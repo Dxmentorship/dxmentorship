@@ -2,7 +2,7 @@ import ApplyButton from "./ApplyButton"
 
 export default function Hero() {
     return (
-        <section class="text-gray-600 body-font">
+        <section class="text-gray-900 body-font">
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
       <h1 class="title-font sm:text-4xl text-5xl mb-4 font-bold text-gray-900 font-nunito">Online training program designed to charge you into DevRel in 3 months
