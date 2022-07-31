@@ -28,6 +28,7 @@ export default function Newsletter() {
           <Image
             alt="resource"
             loader={ImageLoader}
+            priority={true}
             width={900}
             height={900}
             className="w-full h-full rounded-lg object-cover object-top"

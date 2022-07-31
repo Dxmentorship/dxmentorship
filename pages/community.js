@@ -1,4 +1,5 @@
 import AppButton from "../components/AppButton";
+import ImageLoader from "../utils/imageLoader";
 import Image from "next/image";
 export default function Resources() {
   function joinDiscord() {
@@ -14,7 +15,9 @@ export default function Resources() {
             alt="hero"
             height={700}
             width={900}
-            src="/images/community.jpg"
+            loader={ImageLoader}
+            priority={true}
+            src="/kennyy/image/upload/v1659295000/community_rnohik.jpg"
           />
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">

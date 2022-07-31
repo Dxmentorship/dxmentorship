@@ -1,27 +1,27 @@
 import Image from "next/image";
+import ImageLoader from "../utils/imageLoader";
 export default function Testimonials() {
-  // const harpreetImage = "";
   const data = [
     {
       name: "Harpreet",
       title: "Developer Relations Manager at Deci AI",
       quote:
         "I like the structure of the program and the topics covered. It provides an all around perspective of what it takes to be a great DevRel professional.",
-      image: "/images/mentees/harpreet.jpeg",
+      image: "/kennyy/image/upload/v1659294659/harpreet_vvpr4h.jpg",
     },
     {
       name: "Teri",
       title: "Dev Advocate",
       quote:
         "I think it is an excellent way to connect with individuals across different areas of specialization and learn practices you are unaware of in Devrel. ",
-      image: "/images/mentees/teri.jpeg",
+      image: "/kennyy/image/upload/v1659294659/teri_ukpn22.jpg",
     },
     {
       name: "Gloria Asuquo",
       title: "Dev Advocate",
       quote:
         "It was quite the best way to start my journey as a developer advocate. I gained knowledge, relationships and experience. ",
-      image: "/images/mentees/gloria.jpeg",
+      image: "/kennyy/image/upload/v1659294659/gloria_eeuj08.jpg",
     },
   ];
   return (
@@ -44,6 +44,8 @@ export default function Testimonials() {
                         className="w-30 h-40 mx-auto rounded-full object-cover"
                         src={person.image}
                         alt={person.name}
+                        loader={ImageLoader}
+                        priority={true}
                         height={200}
                         width={200}
                       />

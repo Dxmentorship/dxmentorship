@@ -1,6 +1,6 @@
 import AppButton from "./AppButton";
 import Image from "next/image";
-
+import ImageLoader from "../utils/imageLoader";
 export default function Hero() {
   function register() {
     window.location.href = "https://uoo376jx6hb.typeform.com/to/zVymBRsP";
@@ -29,7 +29,9 @@ export default function Hero() {
             alt="hero"
             height={600}
             width={800}
-            src="/images/learn.jpeg"
+            loader={ImageLoader}
+            priority={true}
+            src="/kennyy/image/upload/v1659295000/learn_jrodeh.jpg"
           />
         </div>
       </div>
