@@ -1,0 +1,195 @@
+{
+  "weeks": [
+    {
+      "title": "Week 1",
+      "description": "Community Building",
+      "events": {
+        "descriptions": [
+          {
+            "title": "Why do companies need dedicated communities?"
+          },
+          {
+            "title": "What are the benefits of building a community around a company/product?"
+          },
+          {
+            "title": "How do you measure the impact of a community?"
+          },
+          {
+            "title": "What are the best practices for building a community?"
+          },
+          {
+            "title": "Handling moderation in online communities"
+          },
+          {
+            "title": "Examples of thriving communities and lessons learned"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Week 2",
+      "description": "Conferences & Events",
+      "events": {
+        "descriptions": [
+          {
+            "title": "Why do companies need conferences and events?"
+          },
+          { "title": "Event hosting platforms and user expectations" },
+          {
+            "title": "Skills needed to excel in hosting/speaking at events"
+          },
+          {
+            "title": "What are the best practices for hosting an event?"
+          },
+          {
+            "title": "Moderating events"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Week 3",
+      "description": "Dev Marketing/Evangelism",
+      "events": {
+        "descriptions": [
+          {
+            "title": "How to architect a successful Dev evangelism strategy"
+          },
+          {
+            "title": "Who is a Dev Evangelist?"
+          },
+          {
+            "title": "Relationship between DevRel and Marketing"
+          },
+          {
+            "title": "Lead-gen Strategies for DevRel"
+          },
+          {
+            "title": "Content marketing"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Week 4",
+      "description": "Content Creation",
+      "events": {
+        "descriptions": [
+          {
+            "title": "Types/Formats of Devrel content"
+          },
+          {
+            "title": "Livestreaming"
+          },
+          {
+            "title": "Blogging & Social Media"
+          },
+          {
+            "title": "Video content and tutorials"
+          },
+          {
+            "title": "Content Marketing"
+          },
+          {
+            "title": "Content reusurfacing and re-distribution"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Week 5",
+      "description": "Developer Experience",
+      "events": {
+        "descriptions": [
+          {
+            "title": "What is Developer Experience?"
+          },
+          {
+            "title": "Understanding and improving developer experiences"
+          },
+          {
+            "title": "Sentiment analysis"
+          },
+          {
+            "title": "Collaboration with developers"
+          },
+          {
+            "title": "Feedback loops and gaps"
+          },
+          {
+            "title": "Strategies for better DX"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Week 6",
+      "description": "Documentation and technical writing",
+      "events": {
+        "descriptions": [
+          {
+            "title": "API documentation best practices"
+          },
+          {
+            "title": "Fluency and clarity techniques"
+          },
+          {
+            "title": "Tenses, grammar and tones"
+          },
+          {
+            "title": "Documenting guides and tutorials"
+          },
+          {
+            "title": "Documentation as product"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Week 7",
+      "description": "Metrics and Value prop",
+      "events": {
+        "descriptions": [
+          {
+            "title": "How do you measure Devrel metrics"
+          },
+          {
+            "title": "What value do you provide as a dev advocate"
+          },
+          {
+            "title": "How do you measure your impact"
+          },
+          {
+            "title": "What metrics should you track"
+          },
+          {
+            "title": "Which ones should you ignore"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Week 8",
+      "description": "Open Source",
+      "events": {
+        "descriptions": [
+          {
+            "title": "Why OSS"
+          },
+          {
+            "title": "Code review strategies"
+          },
+          {
+            "title": "Maintaining Open Source projects"
+          },
+          {
+            "title": "READMEs and Licences"
+          },
+          {
+            "title": "Creating your own Open Source project"
+          }
+        ]
+      }
+    }
+  ]
+}

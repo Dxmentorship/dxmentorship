@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import Hero from "../components/AppHero";
 import DXTProcess from "../components/OurProcess";
 import Testimonials from "../components/Testimonials";
-import Features from "../components/Features";
+import Newsletter from "../components/Newsletter";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -21,7 +21,7 @@ export default function Home() {
         <Hero />
         <DXTProcess />
         <Testimonials />
-        <Features />
+        <Newsletter />
       </main>
     </div>
   );

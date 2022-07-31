@@ -1,35 +1,34 @@
-import ApplyButton from "./ApplyButton";
+import AppButton from "./AppButton";
 import AppLogo from "./AppLogo";
+import Link from "next/link";
 export default function Header() {
+  function register() {
+    window.location.href = "https://uoo376jx6hb.typeform.com/to/zVymBRsP";
+  }
   return (
-    <header class="text-gray-600 body-font">
-      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a href="/" class="mr-5 hover:text-gray-900">
-          <AppLogo />
-        </a>
-        <nav class="md:ml-auto font-bold text-gray-900 flex flex-wrap items-center text-base justify-center cursor-pointer font-source-sans-pro">
-          <a href="/class" class="mr-5 hover:text-gray-900">
-            Curriculumn
+    <header className="text-gray-600 body-font">
+      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <Link href="/" className="mr-5 hover:text-gray-900">
+          <a>
+            <AppLogo />
           </a>
-          <a href="/faqs" class="mr-5 hover:text-gray-900">
-            FAQs
-          </a>
-          <a href="/" class="mr-5 hover:text-gray-900">
-            Expectations
-          </a>
-          <a href="/resources" class="mr-5 hover:text-gray-900">
-            Resources
-          </a>
-          <a href="/community" class="mr-5 hover:text-blue-accent">
-            Community
-          </a>
+        </Link>
+        <nav className="md:ml-auto font-bold text-gray-900 flex flex-wrap items-center text-base justify-center cursor-pointer font-source-sans-pro space-x-4">
+          <Link href="/curriculumn" className=" hover:text-gray-900">
+            <a>Curriculumn</a>
+          </Link>
+          <Link href="/faqs" className=" hover:text-gray-900">
+            <a> FAQs</a>
+          </Link>
+
+          <Link href="/resources" className=" hover:text-gray-900">
+            <a> Resources</a>
+          </Link>
+          <Link href="/community" className=" hover:text-blue-accent">
+            <a> Community</a>
+          </Link>
+          <AppButton title="Apply Now!" onClick={register} />
         </nav>
-        {/* <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Apply Now
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button> */}
-        <ApplyButton />
       </div>
     </header>
   );
