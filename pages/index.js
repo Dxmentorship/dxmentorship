@@ -18,7 +18,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Online DevRel mentorship program designed to charge you ..."
+          content="Online DevRel Mentorship Program designed to charge you ..."
         />
         <meta name="twitter:card" content="summary" />
         <meta
@@ -27,7 +27,9 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/kennyy/image/upload/v1662128709/mentor_ltu3vc.jpg"
+          content={
+            "https://res.cloudinary.com/kennyy/image/upload/v1662128709/mentor_ltu3vc.jpg"
+          }
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
