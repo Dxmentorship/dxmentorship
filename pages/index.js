@@ -27,7 +27,7 @@ export default function Home() {
           property="og:description"
           content="Get equipped with knowledge and information that will propel you into a fulfilling Developer Advocacy career."
         />
-        <meta property="og:image" content={OGImage} />
+        <meta property="og:image" content="/images/mentor.jpg" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
