@@ -6,6 +6,7 @@ export default function Newsletter() {
   // post form submission to api/subscribe
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(email);
@@ -15,6 +16,8 @@ export default function Newsletter() {
       })
       .then(function (response) {
         console.log(response);
+        setSuccess(response.data.message);
+        setEmail("");
       })
       .catch(function (error) {
         setError(error.response.data.message);
@@ -48,6 +51,8 @@ export default function Newsletter() {
             <input
               className="bg-gray-100 rounded-lg rounded-r-none text-base leading-none text-gray-800 p-5 w-4/5 border border-transparent focus:outline-none focus:border-gray-500"
               type="email"
+              value={email}
+              disabled={success}
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
@@ -61,7 +66,9 @@ export default function Newsletter() {
             </button>{" "}
             <br />
           </form>
+          {/* if error, show error message, else show success message */}
           {error && <p className="text-red-500 mt-4">{error}</p>}
+          {success && <p className="text-green-500 mt-4">{success}</p>}
         </div>
       </div>
     </section>
