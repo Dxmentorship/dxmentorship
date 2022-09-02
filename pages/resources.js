@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ImageLoader from "../utils/imageLoader";
+import Head from "next/head";
 export default function Resources() {
   // const { myLoader } = ImageLoader();
   // const myLoader = ({ src, width, quality }) => {
@@ -44,6 +45,24 @@ export default function Resources() {
   ];
   return (
     <section className="relative py-20 2xl:py-40 bg-dxt-bg-primary overflow-hidden">
+      <Head>
+        <title>Resources</title>
+        <meta property="og:title" content="DevRel Resources" />
+        <meta
+          property="og:description"
+          content="Resources to help you level-up your developer advocacy skills and experience"
+        />
+        <meta
+          property="og:url"
+          content="https://www.devex.training/resources"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/kennyy/image/upload/v1662135847/resources_dmsd7l.webp"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="container px-4 mx-auto">
         <div className="mb-14 text-center">
           <h2 className="mt-8 text-5xl font-bold font-heading text-white font-nunito">

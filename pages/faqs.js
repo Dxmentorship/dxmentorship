@@ -1,3 +1,4 @@
+import Head from "next/head";
 export default function FAQs() {
   const questions = [
     {
@@ -21,6 +22,21 @@ export default function FAQs() {
   ];
   return (
     <section className="py-20 2xl:py-40 bg-blue-50 font-nunito">
+      <Head>
+        <title>FAQs</title>
+        <meta property="og:title" content="Frequently asked questions" />
+        <meta
+          property="og:description"
+          content="What do you wanna know about the program?"
+        />
+        <meta property="og:url" content="https://www.devex.training/faqs" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/kennyy/image/upload/v1662135511/faqs_x2wk9e.jpg"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="container px-4 mx-auto">
         <div className="mb-20 text-center">
           <h2 className="mt-8 text-7xl font-bold font-heading">FAQ&apos;s</h2>

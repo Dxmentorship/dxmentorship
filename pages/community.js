@@ -1,5 +1,6 @@
 import AppButton from "../components/AppButton";
 import ImageLoader from "../utils/imageLoader";
+import Head from "next/head";
 import Image from "next/image";
 export default function Resources() {
   function joinDiscord() {
@@ -8,6 +9,27 @@ export default function Resources() {
 
   return (
     <section className="text-gray-600 body-font">
+      <Head>
+        <title>DX Community</title>
+        <meta
+          property="og:title"
+          content="Join our ever growing community of new and experienced advocates"
+        />
+        <meta property="og:description" content="Wanna Join Us?" />
+        <meta
+          property="og:url"
+          content="https://www.devex.training/community"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content={
+            "https://res.cloudinary.com/" +
+            "/kennyy/image/upload/v1659295000/community_rnohik.jpg"
+          }
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
           <Image

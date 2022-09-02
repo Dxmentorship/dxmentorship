@@ -1,5 +1,6 @@
 import Tick from "../components/Tick";
 import data from "../data.json";
+import Head from "next/head";
 export default function Curriculumn() {
   const { weeks } = data;
 
@@ -7,6 +8,24 @@ export default function Curriculumn() {
 
   return (
     <section className="text-gray-600 body-font font-nunito">
+      <Head>
+        <title>Our Curriculum</title>
+        <meta property="og:title" content="Check out our curriculumn" />
+        <meta
+          property="og:description"
+          content="All the things we'll cover in this cohort"
+        />
+        <meta
+          property="og:url"
+          content="https://www.devex.training/curriculum"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/kennyy/image/upload/v1662134983/Curriculum_ykhxsv.jpg"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="container px-5 py-24 mx-auto">
         <div className="text-center mb-20">
           <h1 className="title-font lg:w-2/3 mx-auto sm:text-4xl text-5xl mb-4 font-bold text-gray-900 font-nunito">
