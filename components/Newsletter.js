@@ -25,7 +25,7 @@ export default function Newsletter() {
       });
   };
   return (
-    <section className="pt-20 2xl:pt-40 p2-40 2xl:pb-80 overflow-hidden font-nunito">
+    <section className="pt-20 mb-16 p2-40 overflow-hidden font-nunito">
       <div className="p-6 container md:w-2/3 xl:w-auto mx-auto  flex flex-col xl:items-stretch justify-between xl:flex-row">
         <div className="xl:w-1/2 md:mb-14 xl:mb-0 relative h-auto flex items-center justify-center">
           <Image
