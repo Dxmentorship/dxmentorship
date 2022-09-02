@@ -13,7 +13,7 @@ export default function Testimonials() {
       name: "Teri",
       title: "Dev Advocate",
       quote:
-        "I think it is an excellent way to connect with individuals across different areas of specialization and learn practices you are unaware of in Devrel. ",
+        "I think it is an excellent way to connect with individuals across different areas of specialization and learn practices you are unaware of in DevRel. ",
       image: "/kennyy/image/upload/v1659294659/teri_ukpn22.jpg",
     },
     {
@@ -22,6 +22,13 @@ export default function Testimonials() {
       quote:
         "It was quite the best way to start my journey as a developer advocate. I gained knowledge, relationships and experience. ",
       image: "/kennyy/image/upload/v1659294659/gloria_eeuj08.jpg",
+    },
+    {
+      name: "Damilola Ezekiel",
+      title: "Developer Advocate",
+      quote:
+        "I'd totally recommend this program for  anyone looking to get into the DevRel space. I learnt a lot during this program and I was able to work on projects that I would not have attempted. I also had the opportunity to connect with amazing people and my awesome mentor.",
+      image: "/kennyy/image/upload/v1662130373/dami_tgicgp.jpg",
     },
   ];
   return (

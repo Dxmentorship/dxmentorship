@@ -1,3 +1,17 @@
 {
-	"siteId": "7355d982-2c5b-410a-8db3-820db3f8ff52"
+	"siteId": "7355d982-2c5b-410a-8db3-820db3f8ff52",
+	"geolocation": {
+		"data": {
+			"city": "Dubai",
+			"country": {
+				"code": "AE",
+				"name": "United Arab Emirates"
+			},
+			"subdivision": {
+				"code": "DU",
+				"name": "Dubai"
+			}
+		},
+		"timestamp": 1662128165333
+	}
 }
