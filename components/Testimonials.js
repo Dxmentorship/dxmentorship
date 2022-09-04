@@ -23,70 +23,65 @@ export default function Testimonials() {
         "It was quite the best way to start my journey as a developer advocate. I gained knowledge, relationships and experience. ",
       image: "/kennyy/image/upload/v1659294659/gloria_eeuj08.jpg",
     },
-    {
-      name: "Damilola Ezekiel",
-      title: "Developer Advocate",
-      quote:
-        "I'd totally recommend this program for  anyone looking to get into the DevRel space. I learnt a lot during this program and I was able to work on projects that I would not have attempted. I also had the opportunity to connect with amazing people and my awesome mentor.",
-      image: "/kennyy/image/upload/v1662130373/dami_tgicgp.jpg",
-    },
+    // {
+    //   name: "Damilola Ezekiel",
+    //   title: "Developer Advocate",
+    //   quote:
+    //     "I'd totally recommend this program for  anyone looking to get into the DevRel space. I learnt a lot during this program and I was able to work on projects that I would not have attempted. I also had the opportunity to connect with amazing people and my awesome mentor.",
+    //   image: "/kennyy/image/upload/v1662130373/dami_tgicgp.jpg",
+    // },
   ];
   return (
-    <section className="relative py-4 bg-dxt-bg-primary ">
-      <div className="relative container px-4 mx-auto">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-10 lg:mb-10">
-            {/* <span className="text-lg text-blue-400 font-bold">Testimonials</span> */}
-            <h2 className="mt-12 sm:mt-8 text-5xl font-bold font-heading text-white font-nunito">
-              From past mentees
-            </h2>
-          </div>
-          <div className="relative flex flex-wrap -mx-5 mb-20">
-            {data.map((person, index) => {
-              return (
-                <div key={index} className="w-full lg:w-1/2 px-5 mb-12 lg:mb-0">
-                  <div className="flex -mx-4 lg:mx-0">
-                    <div className="w-1/3 px-4">
-                      <Image
-                        className="w-30 h-40 mx-auto rounded-full object-cover"
-                        src={person.image}
-                        alt={person.name}
-                        loader={ImageLoader}
-                        priority={true}
-                        height={200}
-                        width={200}
-                      />
-                    </div>
-                    <div className="w-2/3 px-4">
-                      <div className="relative inline-block mb-8 p-10 bg-dxt-accents-1 rounded-lg">
-                        <div
-                          className="absolute top-0 left-0 -ml-5 mt-10 w-14 h-14 bg-dxt-accents-1"
-                          style={{
-                            clipPath: `polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)`,
-                          }}
-                        ></div>
-                        {/* <img
-                          className="absolute top-0 right-0 md:-mr-6 -mt-6 lg:mt-14"
-                          src="zospace-assets/images/quote-circle.svg"
-                          alt=""
-                        /> */}
-                        <p className="mb-8 text-lg text-gray-200 font-source-sans-pro">
-                          {person.quote}
-                        </p>
-                        <h3 className="mb-1 text-2xl text-white font-bold font-nunito">
-                          {" "}
-                          {person.name}{" "}
-                        </h3>
-                        <p className="text-white font-nunito">{person.title}</p>
-                      </div>
-                    </div>
-                  </div>
+    <div className="container px-6 mx-auto ">
+      <section className="mb-8 text-gray-800 text-center">
+        <h2 className="text-5xl sm:mt-8 font-bold font-heading font-nunito mb-20 text-transparent  bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-400">
+          Hear from our past mentees
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-x-6 lg:gap-x-12">
+          {data.map((person, index) => {
+            return (
+              <div key={index} className="mb-12 mt-8 md:mb-0">
+                <div className="flex justify-center mb-6">
+                  <Image
+                    className="w-30 h-40 mx-auto rounded-full object-cover"
+                    src={person.image}
+                    alt={person.name}
+                    loader={ImageLoader}
+                    priority={true}
+                    height={200}
+                    width={200}
+                  />
                 </div>
-              );
-            })}
-          </div>
+                <h5 className="text-2xl font-bold mb-4 font-nunito">
+                  {person.name}
+                </h5>
+                <h6 className="font-nunito text-2xl text-blue-accent font-bold mb-4">
+                  {person.title}
+                </h6>
+                <p className="mb-4 text-2xl font-source-sans-pro">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="quote-left"
+                    className="w-6 pr-2 inline-block"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+                    ></path>
+                  </svg>
+                  {person.quote}
+                </p>
+              </div>
+            );
+          })}
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }

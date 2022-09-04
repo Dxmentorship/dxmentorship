@@ -3,7 +3,7 @@ import AppLogo from "./AppLogo";
 import Link from "next/link";
 export default function Header() {
   function register() {
-    window.location.href = "https://uoo376jx6hb.typeform.com/to/zVymBRsP";
+    window.location.href = "https://forms.gle/Lg2qTm42EMCQAkAN8";
   }
   return (
     <header className="text-gray-600 body-font">
@@ -14,7 +14,7 @@ export default function Header() {
           </a>
         </Link>
         <nav className="md:ml-auto font-bold text-gray-900 flex flex-wrap items-center text-base justify-center cursor-pointer font-source-sans-pro space-x-4">
-          <Link href="/curriculumn" className=" hover:text-gray-900">
+          <Link href="/curriculum" className=" hover:text-gray-900">
             <a>Curriculumn</a>
           </Link>
           <Link href="/faqs" className=" hover:text-gray-900">
