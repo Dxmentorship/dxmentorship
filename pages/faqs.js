@@ -3,9 +3,9 @@ export default function FAQs() {
   const questions = [
     {
       id: 1,
-      question: "What is DXTraining?",
+      question: "What is DX Mentorship?",
       answer:
-        "DXTraining is a program designed to charge you into devrel in 3 months. The mentorship is run by Kenny - Mentor at DXTraining.",
+        "DX Mentorship is a DevRel training program designed to charge you into DevRel in 3 months. The Mentorship is run by Kenny - Mentor at DX Mentorship.",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export default function FAQs() {
     },
   ];
   return (
-    <section className="py-20 2xl:py-40 font-nunito bg-gradient-to-r from-pink-400 to-orange-300 ">
+    <section className="py-20 2xl:py-40 font-nunito bg-dxt-bg-primary overflow-hidden">
       <Head>
         <title>FAQs</title>
         <meta property="og:title" content="Frequently asked questions" />
@@ -39,7 +39,9 @@ export default function FAQs() {
       </Head>
       <div className="container px-4 mx-auto">
         <div className="mb-20 text-center">
-          <h2 className="mt-8 text-7xl font-bold font-heading">FAQ&apos;s</h2>
+          <h2 className="mt-8 text-7xl text-white font-bold font-heading">
+            FAQ&apos;s
+          </h2>
         </div>
         <div className="max-w-4xl mx-auto">
           <ul>

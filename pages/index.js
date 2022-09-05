@@ -5,16 +5,25 @@ import Hero from "../components/AppHero";
 import DXTProcess from "../components/OurProcess";
 import Testimonials from "../components/Testimonials";
 import Newsletter from "../components/Newsletter";
-export default function Home() {
-  const OGImage =
-    "https://res.cloudinary.com/kennyy/image/upload/v1662128709/mentor_ltu3vc.jpg";
+import SEO from "../components/SEO";
+
+export default function Home(props) {
+  console.log(props);
   return (
     <div className={styles.container}>
-      <Head>
+      <SEO
+        url={`${props.url}`}
+        openGraphType="website"
+        schemaType="article"
+        title="DevRel Mentorship for developer advocates"
+        description="Get equipped with knowledge and information that will propel you into a fulfilling Developer Advocacy career..."
+        image="https://res.cloudinary.com/kennyy/image/upload/v1662128709/mentor_ltu3vc.jpg"
+      />
+      {/* <Head>
         <title>DevRel Mentorship for beginners</title>
         <meta
           property="og:title"
-          content="Online DevRel Mentorship Program designed to charge you ..."
+          content="Online DevRel Mentorship Program for dev advocates"
         />
         <meta
           property="og:description"
@@ -27,7 +36,7 @@ export default function Home() {
           content="https://res.cloudinary.com/kennyy/image/upload/v1662128709/mentor_ltu3vc.jpg"
         />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </Head> */}
 
       <main>
         <Hero />
@@ -38,3 +47,11 @@ export default function Home() {
     </div>
   );
 }
+
+export const getServerSideProps = (context) => {
+  return {
+    props: {
+      url: context?.req?.headers?.host,
+    },
+  };
+};
