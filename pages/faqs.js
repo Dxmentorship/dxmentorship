@@ -21,7 +21,7 @@ export default function FAQs() {
     },
   ];
   return (
-    <section className="py-20 2xl:py-40 bg-blue-50 font-nunito">
+    <section className="py-20 2xl:py-40 font-nunito bg-gradient-to-r from-pink-400 to-orange-300 ">
       <Head>
         <title>FAQs</title>
         <meta property="og:title" content="Frequently asked questions" />
@@ -58,18 +58,10 @@ export default function FAQs() {
                     <div className="flex items-center justify-between">
                       <h3 className="text-xl font-bold">{question.question}</h3>
                     </div>
-                    {/* {showAnswer && ( */}
                     <details className="mt-6 border-l-2 border-gray-50 pl-10">
                       <summary>See answer</summary>
                       <p className="mb-5 text-xl">{question.answer}</p>
-                      {/* <p className="mb-2 text-lg">
-                        <span className="inline-block mr-6 h-2 w-2 rounded-full bg-blue-500"></span>
-                        <span>Distribution of letters</span>
-                      </p>
-                      pan>Content here</span>
-                      </p> */}
                     </details>
-                    {/* )} */}
                   </div>
                 </button>
               </li>

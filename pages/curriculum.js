@@ -28,11 +28,11 @@ export default function Curriculumn() {
       </Head>
       <div className="container px-5 py-24 mx-auto">
         <div className="text-center mb-20">
-          <h1 className="title-font lg:w-2/3 mx-auto sm:text-4xl text-5xl mb-4 font-bold text-gray-900 font-nunito">
-            Here&apos;s the Curriculumn we&apos;ll cover in the duration of the
-            program
+          <h1 className="lg:w-2/3 mx-auto sm:text-4xl text-5xl title-font mb-4 font-extrabold text-gray-900 font-nunito text-transparent  bg-clip-text bg-gradient-to-r from-orange-600 to-blue-600">
+            Here&apos;s the Curriculumn we&apos;ll cover within the duration of
+            the program
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxedtext-gray-900 text-2xl font-source-sans-pro">
+          <p className="lg:w-2/3 mx-auto leading-relaxedtext-gray-900 text-2xl font-source-sans-pro text-black">
             In no particular order, we&apos;ll cover the topics below, go over
             their practical applications, and occassionally bring experts in
             these areas to teach and share their knowledge and experiences.
@@ -41,7 +41,9 @@ export default function Curriculumn() {
         <div className="flex flex-wrap -m-4">
           {weeks.map((week, index) => (
             <div key={index} className="p-4 lg:w-1/4 sm:w-1/2 w-full">
-              <h2 className="text-xl font-bold mb-8">{week.description}</h2>
+              <h2 className="text-xl font-bold mb-8  text-transparent  bg-clip-text bg-gradient-to-r from-blue-600 to-orange-600 ">
+                {week.description}
+              </h2>
               <nav className="flex flex-col sm:items-start sm:text-left   -mb-1 space-y-2.5">
                 {week.events.descriptions.map(
                   (event, index) =>

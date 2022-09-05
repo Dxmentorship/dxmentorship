@@ -14,7 +14,7 @@ export default function Header() {
           </a>
         </Link>
         <nav className="md:ml-auto font-bold text-gray-900 flex flex-wrap items-center text-base justify-center cursor-pointer font-source-sans-pro space-x-4">
-          <Link href="/curriculum" className=" hover:text-gray-900">
+          <Link href="/curriculum" className="hover:text-gray-900">
             <a>Curriculumn</a>
           </Link>
           <Link href="/faqs" className=" hover:text-gray-900">

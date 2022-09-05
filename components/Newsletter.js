@@ -60,7 +60,7 @@ export default function Newsletter() {
             />
             <button
               type="submit"
-              className="w-32 rounded-l-none  bg-dxt-accents-3 rounded text-base font-medium leading-none text-white p-5 uppercase focus:outline-none hover:bg-dxt-accents-1"
+              className="w-32 rounded-l-none bg-dxt-accents-3 rounded text-base font-medium leading-none text-white p-5 uppercase focus:outline-none bg-gradient-to-r hover:from-orange-400 hover:to-pink-400 hover:text-black"
             >
               subscribe
             </button>{" "}
