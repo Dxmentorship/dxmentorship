@@ -34,7 +34,7 @@ export default function Testimonials() {
   return (
     <div className="container px-6 mx-auto ">
       <section className="mb-8 text-gray-800 text-center">
-        <h2 className="text-5xl sm:mt-8 font-bold font-heading font-nunito mb-20 text-transparent  bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-400">
+        <h2 className="text-5xl sm:mt-8 font-bold font-heading font-nunito mb-20 text-transparent  bg-clip-text bg-gradient-to-r from-green-700 to-blue-600">
           Hear from our past mentees
         </h2>
 
