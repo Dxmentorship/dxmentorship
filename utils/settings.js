@@ -9,9 +9,11 @@ const settings = {
       "Get equipped with knowledge and information that will propel you into a fulfilling Developer Advocacy career.",
     social: {
       graphic:
-        "https://res.cloudinary.com/kennyy/image/upload/v1662128709/mentor_ltu3vc.jpg",
+        "https://res.cloudinary.com/kennyy/image/upload/v1659295000/learn_jrodeh.jpg",
       twitter: "@kenny_io",
     },
+    image:
+      "https://res.cloudinary.com/kennyy/image/upload/v1659295000/learn_jrodeh.jpg",
   },
   routes: {
     authenticated: {
