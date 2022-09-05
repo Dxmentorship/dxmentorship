@@ -17,7 +17,7 @@ export default function Home(props) {
         schemaType="article"
         title="DevRel Mentorship for developer advocates"
         description="Get equipped with knowledge and information that will propel you into a fulfilling Developer Advocacy career..."
-        image="https://res.cloudinary.com/kennyy/image/upload/v1662410155/mentor_seo.jpg"
+        image="https://res.cloudinary.com/kennyy/image/upload/v1644517485/cdn_edge_serverless_v45ths.png"
       />
       {/* <Head>
         <title>DevRel Mentorship for beginners</title>
