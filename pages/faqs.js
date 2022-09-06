@@ -22,7 +22,7 @@ export default function FAQs() {
   ];
   return (
     <section className="py-20 2xl:py-40 font-nunito bg-dxt-bg-primary overflow-hidden">
-      <Head>
+      {/* <Head>
         <title>FAQs</title>
         <meta property="og:title" content="Frequently asked questions" />
         <meta
@@ -36,6 +36,16 @@ export default function FAQs() {
           content="https://res.cloudinary.com/kennyy/image/upload/v1662135511/faqs_x2wk9e.jpg"
         />
         <link rel="icon" href="/favicon.ico" />
+      </Head> */}
+      <Head>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@kenny_io" />
+        <meta name="twitter:title" content="TITLE_FOR_YOUR_PAGE" />
+        <meta name="twitter:description" content="DESCRIPTION_FOR_YOUR_PAGE" />
+        <meta
+          name="twitter:image"
+          content="https://res.cloudinary.com/kennyy/image/upload/v1662135511/faqs_x2wk9e.jpg"
+        />
       </Head>
       <div className="container px-4 mx-auto">
         <div className="mb-20 text-center">
