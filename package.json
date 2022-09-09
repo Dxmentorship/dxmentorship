@@ -8,16 +8,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/image-url": "^1.0.1",
     "@supabase/supabase-js": "^1.35.4",
     "axios": "^0.27.2",
     "email-validator": "^2.0.4",
+    "moment": "^2.29.4",
     "next": "12.0.8",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-portable-text": "^0.5.1",
+    "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.38",
     "autoprefixer": "^10.4.2",
+    "dotenv": "^16.0.2",
     "eslint": "8.7.0",
     "eslint-config-next": "12.0.8",
     "postcss": "^8.4.5",

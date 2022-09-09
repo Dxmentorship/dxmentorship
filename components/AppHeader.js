@@ -20,6 +20,9 @@ export default function Header() {
           <Link href="/faqs" className=" hover:text-gray-900">
             <a> FAQs</a>
           </Link>
+          <Link href="/post" className=" hover:text-gray-900">
+            <a> Blog</a>
+          </Link>
 
           <Link href="/resources" className=" hover:text-gray-900">
             <a> Resources</a>
