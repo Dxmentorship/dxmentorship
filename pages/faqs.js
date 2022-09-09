@@ -3,9 +3,9 @@ export default function FAQs() {
   const questions = [
     {
       id: 1,
-      question: "What is DXTraining?",
+      question: "What is DX Mentorship?",
       answer:
-        "DXTraining is a program designed to charge you into devrel in 3 months. The mentorship is run by Kenny - Mentor at DXTraining.",
+        "DX Mentorship is a DevRel training program designed to charge you into DevRel in 3 months. The Mentorship is run by Kenny - Mentor at DX Mentorship.",
     },
     {
       id: 2,
@@ -21,8 +21,8 @@ export default function FAQs() {
     },
   ];
   return (
-    <section className="py-20 2xl:py-40 bg-blue-50 font-nunito">
-      <Head>
+    <section className="py-20 2xl:py-40 font-nunito bg-dxt-bg-primary overflow-hidden">
+      {/* <Head>
         <title>FAQs</title>
         <meta property="og:title" content="Frequently asked questions" />
         <meta
@@ -36,10 +36,22 @@ export default function FAQs() {
           content="https://res.cloudinary.com/kennyy/image/upload/v1662135511/faqs_x2wk9e.jpg"
         />
         <link rel="icon" href="/favicon.ico" />
+      </Head> */}
+      <Head>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@kenny_io" />
+        <meta name="twitter:title" content="TITLE_FOR_YOUR_PAGE" />
+        <meta name="twitter:description" content="DESCRIPTION_FOR_YOUR_PAGE" />
+        <meta
+          name="twitter:image"
+          content="https://res.cloudinary.com/kennyy/image/upload/v1662135511/faqs_x2wk9e.jpg"
+        />
       </Head>
       <div className="container px-4 mx-auto">
         <div className="mb-20 text-center">
-          <h2 className="mt-8 text-7xl font-bold font-heading">FAQ&apos;s</h2>
+          <h2 className="mt-8 text-7xl text-white font-bold font-heading">
+            FAQ&apos;s
+          </h2>
         </div>
         <div className="max-w-4xl mx-auto">
           <ul>
@@ -58,18 +70,10 @@ export default function FAQs() {
                     <div className="flex items-center justify-between">
                       <h3 className="text-xl font-bold">{question.question}</h3>
                     </div>
-                    {/* {showAnswer && ( */}
                     <details className="mt-6 border-l-2 border-gray-50 pl-10">
                       <summary>See answer</summary>
                       <p className="mb-5 text-xl">{question.answer}</p>
-                      {/* <p className="mb-2 text-lg">
-                        <span className="inline-block mr-6 h-2 w-2 rounded-full bg-blue-500"></span>
-                        <span>Distribution of letters</span>
-                      </p>
-                      pan>Content here</span>
-                      </p> */}
                     </details>
-                    {/* )} */}
                   </div>
                 </button>
               </li>

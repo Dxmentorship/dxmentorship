@@ -71,7 +71,7 @@ export default function DXTProcess() {
     <section className="text-gray-600 body-font overflow-hidden font-source-sans-pro">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
-          <h1 className="sm:text-4xl text-3xl title-font mb-8 text-gray-900 font-nunito text-transparent  bg-clip-text bg-gradient-to-r from-blue-600 to-orange-600 font-extrabold">
+          <h1 className="sm:text-4xl text-3xl title-font mb-8 text-gray-900 font-nunito text-transparent  bg-clip-text bg-gradient-to-r from-blue-800 to-orange-600 font-extrabold">
             Developer Relations in Practice
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxedtext-gray-900 text-2xl">
@@ -88,9 +88,6 @@ export default function DXTProcess() {
             return (
               <div key={index} className="p-4 xl:w-1/3 md:w-1/2 w-full">
                 <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
-                  {/* <h2 className="text-sm tracking-widest title-font mb-1 font-bold text-blue-accent">
-                    {item.duration}
-                  </h2> */}
                   <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
                     {item.title}
                   </h1>
