@@ -3,7 +3,7 @@ import Image from "next/image";
 import ImageLoader from "../utils/imageLoader";
 export default function Hero() {
   function register() {
-    window.location.href = "https://uoo376jx6hb.typeform.com/to/zVymBRsP";
+    window.location.href = "https://forms.gle/PRBaVp9V517MJena7";
   }
   return (
     <section className="text-gray-900 body-font">

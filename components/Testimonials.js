@@ -23,28 +23,28 @@ export default function Testimonials() {
         "It was quite the best way to start my journey as a developer advocate. I gained knowledge, relationships and experience. ",
       image: "/kennyy/image/upload/v1659294659/gloria_eeuj08.jpg",
     },
-    // {
-    //   name: "Damilola Ezekiel",
-    //   title: "Developer Advocate",
-    //   quote:
-    //     "I'd totally recommend this program for  anyone looking to get into the DevRel space. I learnt a lot during this program and I was able to work on projects that I would not have attempted. I also had the opportunity to connect with amazing people and my awesome mentor.",
-    //   image: "/kennyy/image/upload/v1662130373/dami_tgicgp.jpg",
-    // },
+    {
+      name: "Damilola Ezekiel",
+      title: "Developer Advocate",
+      quote:
+        "I'd totally recommend this program for  anyone looking to get into the DevRel space. I learnt a lot during this program and I was able to work on projects that I would not have attempted. ",
+      image: "/kennyy/image/upload/v1662130373/dami_tgicgp.jpg",
+    },
   ];
   return (
     <div className="container px-6 mx-auto ">
       <section className="mb-8 text-gray-800 text-center">
-        <h2 className="text-5xl sm:mt-8 font-bold font-heading font-nunito mb-20 text-transparent  bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-400">
+        <h2 className="text-5xl sm:mt-8 font-bold font-heading font-nunito mb-20 text-transparent  bg-clip-text bg-gradient-to-r from-green-700 to-blue-600">
           Hear from our past mentees
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-x-6 lg:gap-x-12">
+        <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-x-6 lg:gap-x-12">
           {data.map((person, index) => {
             return (
               <div key={index} className="mb-12 mt-8 md:mb-0">
                 <div className="flex justify-center mb-6">
                   <Image
-                    className="w-30 h-40 mx-auto rounded-full object-cover"
+                    className="w-30 h-40 mx-auto rounded-full object-cover hover:opacity-75"
                     src={person.image}
                     alt={person.name}
                     loader={ImageLoader}
