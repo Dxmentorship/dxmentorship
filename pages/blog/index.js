@@ -36,7 +36,7 @@ export default function Home({ posts }) {
               <div onClick={() => router.push(`/blog/${post.slug.current}`)} className="h-full cursor-pointer bg-gradient-to-r hover:from-orange-400 hover:to-pink-400 bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
                 <h2 className="tracking-widest text-xs title-font font-nunito text-gray-900 mb-1">{moment(post.publishedAt).format("L")}</h2>
                 <h1 className="title-font sm:text-2xl text-xl text-gray-900 mb-3 text-xl font-nunito font-bold mb-8 ">{post.title}</h1>
-                <p className="leading-relaxed mb-3 font-source-sans-pro">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                <p className="leading-relaxed mb-3 font-source-sans-pro">{post.description}</p>
                 <a className="text-lg font-nunito inline-flex items-center ">Learn More
                   <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14"></path>
@@ -63,8 +63,6 @@ export const getServerSideProps = async (pageContext) => {
   const allPosts = encodeURIComponent(`*[ _type == "post"]{..., author->}`);
   const url = `https://${process.env.NEXT_PUBLIC_PROJECT_ID}.api.sanity.io/v1/data/query/production?query=${allPosts}`;
   const getPosts = await fetch(url).then((res) => res.json());
-  
-  console.log(getPosts);
 
   if (!getPosts.result || !getPosts.result.length) {
     return {

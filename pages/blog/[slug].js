@@ -31,9 +31,9 @@ function Post({ title, body, image, author }) {
   return (
     <>
       <div className={styles.postItem}>
-        <div className={styles.postNav} onClick={() => router.push("/post")}>
+        {/* <div className={styles.postNav} onClick={() => router.push("/blog")}>
           &#x2190;
-        </div>
+        </div> */}
         {imageUrl && <img src={imageUrl} alt={title} />}
         <div>
           <h1>
