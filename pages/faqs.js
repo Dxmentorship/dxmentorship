@@ -17,7 +17,13 @@ export default function FAQs() {
       id: 3,
       question: "How do I pay?",
       answer:
-        "DXTraining is a free program. The only payment required is your time and dedication.",
+        "DX Mentorship is a free program. The only payment required is your time and dedication. And ofcourse, your willingness to pay it forward",
+    },
+     {
+      id: 3,
+      question: "Have more questions?",
+      answer:
+        "Email me at hello@kenny.engineer",
     },
   ];
   return (

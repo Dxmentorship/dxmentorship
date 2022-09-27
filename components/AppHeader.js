@@ -25,16 +25,16 @@ export default function Header() {
               FAQs
             </a>
           </Link>
-          <Link href="/post" className=" hover:text-gray-900">
+          <Link href="/blog" className=" hover:text-gray-900">
             <a> Blog</a>
           </Link>
 
-          <Link href="/resources">
+          {/* <Link href="/resources">
             <a className="hover:text-transparent bg-clip-text bg-gradient-to-r text-gray-900 hover:from-orange-600 hover:to-blue-600">
               {" "}
               Resources
             </a>
-          </Link>
+          </Link> */}
           <Link href="/community" className=" hover:text-blue-accent">
             <a className="hover:text-transparent bg-clip-text bg-gradient-to-r text-gray-900 hover:from-orange-600 hover:to-blue-600">
               {" "}
