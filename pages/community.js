@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 export default function Resources() {
   function joinDiscord() {
-    window.location.href = "https://discord.gg/wXNVHBtN";
+    window.location.href = "https://discord.gg/dUQyb2mk4s";
   }
 
   return (
