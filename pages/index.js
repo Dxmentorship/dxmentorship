@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Hero from "../components/AppHero";
 import DXTProcess from "../components/OurProcess";
@@ -8,7 +7,6 @@ import Newsletter from "../components/Newsletter";
 import SEO from "../components/SEO";
 
 export default function Home(props) {
-  console.log(props);
   return (
     <div className={styles.container}>
       <SEO

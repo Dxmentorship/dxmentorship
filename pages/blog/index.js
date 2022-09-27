@@ -8,6 +8,8 @@ export default function Home({ posts }) {
   const router = useRouter();
   useEffect(() => {
     if (posts.length) {
+
+      // If we want to use post images from Sanity
       const imgBuilder = imageUrlBuilder({
         projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
         dataset: process.env.NEXT_PUBLIC_DATASET,
@@ -31,12 +33,12 @@ export default function Home({ posts }) {
         {receivedPosts.length ? (
           receivedPosts.map((post, index) => (
             <div key={index} className="p-4 lg:w-1/3">
-              <div onClick={() => router.push(`/post/${post.slug.current}`)} className="h-full cursor-pointer bg-gradient-to-r hover:from-orange-400 hover:to-pink-400 bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+              <div onClick={() => router.push(`/blog/${post.slug.current}`)} className="h-full cursor-pointer bg-gradient-to-r hover:from-orange-400 hover:to-pink-400 bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
                 <h2 className="tracking-widest text-xs title-font font-nunito text-gray-900 mb-1">{moment(post.publishedAt).format("L")}</h2>
                 <h1 className="title-font sm:text-2xl text-xl text-gray-900 mb-3 text-xl font-nunito font-bold mb-8 ">{post.title}</h1>
                 <p className="leading-relaxed mb-3 font-source-sans-pro">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
                 <a className="text-lg font-nunito inline-flex items-center ">Learn More
-                  <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14"></path>
                     <path d="M12 5l7 7-7 7"></path>
                   </svg>
