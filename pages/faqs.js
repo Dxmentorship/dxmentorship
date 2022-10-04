@@ -19,30 +19,14 @@ export default function FAQs() {
       answer:
         "DX Mentorship is a free program. The only payment required is your time and dedication. And ofcourse, your willingness to pay it forward",
     },
-     {
+    {
       id: 3,
       question: "Have more questions?",
-      answer:
-        "Email me at hello@kenny.engineer",
+      answer: "Email me: hello@kenny.engineer",
     },
   ];
   return (
-    <section className="py-20 2xl:py-40 font-nunito bg-dxt-bg-primary overflow-hidden">
-      {/* <Head>
-        <title>FAQs</title>
-        <meta property="og:title" content="Frequently asked questions" />
-        <meta
-          property="og:description"
-          content="What do you wanna know about the program?"
-        />
-        <meta property="og:url" content="https://www.devex.training/faqs" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://res.cloudinary.com/kennyy/image/upload/v1662135511/faqs_x2wk9e.jpg"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head> */}
+    <section className="py-20 2xl:py-40 font-nunito bg-gradient-to-b from-orange-400 to-pink-500">
       <Head>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@kenny_io" />
