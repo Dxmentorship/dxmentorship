@@ -2,39 +2,20 @@ import Tick from "../components/Tick";
 import data from "../data.json";
 import Head from "next/head";
 import SEO from "../components/SEO";
-export default function Curriculumn() {
+
+export default function Curriculumn(props) {
   const { weeks } = data;
-
-  console.log(SEO);
-
   return (
     <>
       <SEO
-        url={`https://deploy-preview-6--dx-training.netlify.app/curriculum`}
+        url={`${props.url}/curriculum`}
         openGraphType="website"
         schemaType="article"
         title="Curriculum for DevRel Mentorship for developer advocates"
         description="Get equipped with knowledge and information that will propel you into a fulfilling Developer Advocacy career..."
-        image="https://res.cloudinary.com/kennyy/image/upload/v1662410155/mentor_seo.jpg"
+        image="https://res.cloudinary.com/kennyy/image/upload/v1662134983/Curriculum_ykhxsv.jpg"
       />
-      {/* <Head>
-        <title>Our Curriculum</title>
-        <meta property="og:title" content="Check out our curriculumn" />
-        <meta
-          property="og:description"
-          content="All the things we'll cover in this cohort"
-        />
-        <meta
-          property="og:url"
-          content="https://www.devex.training/curriculum"
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://res.cloudinary.com/kennyy/image/upload/v1662134983/Curriculum_ykhxsv.jpg"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head> */}
+
       <section className="text-gray-600 body-font font-nunito">
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
@@ -75,3 +56,10 @@ export default function Curriculumn() {
     </>
   );
 }
+export const getServerSideProps = (context) => {
+  return {
+    props: {
+      url: context?.req?.headers?.host,
+    },
+  };
+};

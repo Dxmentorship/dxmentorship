@@ -1,5 +1,7 @@
 import Head from "next/head";
-export default function FAQs() {
+import SEO from "../components/SEO";
+
+export default function FAQs(props) {
   const questions = [
     {
       id: 1,
@@ -26,51 +28,60 @@ export default function FAQs() {
     },
   ];
   return (
-    <section className="py-20 2xl:py-40 font-nunito bg-gradient-to-b from-orange-400 to-pink-500">
-      <Head>
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@kenny_io" />
-        <meta name="twitter:title" content="TITLE_FOR_YOUR_PAGE" />
-        <meta name="twitter:description" content="DESCRIPTION_FOR_YOUR_PAGE" />
-        <meta
-          name="twitter:image"
-          content="https://res.cloudinary.com/kennyy/image/upload/v1662135511/faqs_x2wk9e.jpg"
-        />
-      </Head>
-      <div className="container px-4 mx-auto">
-        <div className="mb-20 text-center">
-          <h2 className="mt-8 text-7xl text-white font-bold font-heading">
-            FAQ&apos;s
-          </h2>
-        </div>
-        <div className="max-w-4xl mx-auto">
-          <ul>
-            {questions.map((question, index) => (
-              <li
-                key={index}
-                className="mb-4 px-4 lg:px-12 py-8 bg-white rounded-2xl"
-              >
-                <button className="flex w-full text-left">
-                  <div className="w-auto mr-8">
-                    <span className="flex items-center justify-center w-12 h-12 text-lg font-bold bg-blue-100 rounded-full">
-                      {question.id}
-                    </span>
-                  </div>
-                  <div className="w-full mt-3">
-                    <div className="flex items-center justify-between">
-                      <h3 className="text-xl font-bold">{question.question}</h3>
+    <>
+      <SEO
+        url={`${props.url}/faqs`}
+        openGraphType="website"
+        schemaType="article"
+        title="FAQs "
+        description="Get equipped with knowledge and information that will propel you into a fulfilling Developer Advocacy career..."
+        image="https://res.cloudinary.com/kennyy/image/upload/v1662135511/faqs_x2wk9e.jpg"
+      />
+      <section className="py-20 2xl:py-40 font-nunito bg-gradient-to-b from-orange-400 to-pink-500">
+        <div className="container px-4 mx-auto">
+          <div className="mb-20 text-center">
+            <h2 className="mt-8 text-7xl text-white font-bold font-heading">
+              FAQ&apos;s
+            </h2>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <ul>
+              {questions.map((question, index) => (
+                <li
+                  key={index}
+                  className="mb-4 px-4 lg:px-12 py-8 bg-white rounded-2xl"
+                >
+                  <button className="flex w-full text-left">
+                    <div className="w-auto mr-8">
+                      <span className="flex items-center justify-center w-12 h-12 text-lg font-bold bg-blue-100 rounded-full">
+                        {question.id}
+                      </span>
                     </div>
-                    <details className="mt-6 border-l-2 border-gray-50 pl-10">
-                      <summary>See answer</summary>
-                      <p className="mb-5 text-xl">{question.answer}</p>
-                    </details>
-                  </div>
-                </button>
-              </li>
-            ))}
-          </ul>
+                    <div className="w-full mt-3">
+                      <div className="flex items-center justify-between">
+                        <h3 className="text-xl font-bold">
+                          {question.question}
+                        </h3>
+                      </div>
+                      <details className="mt-6 border-l-2 border-gray-50 pl-10">
+                        <summary>See answer</summary>
+                        <p className="mb-5 text-xl">{question.answer}</p>
+                      </details>
+                    </div>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
+export const getServerSideProps = (context) => {
+  return {
+    props: {
+      url: context?.req?.headers?.host,
+    },
+  };
+};

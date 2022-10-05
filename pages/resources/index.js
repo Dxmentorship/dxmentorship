@@ -3,8 +3,9 @@ import { useRouter } from "next/router";
 // import imageUrlBuilder from "@sanity/image-url";
 import moment from "moment";
 import Link from "next/link";
-
-export default function Home({ posts }) {
+import SEO from "../../components/SEO";
+export default function Home({ posts }, props) {
+  console.log(props);
   const [receivedPosts, setReceivedPosts] = useState([]);
   // const router = useRouter();
   useEffect(() => {
@@ -27,7 +28,15 @@ export default function Home({ posts }) {
     }
   }, [posts]);
   return (
-    <div>
+    <>
+      <SEO
+        url="https://www.dxmentorship.com/blog"
+        openGraphType="website"
+        schemaType="article"
+        title="DX Mentorship Blog"
+        description="Get equipped with knowledge and information that will propel you into a fulfilling Developer Advocacy career..."
+        image="https://res.cloudinary.com/kennyy/image/upload/v1662134983/Curriculum_ykhxsv.jpg"
+      />
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
           {receivedPosts.length ? (
@@ -35,7 +44,6 @@ export default function Home({ posts }) {
               <div key={index} className="p-4 lg:w-1/3">
                 <div
                   // onClick={() => router.push(`/blog/${post.slug.current}`)}
-
                   className="h-full bg-gradient-to-r hover:from-orange-400 hover:to-pink-400 bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative"
                 >
                   <h2 className="tracking-widest text-xs title-font font-nunito text-gray-900 mb-1">
@@ -79,7 +87,7 @@ export default function Home({ posts }) {
           )}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 export const getStaticProps = async (pageContext) => {
