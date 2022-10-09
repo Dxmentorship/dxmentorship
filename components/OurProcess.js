@@ -88,7 +88,7 @@ export default function DXTProcess() {
             return (
               <div key={index} className="p-4 xl:w-1/3 md:w-1/2 w-full">
                 <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
-                  <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
+                  <h1 className="md:text-3xl lg:text-5xl text-lg text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
                     {item.title}
                   </h1>
                   <p>
