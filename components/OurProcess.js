@@ -129,7 +129,7 @@ export default function DXTProcess() {
           })}
         </div>
         <h3 className="font-nunito underline py-2 text-lg">
-          <Link href="/curriculumn">
+          <Link href="/curriculum">
             <a className="text-blue-accent">See more on our Curriculumn page</a>
           </Link>
         </h3>
