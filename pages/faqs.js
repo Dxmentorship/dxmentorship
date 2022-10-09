@@ -63,9 +63,9 @@ export default function FAQs(props) {
                           {question.question}
                         </h3>
                       </div>
-                      <details className="mt-6 border-l-2 border-gray-50 pl-10">
+                      <details className="mt-6 border-gray-50">
                         <summary>See answer</summary>
-                        <p className="mb-5 text-xl">{question.answer}</p>
+                        <p className="mt-5 mb-5 text-xl">{question.answer}</p>
                       </details>
                     </div>
                   </button>
