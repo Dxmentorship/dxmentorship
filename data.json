@@ -76,7 +76,7 @@
       "events": {
         "descriptions": [
           {
-            "title": "Types/Formats of Devrel content"
+            "title": "Types/Formats of DevRel content"
           },
           {
             "title": "Livestreaming"
@@ -91,27 +91,27 @@
             "title": "Content Marketing"
           },
           {
-            "title": "Content reusurfacing and re-distribution"
+            "title": "Content distribution"
           }
         ]
       }
     },
     {
       "title": "Week 5",
-      "description": "Developer Experience",
+      "description": "Developer Experience Engineering",
       "events": {
         "descriptions": [
           {
-            "title": "What is Developer Experience?"
+            "title": "Who is a Developer Experience Engineer?"
           },
           {
-            "title": "Understanding and improving developer experiences"
+            "title": "Understanding and improving developer's experiences"
           },
           {
             "title": "Sentiment analysis"
           },
           {
-            "title": "Collaboration with developers"
+            "title": "Collaboration with developers & communities"
           },
           {
             "title": "Feedback loops and gaps"
@@ -128,19 +128,22 @@
       "events": {
         "descriptions": [
           {
-            "title": "API documentation best practices"
+            "title": "Documentation best practices"
           },
           {
-            "title": "Fluency and clarity techniques"
+            "title": "Writing fluency and clarity techniques (tenses, grammar and tones)"
           },
           {
-            "title": "Tenses, grammar and tones"
+            "title": "Content i18n"
           },
           {
             "title": "Documenting guides and tutorials"
           },
           {
-            "title": "Documentation as product"
+            "title": "Documentation as a product"
+          },
+          {
+            "title": "Writing Blogposts"
           }
         ]
       }
@@ -151,19 +154,19 @@
       "events": {
         "descriptions": [
           {
-            "title": "How do you measure Devrel metrics"
+            "title": "Metrics in Developer Relations"
           },
           {
-            "title": "What value do you provide as a dev advocate"
+            "title": "Providing value as a dev advocate"
           },
           {
-            "title": "How do you measure your impact"
+            "title": "Measuring your impact"
           },
           {
-            "title": "What metrics should you track"
+            "title": "Understanding business goals and objectives"
           },
           {
-            "title": "Which ones should you ignore"
+            "title": "Bridging the business/DevRel gap"
           }
         ]
       }
@@ -180,7 +183,7 @@
             "title": "Code review strategies"
           },
           {
-            "title": "Maintaining Open Source projects"
+            "title": "Maintaining & contributing to Open Source projects"
           },
           {
             "title": "READMEs and Licences"
