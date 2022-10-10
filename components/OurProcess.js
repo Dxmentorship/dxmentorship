@@ -3,6 +3,8 @@ export default function DXTProcess() {
   const data = [
     {
       title: "Developer Experience Engineering",
+      description:
+        "You'll learn the fundamentals of Developer Experience Engineering, including how to build internal developer tools, make OSS contributions, and work together with Engineering to build developer-friendly products.",
       duration: "5 weeks",
       topics: [
         {
@@ -11,7 +13,6 @@ export default function DXTProcess() {
         {
           title: "Demonstrative projects",
         },
-
         {
           title: "Code reviews",
         },
@@ -25,6 +26,8 @@ export default function DXTProcess() {
     },
     {
       title: "Community and Education",
+      description:
+        "You'll learn how to build and grow a community around a product, brand or service. You'll also learn how to create educational resources and deliver value for the benefit of your community.",
       duration: "4 weeks",
       topics: [
         {
@@ -32,9 +35,6 @@ export default function DXTProcess() {
         },
         {
           title: "Conferences and events",
-        },
-        {
-          title: "Marketing and sales",
         },
         {
           title: "Content creation",
@@ -46,6 +46,8 @@ export default function DXTProcess() {
     },
     {
       title: "Documentation and Technical writing",
+      description:
+        "We'll cover the fundamentals of technical writing and documentation, including how to write good product documentation, how to write for different audiences, and how to create resources that are easy to understand and use.",
       duration: "3 weeks",
       topics: [
         {
@@ -91,14 +93,7 @@ export default function DXTProcess() {
                   <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
                     {item.title}
                   </h1>
-                  <p>
-                    I intend to take a general approach and train you for all
-                    possible strategies employed in the industry today.
-                    Combining my experience from different companies and the
-                    knowledge I&apos;ve gained working in the industry for 5
-                    years, we can create a unique experience that prepares you
-                    for everything
-                  </p>
+                  <p>{item.description}</p>
                   <br />
                   {item.topics.map((topic, index) => {
                     return (
@@ -129,7 +124,7 @@ export default function DXTProcess() {
           })}
         </div>
         <h3 className="font-nunito underline py-2 text-lg">
-          <Link href="/curriculumn">
+          <Link href="/curriculum">
             <a className="text-blue-accent">See more on our Curriculumn page</a>
           </Link>
         </h3>
