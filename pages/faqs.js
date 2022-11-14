@@ -22,7 +22,7 @@ export default function FAQs(props) {
         "DX Mentorship is a free program. The only payment required is your time and dedication. And ofcourse, your willingness to pay it forward",
     },
     {
-      id: 3,
+      id: 4,
       question: "Have more questions?",
       answer: "Email me: hello@kenny.engineer",
     },
