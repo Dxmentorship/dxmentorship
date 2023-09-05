@@ -19,23 +19,56 @@ export default function Home(props) {
         <div className="flex flex-row flex-wrap gap-3 items-center justify-center">
           { props.graduates.results.map((graduate) => {
             return (
-              <a href={graduate.public_url} key={graduate.id} target="_blank" rel="noreferrer" className="w-full max-w-sm rounded overflow-hidden shadow-lg">
-                  <img className="h-64 w-full object-cover bg-gray-200" src={graduate.cover.file ? graduate.cover.file.url : 'https://www.notion.so/images/page-cover/met_arnold_bocklin_1880.jpg'} />
+              <div key={graduate.id} className="w-full max-w-sm rounded overflow-hidden shadow-lg">
+                  <img className="h-64 w-full object-cover bg-gray-200" src={graduate.properties["Imgur Link to Picture"].rich_text[0]?.plain_text || 'https://www.notion.so/images/page-cover/met_arnold_bocklin_1880.jpg'} />
                   <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">{graduate.properties.Name.title[0].plain_text}</div>
                     <p className="text-gray-700 text-base">
-                      <ul>
-                        <li><span>Technical background: </span><span>{graduate.properties["Technical Background"].select.name}</span></li>
-                        <li><span>Years of experience: </span><span>{graduate.properties["Years of Experience"].number || 'N/A'}</span></li>
-                      </ul>
+                      { graduate.properties["Bio"].rich_text.map((line) => { 
+                        return <>{line.plain_text} <br /></>
+                       }) }
                     </p>
                   </div>
                   <div className="px-6 pt-4 pb-2">
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{
-                      graduate.properties.Cohort.select.name
-                    }</span>
+                    <a href={graduate.public_url} target="_blank" rel="noreferrer">
+                      <span className="inline-block font-sans bg-gray-200 hover:bg-black hover:text-white rounded-full px-3 py-1 text-sm text-gray-700 mr-2 mb-2">
+                        View full profile
+                      </span>
+                    </a>
+                    {
+                      graduate.properties['Blog'].rich_text[0]?.plain_text &&
+                      <a href={graduate.properties['Blog'].rich_text[0]?.plain_text} target="_blank" rel="noreferrer">
+                        <span className="inline-block font-sans bg-gray-200 hover:bg-black hover:text-white rounded-full px-3 py-1 text-sm text-gray-700 mr-2 mb-2">
+                          Blog
+                        </span>
+                      </a>
+                    }
+                    {
+                      graduate.properties['Github'].rich_text[0]?.plain_text &&
+                      <a href={graduate.properties['Github'].rich_text[0]?.plain_text} target="_blank" rel="noreferrer">
+                        <span className="inline-block font-sans bg-gray-200 hover:bg-black hover:text-white rounded-full px-3 py-1 text-sm text-gray-700 mr-2 mb-2">
+                          GitHub
+                        </span>
+                      </a>
+                    }
+                    {
+                      graduate.properties['Twitter'].rich_text[0]?.plain_text &&
+                      <a href={graduate.properties['Twitter'].rich_text[0]?.plain_text} target="_blank" rel="noreferrer">
+                        <span className="inline-block font-sans bg-gray-200 hover:bg-black hover:text-white rounded-full px-3 py-1 text-sm text-gray-700 mr-2 mb-2">
+                          Twitter
+                        </span>
+                      </a>
+                    }
+                    {
+                      graduate.properties['LinkedIn'].rich_text[0]?.plain_text &&
+                      <a href={graduate.properties['LinkedIn'].rich_text[0]?.plain_text} target="_blank" rel="noreferrer">
+                        <span className="inline-block font-sans bg-gray-200 hover:bg-black hover:text-white rounded-full px-3 py-1 text-sm text-gray-700 mr-2 mb-2">
+                          LinkedIn
+                        </span>
+                      </a>
+                    }
                   </div>
-                </a>
+                </div>
             )
           }) } 
         </div>
