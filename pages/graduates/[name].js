@@ -3,6 +3,8 @@ import SEO from "../../components/SEO";
 import { Client } from '@notionhq/client';
 
 export default function Page(props) {
+  const { graduate } = props;
+
   return (
     <div className={styles.container}>
       <SEO
@@ -15,8 +17,14 @@ export default function Page(props) {
       />
 
       <main className="container mx-auto w-full flex px-5 py-24 flex-col items-center">
-        <h1 className="text-6xl mb-20">{props.graduate.properties.Name?.title[0]?.plain_text}</h1>
-        <div className="flex flex-row flex-wrap gap-3 items-center justify-center">
+        <h2 className="text-4xl mb-20">{graduate.properties.Name?.title[0]?.plain_text}</h2>
+        <div className="flex flex-col justify-center items-center typography max-w-[76ch]">
+          <img className="w-64 h-64 object-cover bg-gray-200 rounded-full mb-10" src={graduate.properties["Imgur Link to Picture"].rich_text[0]?.plain_text || 'https://www.notion.so/images/page-cover/met_arnold_bocklin_1880.jpg'} />
+          <p className="text-xl">
+            { graduate.properties["Bio"].rich_text.map((line) => { 
+              return <>{line.plain_text} <br /></>
+            }) }
+          </p>
         </div>
       </main>
     </div>
