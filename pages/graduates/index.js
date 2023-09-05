@@ -2,7 +2,7 @@ import styles from "../../styles/Home.module.css";
 import SEO from "../../components/SEO";
 import { Client } from '@notionhq/client';
 
-export default function Home(props) {
+export default function Graduate(props) {
   return (
     <div className={styles.container}>
       <SEO
@@ -30,7 +30,7 @@ export default function Home(props) {
                     </p>
                   </div>
                   <div className="px-6 pt-4 pb-2">
-                    <a href={graduate.public_url} target="_blank" rel="noreferrer">
+                    <a href={`/graduates/${graduate.properties.Name.title[0].plain_text.split(' ').join('-')}`} rel="noreferrer">
                       <span className="inline-block font-sans bg-gray-200 hover:bg-black hover:text-white rounded-full px-3 py-1 text-sm text-gray-700 mr-2 mb-2">
                         View full profile
                       </span>
