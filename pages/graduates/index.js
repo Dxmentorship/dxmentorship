@@ -35,38 +35,6 @@ export default function Graduate(props) {
                         View full profile
                       </span>
                     </a>
-                    {
-                      graduate.properties['Blog'].rich_text[0]?.plain_text &&
-                      <a href={graduate.properties['Blog'].rich_text[0]?.plain_text} target="_blank" rel="noreferrer">
-                        <span className="inline-block font-sans bg-gray-200 hover:bg-black hover:text-white rounded-full px-3 py-1 text-sm text-gray-700 mr-2 mb-2">
-                          Blog
-                        </span>
-                      </a>
-                    }
-                    {
-                      graduate.properties['Github'].rich_text[0]?.plain_text &&
-                      <a href={graduate.properties['Github'].rich_text[0]?.plain_text} target="_blank" rel="noreferrer">
-                        <span className="inline-block font-sans bg-gray-200 hover:bg-black hover:text-white rounded-full px-3 py-1 text-sm text-gray-700 mr-2 mb-2">
-                          GitHub
-                        </span>
-                      </a>
-                    }
-                    {
-                      graduate.properties['Twitter'].rich_text[0]?.plain_text &&
-                      <a href={graduate.properties['Twitter'].rich_text[0]?.plain_text} target="_blank" rel="noreferrer">
-                        <span className="inline-block font-sans bg-gray-200 hover:bg-black hover:text-white rounded-full px-3 py-1 text-sm text-gray-700 mr-2 mb-2">
-                          Twitter
-                        </span>
-                      </a>
-                    }
-                    {
-                      graduate.properties['LinkedIn'].rich_text[0]?.plain_text &&
-                      <a href={graduate.properties['LinkedIn'].rich_text[0]?.plain_text} target="_blank" rel="noreferrer">
-                        <span className="inline-block font-sans bg-gray-200 hover:bg-black hover:text-white rounded-full px-3 py-1 text-sm text-gray-700 mr-2 mb-2">
-                          LinkedIn
-                        </span>
-                      </a>
-                    }
                   </div>
                 </div>
             )
