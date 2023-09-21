@@ -1,6 +1,6 @@
 
 ## DXTraining
 
-An online training program to designed charge you into Developer Relations with real world insights.
+DXTraining is an online training program designed to charge you into Developer Relations with real-world insights.
 
 
