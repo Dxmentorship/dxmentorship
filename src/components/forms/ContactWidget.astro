@@ -1,5 +1,5 @@
 ---
-import Blurgradientleft from "../assets/Blurgradientleft.astro";
+import Blurgradientleft from '../assets/Blurgradientleft.astro';
 ---
 
 <div id="#" x-data="{ open: false }">
@@ -11,30 +11,21 @@ import Blurgradientleft from "../assets/Blurgradientleft.astro";
     x-transition:leave="transition duration-200 transform ease"
     x-transition:leave-end="opacity-0 translate-y-5"
     @click.away="open = false"
-    class="fixed flex flex-col z-50 bottom-[100px] top-0 ring-0 left-0 sm:top-auto sm:right-5 sm:left-auto h-[calc(100%-95px)] w-full sm:w-[350px] overflow-auto min-h-[250px] p-[0.060rem] sm:h-[600px] bg-gradient-to-b from-indigo-500 via-indigo-500/5 shadow-2xl rounded-3xl">
+    class="fixed flex flex-col z-50 bottom-[100px] top-0 ring-0 left-0 sm:top-auto sm:right-5 sm:left-auto h-[calc(100%-95px)] w-full sm:w-[350px] overflow-auto min-h-[250px] p-[0.060rem] sm:h-[600px] bg-gradient-to-b from-indigo-500 via-indigo-500/5 shadow-2xl rounded-3xl"
+  >
     <div class="bg-vulcan-900 h-full rounded-3xl overflow-hidden relative">
       <Blurgradientleft />
-      <div
-        class="flex p-5 lg:py-12 flex-col justify-center items-center h-32 rounded-t-3xl relative">
+      <div class="flex p-5 lg:py-12 flex-col justify-center items-center h-32 rounded-t-3xl relative">
         <h3 class="text-white">Got any questions?</h3>
-        <p class="text-white text-sm mt-2">
-          we typically reply in under 30 minutes
-        </p>
+        <p class="text-white text-sm mt-2">we typically reply in under 30 minutes</p>
       </div>
       <div class="relative flex-grow p-6">
-        <form
-          action="#"
-          method="POST"
-          id="form"
-          class="needs-validation"
-          novalidate>
+        <form action="#" method="POST" id="form" class="needs-validation" novalidate>
           <input type="hidden" name="#" value="#" />
           <input type="hidden" name="subject" value="Form" />
 
           <div class="mb-4">
-            <label for="full_name" class="block mb-2 text-sm text-white"
-              >Full Name</label
-            >
+            <label for="full_name" class="block mb-2 text-sm text-white">Full Name</label>
             <input
               type="text"
               name="name"
@@ -43,15 +34,11 @@ import Blurgradientleft from "../assets/Blurgradientleft.astro";
               required
               class="block w-full px-4 py-2 border bg-transparent border-white/10 rounded-xl appearance-none text-indigo-300 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
             />
-            <div class="text-sm mt-1 hidden">
-              Please provide your full name.
-            </div>
+            <div class="text-sm mt-1 hidden">Please provide your full name.</div>
           </div>
 
           <div class="mb-4">
-            <label for="email" class="block mb-2 text-sm text-white"
-              >Email Address</label
-            >
+            <label for="email" class="block mb-2 text-sm text-white">Email Address</label>
             <input
               type="email"
               name="email"
@@ -65,9 +52,7 @@ import Blurgradientleft from "../assets/Blurgradientleft.astro";
           </div>
 
           <div class="mb-4">
-            <label for="message" class="block mb-2 text-sm text-white"
-              >Your Message</label
-            >
+            <label for="message" class="block mb-2 text-sm text-white">Your Message</label>
 
             <textarea
               rows="4"
@@ -81,7 +66,8 @@ import Blurgradientleft from "../assets/Blurgradientleft.astro";
           <div class="mb-3">
             <button
               type="submit"
-              class="rounded-lg px-4 py-2 text-sm font-semibold transition-all flex items-center justify-center hover:to-indigo-600 bg-gradient-to-b from-indigo-300 via-indigo-400 to-indigo-500 text-vulcan-900 h-10 w-full">
+              class="rounded-lg px-4 py-2 text-sm font-semibold transition-all flex items-center justify-center hover:to-indigo-600 bg-gradient-to-b from-indigo-300 via-indigo-400 to-indigo-500 text-vulcan-900 h-10 w-full"
+            >
               Submit
             </button>
           </div>
@@ -92,7 +78,8 @@ import Blurgradientleft from "../assets/Blurgradientleft.astro";
   <button
     id="w3f__widget--btn"
     @click="open = !open"
-    class="fixed z-40 right-5 bottom-5 shadow-lg flex justify-center items-center w-14 h-14 bg-gradient-to-r from-indigo-400 to-indigo-500 rounded-full focus:outline-none hover:bg-vulcan-600 focus:bg-vulcan-600 transition duration-300 ease">
+    class="fixed z-40 right-5 bottom-5 shadow-lg flex justify-center items-center w-14 h-14 bg-gradient-to-r from-indigo-400 to-indigo-500 rounded-full focus:outline-none hover:bg-vulcan-600 focus:bg-vulcan-600 transition duration-300 ease"
+  >
     <svg
       class="w-6 h-6 text-white absolute"
       x-show="!open"
@@ -105,7 +92,8 @@ import Blurgradientleft from "../assets/Blurgradientleft.astro";
       viewBox="0 0 24 24"
       stroke-width="1.5"
       stroke="currentColor"
-      class="w-6 h-6">
+      class="w-6 h-6"
+    >
       <path
         stroke-linecap="round"
         stroke-linejoin="round"
@@ -128,7 +116,8 @@ import Blurgradientleft from "../assets/Blurgradientleft.astro";
       stroke="currentColor"
       stroke-width="2"
       stroke-linecap="round"
-      stroke-linejoin="round">
+      stroke-linejoin="round"
+    >
       <line x1="18" y1="6" x2="6" y2="18"></line>
       <line x1="6" y1="6" x2="18" y2="18"></line>
     </svg>

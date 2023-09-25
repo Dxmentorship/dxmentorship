@@ -1,23 +1,18 @@
 ---
-import { getCollection } from "astro:content";
-import BaseLayout from "../../layouts/BaseLayout.astro";
-const allPosts = await getCollection("posts");
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const allPosts = await getCollection('posts');
 const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
-const pageTitle = "Tag Index";
+const pageTitle = 'Tag Index';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-   <section aria-labelledby="blogone" id="blogone">
-    <div
-      class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-32 lg:py-36 relative">
+  <section aria-labelledby="blogone" id="blogone">
+    <div class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-32 lg:py-36 relative">
       <div class="max-w-2xl">
-        <p
-          class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text">
+        <p class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text">
           our blog
-        </p><p
-          class="mt-8 text-4xl font-normal tracking-tighter text-white sm:text-5xl">
-          The latest tech news.
-        </p>
+        </p><p class="mt-8 text-4xl font-normal tracking-tighter text-white sm:text-5xl">The latest tech news.</p>
         <form class="mt-6 sm:flex sm:max-w-md">
           <label for="email-address" class="sr-only">Email address</label>
           <input
@@ -39,14 +34,10 @@ const pageTitle = "Tag Index";
         </form>
       </div>
 
-      <ul
-        class="flex flex-col divide-y divide-white/20 mt-12 lg:mt-24"
-        role="list">
+      <ul class="flex flex-col divide-y divide-white/20 mt-12 lg:mt-24" role="list">
         {
           tags.map((tag) => (
-            <a
-              class="text-lg text-white capitalize hover:text-indigo-400 duration-200 py-3"
-              href={`/tags/${tag}`}>
+            <a class="text-lg text-white capitalize hover:text-indigo-400 duration-200 py-3" href={`/tags/${tag}`}>
               <li aria-label="tags">
                 <p>{tag}</p>
               </li>
@@ -56,5 +47,4 @@ const pageTitle = "Tag Index";
       </ul>
     </div>
   </section>
- 
 </BaseLayout>

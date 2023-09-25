@@ -1,22 +1,18 @@
 ---
-import { Code } from "astro/components";
-import Verticalgrid from "../assets/Verticalgrid.astro";
+import { Code } from 'astro/components';
+import Verticalgrid from '../assets/Verticalgrid.astro';
 ---
 
 <section aria-labelledby="Featuretwo" id="Featuretwo " class="relative">
   <Verticalgrid />
-  <div
-    class="relative px-8 py-12 mx-auto space-y-24 max-w-7xl md:px-12 lg:px-32 lg:py-24">
+  <div class="relative px-8 py-12 mx-auto space-y-24 max-w-7xl md:px-12 lg:px-32 lg:py-24">
     <div class="grid grid-cols-1 gap-4 mt-6 list-none lg:grid-cols-2 lg:gap-24">
       <div>
-        <p class="text-3xl font-normal tracking-tight text-white">
-          Growing your wealth.
-        </p>
+        <p class="text-3xl font-normal tracking-tight text-white">Growing your wealth.</p>
         <p class="mt-4 text-base text-vulcan-300">
-          Explore our comprehensive investment management solutions, carefully
-          crafted to help you grow your wealth and make informed investment
-          decisions with the guidance of experienced professionals, ensuring
-          your financial growth and prosperity.
+          Explore our comprehensive investment management solutions, carefully crafted to help you grow your wealth and
+          make informed investment decisions with the guidance of experienced professionals, ensuring your financial
+          growth and prosperity.
         </p>
         <div class="gap-3 mt-12">
           <ul class="list-none" role="list">
@@ -30,15 +26,14 @@ import Verticalgrid from "../assets/Verticalgrid.astro";
                   stroke="currentColor"
                   fill="none"
                   stroke-linecap="round"
-                  stroke-linejoin="round">
+                  stroke-linejoin="round"
+                >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
                   <path d="M9 12l2 2l4 -4"></path>
                 </svg>
                 <p class="ml-2 text-sm leading-6 text-vulcan-300">
-                  <strong class="font-semibold text-vulcan-100"
-                    >Access real-time financing</strong
-                  > — in your dreams.
+                  <strong class="font-semibold text-vulcan-100">Access real-time financing</strong> — in your dreams.
                 </p>
               </div>
             </li>
@@ -52,15 +47,14 @@ import Verticalgrid from "../assets/Verticalgrid.astro";
                   stroke="currentColor"
                   fill="none"
                   stroke-linecap="round"
-                  stroke-linejoin="round">
+                  stroke-linejoin="round"
+                >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
                   <path d="M9 12l2 2l4 -4"></path>
                 </svg>
                 <p class="ml-2 text-sm leading-6 text-vulcan-300">
-                  <strong class="font-semibold text-vulcan-100"
-                    >Bank-level security
-                  </strong> — ain't no big deal.
+                  <strong class="font-semibold text-vulcan-100">Bank-level security</strong> — ain't no big deal.
                 </p>
               </div>
             </li>
@@ -74,15 +68,15 @@ import Verticalgrid from "../assets/Verticalgrid.astro";
                   stroke="currentColor"
                   fill="none"
                   stroke-linecap="round"
-                  stroke-linejoin="round">
+                  stroke-linejoin="round"
+                >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
                   <path d="M9 12l2 2l4 -4"></path>
                 </svg>
                 <p class="ml-2 text-sm leading-6 text-vulcan-300">
-                  <strong class="font-semibold text-vulcan-100"
-                    >Built to scale</strong
-                  > — the weight you put on christmas.
+                  <strong class="font-semibold text-vulcan-100">Built to scale</strong> — the weight you put on
+                  christmas.
                 </p>
               </div>
             </li>
@@ -120,10 +114,12 @@ import Verticalgrid from "../assets/Verticalgrid.astro";
         }
     }"
           x-init="tabRepositionMarker($refs.tabButtons.firstElementChild);"
-          class="relative lg:border border-white/10 bg-vulcan-900 lg:rounded-3xl lg:p-10">
+          class="relative lg:border border-white/10 bg-vulcan-900 lg:rounded-3xl lg:p-10"
+        >
           <div
             class="relative inline-grid items-center justify-center w-full h-8 grid-cols-3 mx-auto text-white select-none"
-            x-ref="tabButtons">
+            x-ref="tabButtons"
+          >
             <button
               class="relative z-20 inline-flex items-center w-full h-8 text-sm font-medium cursor-pointer ml-2transition-all whitespace-nowrap"
               type="button"
@@ -145,18 +141,15 @@ import Verticalgrid from "../assets/Verticalgrid.astro";
             <div
               class="absolute left-0 z-10 w-1/2 h-full duration-300 ease-out"
               x-ref="tabMarker"
-              style="width: 256px; height: 32px; left: 0px;">
+              style="width: 256px; height: 32px; left: 0px;"
+            >
               <div class="w-8 h-full border-b-2 border-indigo-500"></div>
             </div>
           </div>
           <div class="relative w-full mt-2 content">
-            <div
-              :id="$id(tabId + '-content')"
-              x-show="tabContentActive($el)"
-              class="relative">
+            <div :id="$id(tabId + '-content')" x-show="tabContentActive($el)" class="relative">
               <!-- Tab Content 1 - Replace with your content -->
-              <section
-                class="text-xs font-mono shadow-3xl mt-4 rounded-2xl overflowhidden p-4 bg-[#191a29] h-full">
+              <section class="text-xs font-mono shadow-3xl mt-4 rounded-2xl overflowhidden p-4 bg-[#191a29] h-full">
                 <Code
                   code={`
 import { defineConfig } from 'astro/config';
@@ -186,13 +179,8 @@ export default defineConfig({
               <!-- End Tab Content 1 -->
             </div>
 
-            <div
-              :id="$id(tabId + '-content')"
-              x-show="tabContentActive($el)"
-              class="relative"
-              x-cloak>
-              <section
-                class="text-xs font-mono mt-4 rounded-3xl hadow-2xl overflowhidden p-4 bg-[#191a29] h-full">
+            <div :id="$id(tabId + '-content')" x-show="tabContentActive($el)" class="relative" x-cloak>
+              <section class="text-xs font-mono mt-4 rounded-3xl hadow-2xl overflowhidden p-4 bg-[#191a29] h-full">
                 <Code
                   code={`
 import { defineConfig } from 'astro/config';
@@ -221,13 +209,10 @@ export default defineConfig({
     </div>
     <div class="grid grid-cols-1 gap-4 mt-6 list-none lg:grid-cols-2 lg:gap-24">
       <div>
-        <p class="text-3xl font-normal tracking-tight text-white">
-          Smart conversations.
-        </p>
+        <p class="text-3xl font-normal tracking-tight text-white">Smart conversations.</p>
         <p class="mt-4 text-base text-vulcan-300">
-          Engage in intelligent and efficient conversations with our AI-powered
-          chatbots, capable of providing instant and accurate responses to your
-          banking queries, offering you immediate assistance whenever you need.
+          Engage in intelligent and efficient conversations with our AI-powered chatbots, capable of providing instant
+          and accurate responses to your banking queries, offering you immediate assistance whenever you need.
         </p>
         <div class="gap-3 mt-12">
           <ul class="list-none" role="list">
@@ -241,15 +226,14 @@ export default defineConfig({
                   stroke="currentColor"
                   fill="none"
                   stroke-linecap="round"
-                  stroke-linejoin="round">
+                  stroke-linejoin="round"
+                >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
                   <path d="M9 12l2 2l4 -4"></path>
                 </svg>
                 <p class="ml-2 text-sm leading-6 text-vulcan-300">
-                  <strong class="font-semibold text-vulcan-100"
-                    >Access real-time financing</strong
-                  > — in your dreams.
+                  <strong class="font-semibold text-vulcan-100">Access real-time financing</strong> — in your dreams.
                 </p>
               </div>
             </li>
@@ -263,15 +247,14 @@ export default defineConfig({
                   stroke="currentColor"
                   fill="none"
                   stroke-linecap="round"
-                  stroke-linejoin="round">
+                  stroke-linejoin="round"
+                >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
                   <path d="M9 12l2 2l4 -4"></path>
                 </svg>
                 <p class="ml-2 text-sm leading-6 text-vulcan-300">
-                  <strong class="font-semibold text-vulcan-100"
-                    >Bank-level security
-                  </strong> — ain't no big deal.
+                  <strong class="font-semibold text-vulcan-100">Bank-level security</strong> — ain't no big deal.
                 </p>
               </div>
             </li>
@@ -285,15 +268,15 @@ export default defineConfig({
                   stroke="currentColor"
                   fill="none"
                   stroke-linecap="round"
-                  stroke-linejoin="round">
+                  stroke-linejoin="round"
+                >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
                   <path d="M9 12l2 2l4 -4"></path>
                 </svg>
                 <p class="ml-2 text-sm leading-6 text-vulcan-300">
-                  <strong class="font-semibold text-vulcan-100"
-                    >Built to scale</strong
-                  > — the weight you put on christmas.
+                  <strong class="font-semibold text-vulcan-100">Built to scale</strong> — the weight you put on
+                  christmas.
                 </p>
               </div>
             </li>
@@ -330,10 +313,12 @@ export default defineConfig({
         }
     }"
         x-init="tabRepositionMarker($refs.tabButtons.firstElementChild);"
-        class="relative lg:border border-white/10 bg-vulcan-900 lg:rounded-3xl lg:p-10 lg:order-first">
+        class="relative lg:border border-white/10 bg-vulcan-900 lg:rounded-3xl lg:p-10 lg:order-first"
+      >
         <div
           class="relative inline-grid items-center justify-center w-full h-8 grid-cols-3 mx-auto text-white select-none"
-          x-ref="tabButtons">
+          x-ref="tabButtons"
+        >
           <button
             class="relative z-20 inline-flex items-center w-full h-8 text-sm font-medium cursor-pointer ml-2transition-all whitespace-nowrap"
             type="button"
@@ -355,18 +340,15 @@ export default defineConfig({
           <div
             class="absolute left-0 z-10 w-1/2 h-full duration-300 ease-out"
             x-ref="tabMarker"
-            style="width: 256px; height: 32px; left: 0px;">
+            style="width: 256px; height: 32px; left: 0px;"
+          >
             <div class="w-8 h-full border-b-2 border-indigo-500"></div>
           </div>
         </div>
         <div class="relative w-full mt-2 content">
-          <div
-            :id="$id(tabId + '-content')"
-            x-show="tabContentActive($el)"
-            class="relative">
+          <div :id="$id(tabId + '-content')" x-show="tabContentActive($el)" class="relative">
             <!-- Tab Content 1 - Replace with your content -->
-            <section
-              class="text-xs font-mono shadow-3xl mt-4 rounded-2xl overflowhidden p-4 bg-[#191a29] h-full">
+            <section class="text-xs font-mono shadow-3xl mt-4 rounded-2xl overflowhidden p-4 bg-[#191a29] h-full">
               <Code
                 code={`
 import { defineConfig } from 'astro/config';
@@ -396,13 +378,8 @@ export default defineConfig({
             <!-- End Tab Content 1 -->
           </div>
 
-          <div
-            :id="$id(tabId + '-content')"
-            x-show="tabContentActive($el)"
-            class="relative"
-            x-cloak>
-            <section
-              class="text-xs font-mono mt-4 rounded-3xl hadow-2xl overflowhidden p-4 bg-[#191a29] h-full">
+          <div :id="$id(tabId + '-content')" x-show="tabContentActive($el)" class="relative" x-cloak>
+            <section class="text-xs font-mono mt-4 rounded-3xl hadow-2xl overflowhidden p-4 bg-[#191a29] h-full">
               <Code
                 code={`
 import { defineConfig } from 'astro/config';

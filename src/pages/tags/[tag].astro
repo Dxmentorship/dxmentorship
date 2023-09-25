@@ -1,19 +1,15 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import BlogPost from "../../components/BlogPost.astro";
-import EntriesOne from "../../components/entries/EntriesOne.astro";
-import { getCollection } from "astro:content";
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogPost from '../../components/BlogPost.astro';
+import EntriesOne from '../../components/entries/EntriesOne.astro';
+import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  const allPosts = await getCollection("posts");
-  const uniqueTags = [
-    ...new Set(allPosts.map((post) => post.data.tags).flat()),
-  ];
+  const allPosts = await getCollection('posts');
+  const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 
   return uniqueTags.map((tag) => {
-    const filteredPosts = allPosts.filter((post) =>
-      post.data.tags.includes(tag)
-    );
+    const filteredPosts = allPosts.filter((post) => post.data.tags.includes(tag));
     return {
       params: { tag },
       props: { posts: filteredPosts },
@@ -27,14 +23,11 @@ const { posts } = Astro.props;
 
 <BaseLayout pageTitle={tag}>
   <section>
-    <div
-      class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-32 lg:py-36 relative">
+    <div class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-32 lg:py-36 relative">
       <div>
-        <p
-          class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text">
+        <p class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text">
           Tags categories
-        </p><p
-          class="mt-8 text-4xl font-normal tracking-tighter text-white sm:text-5xl">
+        </p><p class="mt-8 text-4xl font-normal tracking-tighter text-white sm:text-5xl">
           Blog posts tagged with {tag}
         </p>
         <form class="mt-6 sm:flex sm:max-w-md">
@@ -59,13 +52,11 @@ const { posts } = Astro.props;
       </div>
 
       <div class="py-24">
-        <ol
-          class="grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2"
-          role="list">
+        <ol class="grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2" role="list">
           {
             posts.map((post) => (
               <EntriesOne
-                url={"/posts/" + post.slug}
+                url={'/posts/' + post.slug}
                 title={post.data.title}
                 description={post.data.description}
                 alt={post.data.title}

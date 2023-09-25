@@ -1,6 +1,5 @@
 ---
-const { title, url, description, pubDate, author, image, authorImage } =
-  Astro.props;
+const { title, url, description, pubDate, author, image, authorImage } = Astro.props;
 ---
 
 <li class="group">
@@ -15,11 +14,7 @@ const { title, url, description, pubDate, author, image, authorImage } =
       {description}
     </p>
     <p class="mt-4">
-      <a
-        class="text-indigo-400 duration-200 hover:text-white"
-        href={url}
-        title={title}>Read further &nbsp; &rarr;</a
-      >
+      <a class="text-indigo-400 duration-200 hover:text-white" href={url} title={title}>Read further &nbsp; &rarr;</a>
     </p>
   </div>
 </li>
