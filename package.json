@@ -1,6 +1,6 @@
 {
-  "name": "@lexington/navy",
-  "version": "0.0.1",
+  "name": "dxtraining",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -13,7 +13,8 @@
     "@astrojs/tailwind": "^5.0.0",
     "@tailwindcss/typography": "^0.5.9",
     "@types/alpinejs": "^3.7.2",
-    "astro": "^3.0.7"
+    "astro": "^3.0.7",
+    "prettier-plugin-astro": "^0.12.0"
   },
   "dependencies": {
     "@astrojs/mdx": "^1.0.0",
@@ -21,6 +22,7 @@
     "@astrojs/sitemap": "^3.0.0",
     "@astrolib/seo": "^0.6.0",
     "@tailwindcss/forms": "^0.5.6",
+    "prettier": "^3.0.3",
     "undefined": "^0.1.0"
   }
 }
