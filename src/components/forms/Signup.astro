@@ -1,0 +1,181 @@
+---
+import RoundedGrid from "../assets/RoundedGrid.astro";
+---
+
+<section
+  class="relative flex items-center justify-center h-screen overflow-hidden">
+  <RoundedGrid />
+  <div
+    class="relative flex items-center justify-center px-8 py-32 2xl:h-auto md:flex-none md:px-28 sm:justify-center">
+    <div class="w-full max-w-md mx-auto md:max-w-sm md:px-0 sm:px-4">
+      <div class="flex flex-col text-center">
+        <div>
+          <p class="text-3xl font-normal text-white">Signup.</p>
+          <p class="mt-2 text-sm text-vulcan-300">Create an account wiht us.</p>
+          <div class="py-3">
+            <div class="space-y-2">
+              <span class="relative z-0 inline-flex w-full mt-3">
+                <button
+                  class="flex items-center justify-center w-full h-10 px-4 py-2 text-sm font-semibold text-white transition-all border rounded-lg bg-vulcan-900 hover:text-indigo-400 border-vulcan-700"
+                  type="button"
+                  ><span>Signup with X</span>
+                  <span class="order-first mr-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-brand-x"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+                      <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </span>
+              <span class="relative z-0 inline-flex w-full mt-3">
+                <button
+                  class="flex items-center justify-center w-full h-10 px-4 py-2 text-sm font-semibold text-white transition-all border rounded-lg bg-vulcan-900 hover:text-indigo-400 border-vulcan-700"
+                  type="button"
+                  ><span>Signup with Google</span>
+                  <span class="order-first mr-3"
+                    ><svg
+                      fill="none"
+                      height="24"
+                      viewBox="0 0 32 32"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      ><path
+                        d="M30.0014 16.3109C30.0014 15.1598 29.9061 14.3198 29.6998 13.4487H16.2871V18.6442H24.1601C24.0014 19.9354 23.1442 21.8798 21.2394 23.1864L21.2127 23.3604L25.4536 26.58L25.7474 26.6087C28.4458 24.1665 30.0014 20.5731 30.0014 16.3109Z"
+                        fill="#4285F4"></path><path
+                        d="M16.2862 30C20.1433 30 23.3814 28.7555 25.7465 26.6089L21.2386 23.1865C20.0322 24.011 18.4132 24.5866 16.2862 24.5866C12.5085 24.5866 9.30219 22.1444 8.15923 18.7688L7.9917 18.7827L3.58202 22.1272L3.52435 22.2843C5.87353 26.8577 10.6989 30 16.2862 30Z"
+                        fill="#34A853"></path><path
+                        d="M8.16007 18.7688C7.85848 17.8977 7.68395 16.9643 7.68395 15.9999C7.68395 15.0354 7.85849 14.1021 8.1442 13.231L8.13621 13.0455L3.67126 9.64734L3.52518 9.71544C2.55696 11.6132 2.0014 13.7444 2.0014 15.9999C2.0014 18.2555 2.55696 20.3865 3.52518 22.2843L8.16007 18.7688Z"
+                        fill="#FBBC05"></path><path
+                        d="M16.2863 7.4133C18.9688 7.4133 20.7783 8.54885 21.8101 9.4978L25.8418 5.64C23.3657 3.38445 20.1434 2 16.2863 2C10.699 2 5.87354 5.1422 3.52435 9.71549L8.14339 13.2311C9.30223 9.85555 12.5086 7.4133 16.2863 7.4133Z"
+                        fill="#EB4335"></path>
+                    </svg>
+                  </span>
+                </button>
+              </span>
+            </div>
+            <div class="relative py-3">
+              <div
+                class="absolute inset-0 flex items-center"
+                aria-hidden="true">
+                <div class="w-full border-t border-white/5"></div>
+              </div><div class="relative flex justify-center">
+                <span class="px-2 text-sm text-white bg-vulcan-900"
+                  >Or continue with</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form action="#">
+        <input name="hidden" autocomplete="false" style="display:none" />
+        <input name="_redirect" type="hidden" value="#" /><div
+          class="space-y-3">
+          <div class="flex flex-row w-full gap-3">
+            <div class="w-full">
+              <label
+                class="block mb-3 text-sm font-medium text-white sr-only"
+                for="first_name">First name</label
+              >
+              <input
+                class="block w-full h-10 px-4 py-3 text-indigo-300 bg-transparent border rounded-lg appearance-none border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
+                id="first_name"
+                name="first_name"
+                autocomplete="given-name"
+                required=""
+                placeholder="Your name..."
+              />
+            </div>
+            <div class="w-full">
+              <label
+                class="block mb-3 text-sm font-medium text-white sr-only"
+                for="last_name">Last name</label
+              ><input
+                class="block w-full h-10 px-4 py-3 text-indigo-300 bg-transparent border rounded-lg appearance-none border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
+                id="last_name"
+                name="last_name"
+                autocomplete="family-name"
+                required=""
+                placeholder="Last name..."
+              />
+            </div>
+          </div>
+          <div class="col-span-full">
+            <label
+              name="email"
+              class="block mb-3 text-sm font-medium text-white sr-only">
+              Email
+            </label>
+            <input
+              type="email"
+              autocomplete="off"
+              placeholder="email@example.com"
+              class="block w-full h-10 px-4 py-3 text-indigo-300 bg-transparent border rounded-lg appearance-none border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
+            />
+          </div>
+          <div class="col-span-full">
+            <label
+              class="block mb-3 text-sm font-medium text-white sr-only"
+              name="company">Password</label
+            >
+            <input
+              class="block w-full h-10 px-4 py-3 text-indigo-300 bg-transparent border rounded-lg appearance-none border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
+              placeholder="Type password here..."
+              type="password"
+            />
+          </div>
+          <div class="flex items-start">
+            <input
+              class="w-4 h-4 bg-black border-indigo-300 rounded focus:ring-white focus:border-white"
+              id="remember-me"
+              name="remember-me"
+              type="checkbox"
+            />
+            <label
+              class="block ml-2 text-sm leading-tight text-vulcan-300"
+              for="remember-me"
+              >Creating an account means you’re okay with our <a
+                class="text-white hover:text-indigo-300"
+                href="/terms"
+                >Terms of Service,
+              </a><a class="text-white hover:text-indigo-300" href="/privacy"
+                >Privacy Policy
+              </a>, and our default <a
+                class="text-white hover:text-indigo-300"
+                href="/notifications">Notification Settings.</a
+              >
+            </label>
+          </div>
+          <div class="col-span-full">
+            <a
+              class="flex items-center justify-center h-10 px-4 py-2 text-sm font-semibold text-white transition-all rounded-lg hover:to-indigo-600 bg-gradient-to-b from-indigo-300 via-indigo-400 to-indigo-500"
+              href="#"
+              >Sign in
+            </a>
+          </div>
+          <div>
+            <p
+              class="mx-auto text-sm font-medium leading-tight text-center text-white">
+              Already member? <a
+                class="ml-3 text-indigo-300 hover:text-white"
+                href="/signin">Log in now</a
+              >
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

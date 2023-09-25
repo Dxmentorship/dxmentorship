@@ -1,36 +1,26 @@
 {
-  "name": "dxtraining",
+  "name": "@lexington/navy",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@notionhq/client": "^2.2.12",
-    "@sanity/block-content-to-react": "^3.0.0",
-    "@sanity/image-url": "^1.0.1",
-    "@supabase/supabase-js": "^1.35.4",
-    "axios": "^0.27.2",
-    "email-validator": "^2.0.4",
-    "moment": "^2.29.4",
-    "next": "12.0.8",
-    "notion-client": "^6.16.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-notion-x": "^6.16.0",
-    "react-portable-text": "^0.5.1",
-    "react-syntax-highlighter": "^15.5.0"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "devDependencies": {
-    "@types/react": "^17.0.38",
-    "autoprefixer": "^10.4.2",
-    "dotenv": "^16.0.2",
-    "eslint": "8.7.0",
-    "eslint-config-next": "12.0.8",
-    "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.15",
-    "typescript": "^5.2.2"
+    "@astrojs/tailwind": "^5.0.0",
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/alpinejs": "^3.7.2",
+    "astro": "^3.0.7"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^1.0.0",
+    "@astrojs/rss": "^3.0.0",
+    "@astrojs/sitemap": "^3.0.0",
+    "@astrolib/seo": "^0.6.0",
+    "@tailwindcss/forms": "^0.5.6",
+    "undefined": "^0.1.0"
   }
 }

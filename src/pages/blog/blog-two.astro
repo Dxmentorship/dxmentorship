@@ -1,0 +1,114 @@
+---
+import { getCollection } from "astro:content";
+const allPosts = await getCollection("posts");
+import EntriesTwo from "../../components/entries/EntriesTwo.astro";
+import Verticalgrid from "../../components/assets/Verticalgrid.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Blurgradientleft from "../../components/assets/Blurgradientleft.astro";
+import CtaFive from "../../components/ctas/CtaFive.astro";
+import { AstroSeo } from "@astrolib/seo";
+---
+
+<!---
+Use AstroSeo in all the pages you want different Seo than the index page
+-->
+<AstroSeo
+  title="Blog  02"
+  description="Your site description goes here"
+  canonical="https://www.lexingtonthemes.com"
+  openGraph={{
+    url: "https://www.lexingtonthemes.com",
+    title: "Open Graph Title",
+    description: "Open Graph Description",
+    images: [
+      {
+        url: "https://www.lexingtonthemes.com/opengraph/social-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Social open graph",
+        type: "image/jpeg",
+      },
+      {
+        url: "https://www.lexingtonthemes.com/opengraph/twitter-og.jpg",
+        width: 4096,
+        height: 4096,
+        alt: "Twitter open graph",
+        type: "image/jpeg",
+      },
+      { url: "https://www.lexingtonthemes.com/opengraph/social-og.jpg" },
+      { url: "https://www.lexingtonthemes.com/opengraph/twitter-og.jpg" },
+    ],
+    site_name: "YourSitesName",
+  }}
+  twitter={{
+    handle: "@TwitterHandle",
+    site: "@site",
+    cardType: "summary_large_image",
+  }}
+/>
+<BaseLayout>
+  <Verticalgrid />
+  <section>
+    <Blurgradientleft />
+    <div
+      class="relative items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl lg:pb-32 lg:pt-56">
+      <div class="text-left sm:text-center">
+        <p
+          class="text-transparent bg-gradient-to-r from-indigo-300 via-indigo-400 to-indigo-500 bg-clip-text">
+          Blog
+        </p>
+        <p
+          class="mt-12 text-4xl font-normal tracking-tighter text-white sm:text-5xl">
+          Welcome to our blog
+        </p>
+        <p class="max-w-2xl mx-auto mt-4 text-vulcan-300">
+          Transforming the banking experience for a digital future: Unleashing
+          innovative technologies to empower customers and redefine financial
+          services.
+        </p>
+
+        <form class="mt-12 sm:flex sm:max-w-md mx-auto">
+          <label for="email-address" class="sr-only">Email address</label>
+          <input
+            type="email"
+            name="email-address"
+            id="email-address"
+            autocomplete="email"
+            required
+            class="block w-full h-10 px-4 py-2 text-sm text-indigo-300 bg-transparent border rounded-lg appearance-none border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
+            placeholder="Enter your email"
+          />
+          <div class="mt-4 sm:ml-2 sm:mt-0 sm:flex-shrink-0">
+            <button
+              type="submit"
+              class="flex items-center justify-center w-auto h-10 px-4 py-2 text-sm font-semibold text-white transition-all rounded-lg hover:to-indigo-600 bg-gradient-to-b from-indigo-300 via-indigo-400 to-indigo-500"
+              >Subscribe</button
+            >
+          </div>
+        </form>
+      </div>
+
+      <div class="py-24">
+        <ol class="grid grid-cols-1 gap-4 max-w-xl mx-auto" role="list">
+          {
+            allPosts
+              .slice()
+              .map((post) => (
+                <EntriesTwo
+                  url={"/posts/" + post.slug}
+                  title={post.data.title}
+                  description={post.data.description}
+                  alt={post.data.title}
+                  pubDate={post.data.pubDate.toString().slice(0, 10)}
+                  author={post.data.author}
+                  image={post.data.image.url}
+                />
+              ))
+          }
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <CtaFive />
+</BaseLayout>

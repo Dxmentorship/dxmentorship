@@ -1,0 +1,397 @@
+<section class="border-y border-white/5">
+  <div
+    x-data="{annual: false}"
+    class="relative items-center w-full px-4 py-32 mx-auto md:px-12 lg:px-32 max-w-7xl lg:py-32">
+    <div
+      class="grid items-end justify-between grid-cols-1 gap-8 xl:grid-cols-2">
+      <div>
+        <span
+          class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text"
+          >pricing
+        </span>
+        <h2 class="mt-8 text-3xl font-normal tracking-tight text-white">
+          Always know what you’ll pay,
+          <span class="lg:block"> semitransparent pricing for some</span>
+        </h2>
+        <p class="mt-4 text-base text-vulcan-300">
+          Choose a plan that works the best for you and your team. Start small,
+          upgrade when you need to.
+        </p>
+      </div>
+
+      <div
+        class="w-full bg-vulcan-800 overflow-hidden inline-flex p-0.5 rounded-lg z-0 lg:ml-auto max-w-xs">
+        <button
+          class="block w-full px-8 py-2 text-xs font-medium text-white transition border border-transparent rounded-md"
+          @click="annual = false"
+          :class="annual == false ? 'bg-vulcan-900 border text-white ' : ''"
+          type="button">Monthly</button
+        >
+        <button
+          class="block w-full px-8 py-2 text-xs font-medium text-white transition border border-transparent rounded-md"
+          @click="annual = true"
+          :class="annual == true ? 'bg-vulcan-900 border text-white' : ''"
+          type="button">Annual</button
+        >
+      </div>
+    </div>
+
+    <div
+      class="mt-12 space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:grid-cols-2">
+      <div
+        class="p-[0.060rem] rounded-3xl shadow-2xl shadow-vulcan-950 bg-gradient-to-b from-slate-800 via-indigo-500/5">
+        <div
+          class="grid items-center justify-center w-full grid-cols-1 p-6 bg-vulcan-900 lg:p-8 lg:grid-cols-2 rounded-t-3xl">
+          <div>
+            <h2 class="text-lg text-white">Basic plan</h2>
+            <p class="mt-4 text-sm text-vulcan-300">
+              Suitable for those that want to grow steadily.
+            </p>
+          </div>
+          <div class="flex-col mt-3 lg:mt-0 lg:text-right lg:ml-auto">
+            <p class="text-5xl font-light tracking-tight text-white">
+              $<span x-text="annual ? '8.00' : '15.00'">15.00</span>
+            </p>
+            <p class="text-sm text-vulcan-300">
+              per month
+              <span x-show="annual" style="display: none"
+                >(billed annually)</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="px-6 pb-8 bg-vulcan-900 rounded-b-3xl">
+          <div class="grid grid-cols-1 xl:grid-cols-2 lg:gap-12">
+            <ul
+              role="list"
+              class="flex flex-col order-last mt-10 text-sm text-vulcan-200 gap-y-3">
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+
+                <span class="ml-4">Limited number of users</span>
+              </li>
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span class="ml-4">Limited storage (1 GB)</span>
+              </li>
+
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span class="ml-4">Basic support</span>
+              </li>
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span class="ml-4">Basic analytics</span>
+              </li>
+            </ul>
+            <ul
+              role="list"
+              class="flex flex-col order-last mt-10 text-sm text-vulcan-200 lg:mt-10 gap-y-3">
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+
+                <span class="ml-4">Limited integrations</span>
+              </li>
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span class="ml-4">Limited Customization</span>
+              </li>
+
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span class="ml-4">No SLA</span>
+              </li>
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span class="ml-4">No automatic backups</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8">
+            <a
+              class="flex items-center justify-center h-10 px-4 py-2 text-sm font-semibold text-white transition-all border rounded-lg bg-vulcan-900 hover:text-indigo-400 border-vulcan-700"
+              aria-label="Big fish tier"
+              href="/register">Get started</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="p-[0.060rem] rounded-3xl shadow-2xl shadow-vulcan-950 bg-gradient-to-b from-indigo-500 via-indigo-500/5">
+        <div
+          class="grid items-center justify-center w-full grid-cols-1 p-6 bg-vulcan-900 lg:p-8 lg:grid-cols-2 rounded-t-3xl">
+          <div>
+            <h2 class="text-lg text-white">
+              Advanced plan
+              <span
+                class="inline-flex items-center ml-3 px-2.5 py-0.5 rounded-xl text-xs font-medium bg-gradient-to-r from-indigo-300 via-indigo-400 to-indigo-500 text-vulcan-800">
+                Popular
+              </span>
+            </h2>
+            <p class="mt-4 text-sm text-vulcan-300">
+              Suitable for those that want to grow like a rocket.
+            </p>
+          </div>
+          <div class="flex-col mt-3 lg:mt-0 lg:text-right lg:ml-auto">
+            <p class="text-5xl font-light tracking-tight text-white">
+              $<span x-text="annual ? '28.00' : '35.00'">35.00</span>
+            </p>
+            <p class="text-sm text-vulcan-300">
+              per month
+              <span x-show="annual" style="display: none"
+                >(billed annually)</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="px-6 pb-8 bg-vulcan-900 rounded-b-3xl">
+          <div class="grid grid-cols-1 xl:grid-cols-2 lg:gap-12">
+            <ul
+              role="list"
+              class="flex flex-col order-last mt-10 text-sm text-vulcan-200 gap-y-3">
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+
+                <span class="ml-4">Unlimited users</span>
+              </li>
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span class="ml-4">Unlimited storage</span>
+              </li>
+
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span class="ml-4">Advanced suppor</span>
+              </li>
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span class="ml-4"> Advanced analytics</span>
+              </li>
+            </ul>
+            <ul
+              role="list"
+              class="flex flex-col order-last mt-10 text-sm text-vulcan-200 lg:mt-10 gap-y-3">
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+
+                <span class="ml-4">Multiple integrations</span>
+              </li>
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span class="ml-4">Customization</span>
+              </li>
+
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span class="ml-4">99.9% SLA</span>
+              </li>
+              <li class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <span class="ml-4">Automatic backups</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8">
+            <a
+              class="flex items-center justify-center h-10 px-4 py-2 text-sm font-semibold transition-all rounded-lg hover:to-indigo-600 bg-gradient-to-b from-indigo-300 via-indigo-400 to-indigo-500 text-white"
+              aria-label="Indie hacker tier"
+              href="/register">Get started</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

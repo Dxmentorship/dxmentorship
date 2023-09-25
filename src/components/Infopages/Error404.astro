@@ -1,0 +1,44 @@
+---
+import Verticalgrid from "../assets/Verticalgrid.astro";
+import Blurgradientleft from "../assets/Blurgradientleft.astro";
+---
+
+<section class="relative">
+  <Verticalgrid />
+  <section>
+    <Blurgradientleft />
+    <div
+      class="relative items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl lg:pb-32 lg:pt-56">
+      <div class="text-left sm:text-center">
+        <p
+          class="text-transparent bg-gradient-to-r from-indigo-300 via-indigo-400 to-indigo-500 bg-clip-text">
+          404
+        </p>
+        <p
+          class="mt-12 text-4xl font-normal tracking-tighter text-white sm:text-5xl">
+          Oops, page not found
+        </p>
+        <p class="max-w-2xl mx-auto mt-4 text-vulcan-300">
+          This page does not exist or it was removed.
+          <span class="block"
+            >We suggest you go back home or see all pages-</span
+          >
+        </p>
+
+        <div
+          class="flex flex-col justify-center max-w-xl gap-2 mx-auto mt-12 sm:flex-row">
+          <a
+            href="/"
+            class="flex items-center justify-center h-10 px-4 py-2 text-sm font-semibold text-white transition-all rounded-lg hover:to-indigo-600 bg-gradient-to-b from-indigo-300 via-indigo-400 to-indigo-500"
+            >&larr; &nbsp; Go back home</a
+          >
+          <a
+            href="/system/overview"
+            class="rounded-lg px-4 py-2 text-sm font-semibold transition-all flex items-center justify-center text-white bg-gradient-to-b from-white/[.105] to-white/[.15] hover:to-white/[.25] h-10 ring-1 ring-inset ring-white/20"
+            >See all pages</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

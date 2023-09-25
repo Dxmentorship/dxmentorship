@@ -1,0 +1,41 @@
+---
+import Blurgradientleft from "../assets/Blurgradientleft.astro";
+import Verticalgrid from "../assets/Verticalgrid.astro";
+---
+
+<section class="relative overflow-hidden border-t border-white/5">
+  <Verticalgrid />
+  <Blurgradientleft />
+  <div class="relative px-8 py-12 mx-auto max-w-7xl md:px-12 lg:px-32 lg:py-24">
+    <div
+      class="grid grid-cols-1 gap-6 p-4 overflow-hidden border lg:grid-cols-2 lg:gap-24 border-white/5 bg-vulcan-900/50 rounded-3xl lg:p-20">
+      <div
+        class="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
+        <div class="text-center lg:text-left">
+          <p class="text-3xl font-normal tracking-tight text-white">
+            Track your daily progress.
+          </p>
+          <p class="mt-4 text-base text-vulcan-300">
+            Explore our comprehensive investment management solutions, carefully
+            crafted to help you grow your wealth.
+          </p>
+          <div
+            class="flex flex-col justify-center mt-12 sm:flex-row lg:justify-start">
+            <a
+              href="/signup"
+              class="rounded-lg px-4 py-2 text-sm font-semibold transition-all flex items-center justify-center text-white bg-gradient-to-b from-white/[.105] to-white/[.15] hover:to-white/[.25] h-10 ring-1 ring-inset ring-white/20">
+              Get started now &nbsp;&nbsp; &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="relative order-first hidden w-full mt-0 lg:block">
+        <img
+          class="object-cover object-center w-full mx-auto shadow-2xl lg:absolute lg:ml-auto"
+          alt="hero"
+          src="/assets/card3.svg"
+        />
+      </div>
+    </div>
+  </div>
+</section>

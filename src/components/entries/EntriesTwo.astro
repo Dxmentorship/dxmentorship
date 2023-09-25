@@ -1,0 +1,25 @@
+---
+const { title, url, description, pubDate, author, image, authorImage } =
+  Astro.props;
+---
+
+<li class="group">
+  <div class="p-8">
+    <p>
+      <time class="text-xs text-indigo-300" datetime={pubDate}>{pubDate}</time>
+    </p>
+    <h3 class="mt-5 text-lg font-medium leading-6 text-white">
+      {title}
+    </h3>
+    <p class="mt-2 text-base text-vulcan-300">
+      {description}
+    </p>
+    <p class="mt-4">
+      <a
+        class="text-indigo-400 duration-200 hover:text-white"
+        href={url}
+        title={title}>Read further &nbsp; &rarr;</a
+      >
+    </p>
+  </div>
+</li>

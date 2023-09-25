@@ -1,0 +1,112 @@
+---
+import { getCollection } from "astro:content";
+const allPosts = await getCollection("posts");
+const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+import CtaFive from "../../components/ctas/CtaFive.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import EntriesOne from "../../components/entries/EntriesOne.astro";
+import { AstroSeo } from "@astrolib/seo";
+---
+
+<AstroSeo
+  description="Your site description goes here"
+  canonical="https://www.lexingtonthemes.com"
+  openGraph={{
+    url: "https://www.lexingtonthemes.com",
+    title: "Open Graph Title",
+    description: "Open Graph Description",
+    images: [
+      {
+        url: "https://www.lexingtonthemes.com/opengraph/social-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Social open graph",
+        type: "image/jpeg",
+      },
+      {
+        url: "https://www.lexingtonthemes.com/opengraph/twitter-og.jpg",
+        width: 4096,
+        height: 4096,
+        alt: "Twitter open graph",
+        type: "image/jpeg",
+      },
+      { url: "https://www.lexingtonthemes.com/opengraph/social-og.jpg" },
+      { url: "https://www.lexingtonthemes.com/opengraph/twitter-og.jpg" },
+    ],
+    site_name: "YourSitesName",
+  }}
+  twitter={{
+    handle: "@TwitterHandle",
+    site: "@site",
+    cardType: "summary_large_image",
+  }}
+/>
+<BaseLayout>
+  <section >
+    <div
+      class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-32 lg:py-36 relative">
+      <div class="max-w-2xl">
+        <p
+          class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text">
+          our blog
+        </p><p
+          class="mt-8 text-4xl font-normal tracking-tighter text-white sm:text-5xl">
+          The latest tech news.
+        </p>
+        <form class="mt-6 sm:flex sm:max-w-md">
+          <label for="email-address" class="sr-only">Email address</label>
+          <input
+            type="email"
+            name="email-address"
+            id="email-address"
+            autocomplete="email"
+            required
+            class="block w-full h-10 px-4 py-2 text-sm text-indigo-300 bg-transparent border rounded-lg appearance-none border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
+            placeholder="Enter your email"
+          />
+          <div class="mt-4 sm:ml-2 sm:mt-0 sm:flex-shrink-0">
+            <button
+              type="submit"
+              class="flex items-center justify-center w-auto h-10 px-4 py-2 text-sm font-semibold text-white transition-all rounded-lg hover:to-indigo-600 bg-gradient-to-b from-indigo-300 via-indigo-400 to-indigo-500"
+              >Subscribe</button
+            >
+          </div>
+        </form>
+      </div>
+      <ul class="flex flex-wrap gap-2 mt-12" role="list">
+        {
+          tags.map((tag) => (
+            <a href={`/tags/${tag}`}>
+              <li class=" flex items-center justify-center h-8 text-xs px-4 py-2 font-semibold text-white transition-all border rounded-lg bg-vulcan-900 hover:text-indigo-400 border-vulcan-700">
+                {tag}
+              </li>
+            </a>
+          ))
+        }
+      </ul>
+      <div class="py-24">
+        <ol
+          class="grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2"
+          role="list">
+          {
+            allPosts
+              .slice()
+              .map((post) => (
+                <EntriesOne
+                  url={"/posts/" + post.slug}
+                  title={post.data.title}
+                  description={post.data.description}
+                  alt={post.data.title}
+                  pubDate={post.data.pubDate.toString().slice(0, 10)}
+                  author={post.data.author}
+                  image={post.data.image.url}
+                />
+              ))
+          }
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <CtaFive />
+</BaseLayout>

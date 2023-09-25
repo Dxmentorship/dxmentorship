@@ -1,0 +1,291 @@
+---
+import Verticalgrid from "../assets/Verticalgrid.astro";
+---
+
+<section class="relative">
+  <Verticalgrid />
+  <div class="relative px-8 py-12 mx-auto max-w-7xl md:px-12 lg:px-32 lg:pt-24">
+    <div class="max-w-xl mx-auto text-center">
+      <p
+        class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text">
+        Frequent questions and answers
+      </p>
+      <h2 class="mt-8 text-3xl font-normal tracking-tight text-white">
+        Fully automated, fully supported
+      </h2>
+      <p class="mx-auto mt-4 text-base text-vulcan-300">
+        Self-serve or work with a representative, we're here to help with the
+        capital journey that works for you.
+      </p>
+    </div>
+    <div class="relative mt-10">
+      <div
+        class="relative mx-auto border rounded-3xl border-white/5 bg-vulcan-900"
+        x-data="{selected:null}">
+        <ul class="list-none" role="list" @click="open = !open">
+          <li class="relative border-b border-white/5">
+            <button
+              type="button"
+              class="w-full px-8 py-6 text-left"
+              @click="selected !== 1 ? selected = 1 : selected = null">
+              <div class="flex items-center justify-between text-white group">
+                <p
+                  class="text-base duration-200 text-vulcan-300 group-hover:text-indigo-400">
+                  How do I sign up for mobile banking?
+                </p>
+                <svg
+                  :class="{'rotate-180': open, 'rotate-0': !open}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline w-5 h-5 ml-4 transition-transform duration-200 transform rotate-180 group-hover:text-indigo-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="relative overflow-hidden transition-all duration-700 max-h-0"
+              style=""
+              x-ref="container1"
+              x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+              <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">
+                Signing up for mobile banking is easy! Simply download our app
+                from the App Store or Google Play, and follow the registration
+                process. You'll be able to create an account and access your
+                finances right from your mobile device.
+              </div>
+            </div>
+          </li>
+          <li class="relative border-b border-white/5">
+            <button
+              type="button"
+              class="w-full px-8 py-6 text-left"
+              @click="selected !== 2 ? selected = 2 : selected = null">
+              <div class="flex items-center justify-between text-white group">
+                <p
+                  class="text-base duration-200 text-vulcan-300 group-hover:text-indigo-400">
+                  Are my transactions secure?
+                </p>
+                <svg
+                  :class="{'rotate-180': open, 'rotate-0': !open}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline w-5 h-5 ml-4 transition-transform duration-200 transform rotate-180 group-hover:text-indigo-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="relative overflow-hidden transition-all duration-700 max-h-0"
+              style=""
+              x-ref="container2"
+              x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+              <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">
+                Yes, we prioritize the security of your transactions. We
+                implement industry-leading encryption protocols to protect your
+                sensitive data and ensure secure transactions. Our robust
+                security measures and fraud detection systems provide an added
+                layer of protection for your peace of mind.
+              </div>
+            </div>
+          </li>
+          <li class="relative border-b border-white/5">
+            <button
+              type="button"
+              class="w-full px-8 py-6 text-left"
+              @click="selected !== 3 ? selected = 3 : selected = null">
+              <div class="flex items-center justify-between text-white group">
+                <p
+                  class="text-base duration-200 text-vulcan-300 group-hover:text-indigo-400">
+                  Can I make payments to other banks using your platform?
+                </p>
+                <svg
+                  :class="{'rotate-180': open, 'rotate-0': !open}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline w-5 h-5 ml-4 transition-transform duration-200 transform rotate-180 group-hover:text-indigo-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="relative overflow-hidden transition-all duration-700 max-h-0"
+              style=""
+              x-ref="container2"
+              x-bind:style="selected == 3 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+              <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">
+                Absolutely! Our platform allows you to make payments to accounts
+                in other banks through convenient and secure transfer options.
+                You can easily initiate transfers to recipients within the same
+                country or even internationally, depending on the available
+                services.
+              </div>
+            </div>
+          </li>
+          <li class="relative border-b border-white/5">
+            <button
+              type="button"
+              class="w-full px-8 py-6 text-left"
+              @click="selected !== 4 ? selected = 4 : selected = null">
+              <div class="flex items-center justify-between text-white group">
+                <p
+                  class="text-base duration-200 text-vulcan-300 group-hover:text-indigo-400">
+                  What should I do if I lose my mobile device?
+                </p>
+                <svg
+                  :class="{'rotate-180': open, 'rotate-0': !open}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline w-5 h-5 ml-4 transition-transform duration-200 transform rotate-180 group-hover:text-indigo-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="relative overflow-hidden transition-all duration-700 max-h-0"
+              style=""
+              x-ref="container2"
+              x-bind:style="selected == 4 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+              <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">
+                If you lose your mobile device, it's important to take immediate
+                action. Contact our customer support team to report the loss and
+                have your account temporarily disabled for security reasons. We
+                can assist you in disabling access to your account from the lost
+                device and help you regain access on a new device.
+              </div>
+            </div>
+          </li>
+          <li class="relative border-b border-white/5">
+            <button
+              type="button"
+              class="w-full px-8 py-6 text-left"
+              @click="selected !== 5 ? selected = 5 : selected = null">
+              <div class="flex items-center justify-between text-white group">
+                <p
+                  class="text-base duration-200 text-vulcan-300 group-hover:text-indigo-400">
+                  How can I set up alerts and notifications for my account?
+                </p>
+                <svg
+                  :class="{'rotate-180': open, 'rotate-0': !open}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline w-5 h-5 ml-4 transition-transform duration-200 transform rotate-180 group-hover:text-indigo-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="relative overflow-hidden transition-all duration-700 max-h-0"
+              style=""
+              x-ref="container2"
+              x-bind:style="selected == 5 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+              <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">
+                Setting up alerts and notifications is simple. Once you have
+                logged into your account, navigate to the settings or
+                preferences section. From there, you can customize the types of
+                notifications you want to receive, such as balance updates,
+                transaction alerts, and payment reminders. You can choose to
+                receive notifications via email, SMS, or through our mobile app.
+              </div>
+            </div>
+          </li>
+          <li class="relative border-b border-white/5">
+            <button
+              type="button"
+              class="w-full px-8 py-6 text-left"
+              @click="selected !== 6 ? selected = 6 : selected = null">
+              <div class="flex items-center justify-between text-white group">
+                <p
+                  class="text-base duration-200 text-vulcan-300 group-hover:text-indigo-400">
+                  Can I access my account from multiple devices?
+                </p>
+                <svg
+                  :class="{'rotate-180': open, 'rotate-0': !open}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline w-5 h-5 ml-4 transition-transform duration-200 transform rotate-180 group-hover:text-indigo-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="relative overflow-hidden transition-all duration-700 max-h-0"
+              style=""
+              x-ref="container2"
+              x-bind:style="selected == 6 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+              <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">
+                Yes, you can access your account from multiple devices. Our
+                platform offers seamless multi-device synchronization, allowing
+                you to log in and manage your finances from your smartphone,
+                tablet, or computer. Your account information and transaction
+                history will be up-to-date across all devices.
+              </div>
+            </div>
+          </li>
+          <!----- Last -->
+          <li class="relative">
+            <button
+              type="button"
+              class="w-full px-8 py-6 text-left"
+              @click="selected !== 7 ? selected = 7 : selected = null">
+              <div class="flex items-center justify-between text-white group">
+                <p
+                  class="text-base duration-200 text-vulcan-300 group-hover:text-indigo-400">
+                  Can I deposit checks using the mobile banking app?
+                </p>
+                <svg
+                  :class="{'rotate-180': open, 'rotate-0': !open}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline w-5 h-5 ml-4 transition-transform duration-200 transform rotate-180 group-hover:text-indigo-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="relative overflow-hidden transition-all duration-700 max-h-0"
+              style=""
+              x-ref="container3"
+              x-bind:style="selected == 7 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+              <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">
+                Yes, you can conveniently deposit checks using our mobile
+                banking app. Simply access the app, select the "Deposit" option,
+                and follow the step-by-step instructions to capture images of
+                the front and back of the check. Once submitted, your check will
+                be securely processed, saving you time and effort by avoiding
+                the need to visit a physical branch.
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

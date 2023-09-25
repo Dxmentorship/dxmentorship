@@ -1,0 +1,50 @@
+---
+import RoundedGrid from "../assets/RoundedGrid.astro";
+---
+
+<section
+  aria-labelledby="cta"
+  id="cta "
+  class="relative overflow-hidden border-t border-white/5">
+  <RoundedGrid />
+  <div
+    class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:pb-32 lg:pt-56">
+    <div class="relative items-center">
+      <div class="max-w-xl mx-auto text-center">
+        <p
+          class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text">
+          we are about to land
+        </p>
+        <p class="mt-8 text-4xl font-normal tracking-tight text-white">
+          Coming Soon
+        </p>
+        <p class="max-w-sm mx-auto mt-4 text-vulcan-300">
+          In the mean time, sign up for our monthly newsletter to stay up to
+          day,
+        </p>
+      </div>
+      <div class="flex flex-col mt-12 sm:flex-row lg:justify-center">
+        <form action="#" class="mt-12 lg:mx-auto sm:flex sm:max-w-lg">
+          <label for="email-address" class="sr-only">Email address</label>
+          <input
+            type="email"
+            name="email-address"
+            id="email-address"
+            autocomplete="email"
+            required
+            class="block w-full h-10 px-4 py-2 text-sm text-indigo-300 bg-transparent border rounded-lg appearance-none border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
+            placeholder="Enter your email"
+          />
+          <div class="mt-4 sm:ml-2 sm:mt-0 sm:flex-shrink-0">
+            <button
+              type="submit"
+              class="flex items-center justify-center w-auto h-10 px-4 py-2 text-sm font-semibold text-white transition-all rounded-lg hover:to-indigo-600 bg-gradient-to-b from-indigo-300 via-indigo-400 to-indigo-500"
+              >Subscribe</button
+            >
+          </div>
+        </form>
+      </div>
+    
+    </div>
+  </div>
+</section>
