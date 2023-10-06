@@ -1,42 +1,45 @@
-# Astro & Tailwind CSS Starter Kit
+# DXMentorship
 
-## Template Integrations
-- @astrojs/tailwind - https://docs.astro.build/en/guides/integrations-guide/tailwind/
-- @astrojs/image - https://docs.astro.build/en/guides/integrations-guide/image/
-- @astrojs/sitemap - https://docs.astro.build/en/guides/integrations-guide/sitemap/
-- Astrolib SEO - https://github.com/onwidget/astrolib/tree/main/packages/seo
-## Template Structure
+Welcome to the DXMentorship Frontend repository! The DX Mentorship program is all about helping aspiring Developer Advocates become industry-ready professionals. We'll be working closely with industry experts and diving into real-world scenarios to provide you with hands-on experience and practical skills that are essential for a successful career in Developer Relations. Feel free to take on any issues and contribute. We are also participating in Hacktoberfest! :zap:
 
-Inside of your Astro project, you'll see the following folders and files:
+## Getting Started
 
-```
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+If you're interested in contributing to this project as part of Hacktoberfest or simply want to explore and make improvements, follow these steps to get started:
+
+1. **Fork the Repository**: Click the "Fork" button at the top right corner of this repository to create your own copy.
+
+2. **Clone the Repository**: Clone your forked repository to your local machine using the following command:
+```js
+git clone https://github.com/dxmentorship/dxmentorship.git
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+3. **Install Dependencies**: Make sure you have Node.js and npm installed. Then, navigate to the project directory and install the required dependencies:
+```js
+cd dxmentorship
+npm install
+```
+4. **Run the Development Server**: Start the development server to see the website in action locally:
+```nodejs
+npm run dev
+```
+5. **Make Changes**: Make the necessary changes, fix bugs, or add new features. Don't forget to create a new branch for your changes.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+6. **Create a Pull Request**: When you're ready, push your changes to your forked repository and create a pull request to this main repository. We'll review your contributions and merge them if they align with our goals.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Contributing to Hacktoberfest
 
-## Commands
+We're excited to have this repository as part of Hacktoberfest! Whether you're a seasoned developer or just getting started, your contributions are highly appreciated. 
 
-All commands are run from the root of the project, from a terminal:
+<!-- Feel free to check our [Hacktoberfest Guidelines](CONTRIBUTING.md) for more information on how to contribute. -->
+If you have any questions, suggestions, or need assistance with anything related to the DXMentorship or program, please don't hesitate to create the appropriate issues. We value your feedback and are here to help!
+Thank you for being a part of the DXMentorship community and contributing to our mission of empowering future Developer Advocates. Happy hacking!
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
+## License
+MIT
 
-## Want to learn more?
 
-Feel free to check Astroäs [documentation](https://docs.astro.build)
+
+
+
+
+
