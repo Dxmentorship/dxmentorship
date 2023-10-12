@@ -184,7 +184,127 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"posts": {
+		"curriculum": {
+"community-building.md": {
+	id: "community-building.md";
+  slug: "community-building";
+  body: string;
+  collection: "curriculum";
+  data: InferEntrySchema<"curriculum">
+} & { render(): Render[".md"] };
+"conferences-and-events.md": {
+	id: "conferences-and-events.md";
+  slug: "conferences-and-events";
+  body: string;
+  collection: "curriculum";
+  data: InferEntrySchema<"curriculum">
+} & { render(): Render[".md"] };
+"content-creation.md": {
+	id: "content-creation.md";
+  slug: "content-creation";
+  body: string;
+  collection: "curriculum";
+  data: InferEntrySchema<"curriculum">
+} & { render(): Render[".md"] };
+"dev-marketing-evangelism.md": {
+	id: "dev-marketing-evangelism.md";
+  slug: "dev-marketing-evangelism";
+  body: string;
+  collection: "curriculum";
+  data: InferEntrySchema<"curriculum">
+} & { render(): Render[".md"] };
+"documentation-and-technical-writing.md": {
+	id: "documentation-and-technical-writing.md";
+  slug: "documentation-and-technical-writing";
+  body: string;
+  collection: "curriculum";
+  data: InferEntrySchema<"curriculum">
+} & { render(): Render[".md"] };
+"dx-engineering.md": {
+	id: "dx-engineering.md";
+  slug: "dx-engineering";
+  body: string;
+  collection: "curriculum";
+  data: InferEntrySchema<"curriculum">
+} & { render(): Render[".md"] };
+"metrics-and-value-prop.md": {
+	id: "metrics-and-value-prop.md";
+  slug: "metrics-and-value-prop";
+  body: string;
+  collection: "curriculum";
+  data: InferEntrySchema<"curriculum">
+} & { render(): Render[".md"] };
+"open-source.md": {
+	id: "open-source.md";
+  slug: "open-source";
+  body: string;
+  collection: "curriculum";
+  data: InferEntrySchema<"curriculum">
+} & { render(): Render[".md"] };
+};
+"faq": {
+};
+"faqs": {
+"have-more-questions.md": {
+	id: "have-more-questions.md";
+  slug: "have-more-questions";
+  body: string;
+  collection: "faqs";
+  data: InferEntrySchema<"faqs">
+} & { render(): Render[".md"] };
+"how-do-I-enroll.md": {
+	id: "how-do-I-enroll.md";
+  slug: "how-do-i-enroll";
+  body: string;
+  collection: "faqs";
+  data: InferEntrySchema<"faqs">
+} & { render(): Render[".md"] };
+"how-do-I-pay.md": {
+	id: "how-do-I-pay.md";
+  slug: "how-do-i-pay";
+  body: string;
+  collection: "faqs";
+  data: InferEntrySchema<"faqs">
+} & { render(): Render[".md"] };
+"what-is-dx-mentorship.md": {
+	id: "what-is-dx-mentorship.md";
+  slug: "what-is-dx-mentorship";
+  body: string;
+  collection: "faqs";
+  data: InferEntrySchema<"faqs">
+} & { render(): Render[".md"] };
+};
+"mentees": {
+"damilola.md": {
+	id: "damilola.md";
+  slug: "damilola";
+  body: string;
+  collection: "mentees";
+  data: any
+} & { render(): Render[".md"] };
+"gloria.md": {
+	id: "gloria.md";
+  slug: "gloria";
+  body: string;
+  collection: "mentees";
+  data: any
+} & { render(): Render[".md"] };
+"harpreet.md": {
+	id: "harpreet.md";
+  slug: "harpreet";
+  body: string;
+  collection: "mentees";
+  data: any
+} & { render(): Render[".md"] };
+"teri.md": {
+	id: "teri.md";
+  slug: "teri";
+  body: string;
+  collection: "mentees";
+  data: any
+} & { render(): Render[".md"] };
+};
+"posts": {
 "1.md": {
 	id: "1.md";
   slug: "1";

@@ -14,6 +14,22 @@ const postsCollection = defineCollection({
   }),
 });
 
+const faqsCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    weight: z.number(),
+  }),
+});
+
+const curriculumCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    weight: z.number(),
+  }),
+});
+
 export const collections = {
   posts: postsCollection,
+  faqs: faqsCollection,
+  curriculum: curriculumCollection,
 };
