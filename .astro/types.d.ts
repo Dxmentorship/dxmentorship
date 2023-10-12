@@ -242,8 +242,6 @@ declare module 'astro:content' {
   data: InferEntrySchema<"curriculum">
 } & { render(): Render[".md"] };
 };
-"faq": {
-};
 "faqs": {
 "have-more-questions.md": {
 	id: "have-more-questions.md";
@@ -272,6 +270,15 @@ declare module 'astro:content' {
   body: string;
   collection: "faqs";
   data: InferEntrySchema<"faqs">
+} & { render(): Render[".md"] };
+};
+"graduates": {
+"TEMPLATE.md": {
+	id: "TEMPLATE.md";
+  slug: "template";
+  body: string;
+  collection: "graduates";
+  data: InferEntrySchema<"graduates">
 } & { render(): Render[".md"] };
 };
 "mentees": {
