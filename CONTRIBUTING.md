@@ -21,9 +21,9 @@ Before you begin contributing, please follow these steps:
 2. Clone your forked repository to your local machine and add upstream remote:
 
 ```bash
-git clone https://github.com/dxmentorship/dxmentorship.git
+git clone https://github.com/[YOUR-GITHUB-USERNAME]/dxmentorship.git
 cd dxmentorship
-git remote add upstream https://github.com/dxmentorship/dxmentorship.git
+git remote add upstream https://github.com/[YOUR-GITHUB-USERNAME]/dxmentorship.git
 ```
 
 
@@ -41,12 +41,8 @@ git remote add upstream https://github.com/dxmentorship/dxmentorship.git
 
 4. **Documentation**: If you are improving documentation, please follow the existing style and make sure your documentation is clear and concise.
 
-## Code of Conduct
-
-By participating in this project, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md).
-
 ## Contact
 
-If you have questions, concerns, or need to contact the project team, you can reach out to [maintainer email or contact information].
+If you have questions, concerns, or need to contact the project team, you can reach out to [Discord](https://discord.com/invite/dUQyb2mk4s).
 
 Thank you for your interest in making dxmentorship.com an even better resource for mentees. We appreciate your contributions!
