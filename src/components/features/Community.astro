@@ -1,0 +1,36 @@
+---
+import Verticalgrid from '../assets/Verticalgrid.astro';
+---
+
+<section class="relative">
+  <Verticalgrid />
+  <div class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-12 lg:py-24 relative space-y-24">
+    <div class="grid grid-cols-1 gap-4 mt-6 list-none lg:grid-cols-2 lg:gap-24">
+      <div>
+        <p class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text">
+          Join our community
+        </p><p class="text-3xl mt-8 font-normal text-white trackingt-tight">
+          Learn from and connect with other DevRel professionals
+        </p>
+        <p class="mt-4 text-base text-vulcan-300">
+          We have a thriving community of both established and entry-level developer advocates. There, we share
+          opportunities, learn, and support each other through our individual and collective DevRel challenges.
+        </p>
+        <div class="flex flex-wrap mt-10">
+          <a
+            href="https://discord.com/invite/dUQyb2mk4s"
+            class="rounded-lg px-4 border py-2 text-sm font-semibold transition-all flex items-center justify-center bg-vulcan-900 text-white hover:text-indigo-400 h-10 border-vulcan-700"
+            >Join Us</a
+          >
+        </div>
+      </div>
+      <div class="lg:mt-0 mt-12 h-full">
+        <img
+          alt="Lexington thumbnail"
+          class="rounded-2xl shadow-2xl shadow-vulcan-950/50 w-full"
+          src="https://cdn.pixabay.com/photo/2016/12/19/10/16/hands-1917895_1280.png"
+        />
+      </div>
+    </div>
+  </div>
+</section>

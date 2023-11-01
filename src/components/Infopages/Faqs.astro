@@ -1,0 +1,247 @@
+---
+import Verticalgrid from '../assets/Verticalgrid.astro';
+---
+
+<section class="relative">
+  <Verticalgrid />
+  <div class="relative px-8 py-12 mx-auto max-w-7xl md:px-12 lg:px-32 lg:pt-24">
+    <div class="max-w-xl mx-auto text-center my-24">
+      <p class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text">
+        Frequent questions and answers
+      </p>
+      <h2 class="mt-8 text-3xl font-normal tracking-tight text-white">Verified Answers!</h2>
+      <p class="mx-auto mt-4 text-base text-vulcan-300">
+        Finding answers to our most commonly asked questions is easy. You can browse our FAQs to find what you need.
+        Still can't find what you're looking for? Join our community on Discord, ask your questions and we'll be happy
+        to help.
+      </p>
+    </div>
+    <div class="relative mt-10">
+      <div class="relative mx-auto border rounded-3xl border-white/5 bg-vulcan-900" x-data="{selected:null}">
+        <ul class="list-none" role="list" @click="open = !open">
+          <li class="relative border-b border-white/5">
+            <button
+              type="button"
+              class="w-full px-8 py-6 text-left"
+              @click="selected !== 1 ? selected = 1 : selected = null"
+            >
+              <div class="flex items-center justify-between text-white group">
+                <p class="text-base duration-200 text-vulcan-300 group-hover:text-indigo-400">
+                  What is the program duration?
+                </p>
+                <svg
+                  :class="{'rotate-180': open, 'rotate-0': !open}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline w-5 h-5 ml-4 transition-transform duration-200 transform rotate-180 group-hover:text-indigo-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="relative overflow-hidden transition-all duration-700 max-h-0"
+              style=""
+              x-ref="container1"
+              x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
+            >
+              <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">
+                The DX Mentorship is a 3-month program. You will be assigned a mentor who will guide you through the
+                program and help you achieve your goals. You will also have access to our community of mentors and
+                mentees on Discord.
+              </div>
+            </div>
+          </li>
+          <li class="relative border-b border-white/5">
+            <button
+              type="button"
+              class="w-full px-8 py-6 text-left"
+              @click="selected !== 2 ? selected = 2 : selected = null"
+            >
+              <div class="flex items-center justify-between text-white group">
+                <p class="text-base duration-200 text-vulcan-300 group-hover:text-indigo-400">How do I enroll?</p>
+                <svg
+                  :class="{'rotate-180': open, 'rotate-0': !open}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline w-5 h-5 ml-4 transition-transform duration-200 transform rotate-180 group-hover:text-indigo-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="relative overflow-hidden transition-all duration-700 max-h-0"
+              style=""
+              x-ref="container2"
+              x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
+            >
+              <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">
+                You can enroll in the program by filling out the application form. Once you have submitted your
+                application, you will be contacted by our team to schedule an interview. If you are accepted into the
+                program, you will be notified by email.
+              </div>
+            </div>
+          </li>
+          <li class="relative border-b border-white/5">
+            <button
+              type="button"
+              class="w-full px-8 py-6 text-left"
+              @click="selected !== 3 ? selected = 3 : selected = null"
+            >
+              <div class="flex items-center justify-between text-white group">
+                <p class="text-base duration-200 text-vulcan-300 group-hover:text-indigo-400">
+                  How much does it cost to be part of the program?
+                </p>
+                <svg
+                  :class="{'rotate-180': open, 'rotate-0': !open}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline w-5 h-5 ml-4 transition-transform duration-200 transform rotate-180 group-hover:text-indigo-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="relative overflow-hidden transition-all duration-700 max-h-0"
+              style=""
+              x-ref="container2"
+              x-bind:style="selected == 3 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
+            >
+              <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">
+                If your application is accepted, the program is free for you. However we offer a paid option for those
+                who want to support the program. The paid option includes a 1-hour consultation with a mentor of your
+                choice to help you with your career goals, guide your journey and answer any questions you may have.
+              </div>
+            </div>
+          </li>
+          <li class="relative border-b border-white/5">
+            <button
+              type="button"
+              class="w-full px-8 py-6 text-left"
+              @click="selected !== 4 ? selected = 4 : selected = null"
+            >
+              <div class="flex items-center justify-between text-white group">
+                <p class="text-base duration-200 text-vulcan-300 group-hover:text-indigo-400">
+                  Can I still join after the program has started?
+                </p>
+                <svg
+                  :class="{'rotate-180': open, 'rotate-0': !open}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline w-5 h-5 ml-4 transition-transform duration-200 transform rotate-180 group-hover:text-indigo-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="relative overflow-hidden transition-all duration-700 max-h-0"
+              style=""
+              x-ref="container2"
+              x-bind:style="selected == 4 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
+            >
+              <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">
+                Yes you can! We will be accepting applications on a rolling basis. However, we encourage you to apply as
+                soon as possible as we have limited spots available.
+              </div>
+            </div>
+          </li>
+          <li class="relative border-b border-white/5">
+            <button
+              type="button"
+              class="w-full px-8 py-6 text-left"
+              @click="selected !== 5 ? selected = 5 : selected = null"
+            >
+              <div class="flex items-center justify-between text-white group">
+                <p class="text-base duration-200 text-vulcan-300 group-hover:text-indigo-400">
+                  What platform do you use to run the program?
+                </p>
+                <svg
+                  :class="{'rotate-180': open, 'rotate-0': !open}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline w-5 h-5 ml-4 transition-transform duration-200 transform rotate-180 group-hover:text-indigo-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="relative overflow-hidden transition-all duration-700 max-h-0"
+              style=""
+              x-ref="container2"
+              x-bind:style="selected == 5 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
+            >
+              <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">
+                We use Discord to run the program. Discord is a free platform that allows us to create a community where
+                we can share resources, host events, and connect with each other. We use Zoom to host our weekly program
+                sessions.
+              </div>
+            </div>
+          </li>
+
+          <!----- Last -->
+          <li class="relative">
+            <button
+              type="button"
+              class="w-full px-8 py-6 text-left"
+              @click="selected !== 7 ? selected = 7 : selected = null"
+            >
+              <div class="flex items-center justify-between text-white group">
+                <p class="text-base duration-200 text-vulcan-300 group-hover:text-indigo-400">
+                  Do I get dedicated 1:1 mentorship?
+                </p>
+                <svg
+                  :class="{'rotate-180': open, 'rotate-0': !open}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="inline w-5 h-5 ml-4 transition-transform duration-200 transform rotate-180 group-hover:text-indigo-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="relative overflow-hidden transition-all duration-700 max-h-0"
+              style=""
+              x-ref="container3"
+              x-bind:style="selected == 7 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''"
+            >
+              <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">
+                On the paid path Yes! We have a dedicated team of mentors who will be working with you throughout the
+                program. You will be assigned a mentor who will be your main point of contact. On the free path, you
+                will have the opportunity to connect with other mentees and learn from their experiences.
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
