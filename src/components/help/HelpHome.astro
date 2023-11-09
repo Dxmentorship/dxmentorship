@@ -1,0 +1,254 @@
+---
+import Blurgradientleft from '../assets/Blurgradientleft.astro';
+---
+
+<section class="relative">
+  <Blurgradientleft />
+  <div class="relative px-8 py-32 mx-auto max-w-7xl md:px-12 lg:px-32 lg:py-56">
+    <div class="max-w-2xl">
+      <span
+        class="text-xs font-medium tracking-widest text-transparent uppercase bg-clip-text bg-gradient-to-r from-indigo-300 via-indigo-400 to-indigo-500"
+        >Help Center</span
+      >
+      <p class="mt-8 text-4xl font-normal tracking-tighter text-white sm:text-5xl">Hi, how can we help you?</p>
+      <div class="relative flex items-center max-w-sm mt-12">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="search for anything..."
+          class="block w-full h-10 px-4 py-3 text-indigo-300 border rounded-lg appearance-none bg-vulcan-900 border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm pr-14"
+        />
+        <div class="absolute inset-y-0 right-0 flex py-1.5 pr-1.5">
+          <kbd class="inline-flex items-center px-1 font-sans text-xs text-gray-400 rounded">⌘K</kbd>
+        </div>
+      </div>
+    </div>
+    <ul class="grid grid-cols-1 gap-6 mt-12 list-none md:grid-cols-2 lg:grid-cols-3 lg:mt-24" role="list">
+      <li>
+        <a
+          href="/helpcenter/help-categories"
+          class="hover:shadow-xl duration-200 items-center bg-gradient-to-b from-indigo-500 via-indigo-500/5 rounded-3xl inline-flex p-[0.060rem] shadow-2xl text-center bg-vulcan-900 h-full w-full"
+        >
+          <div class="flex flex-col items-center justify-between w-full h-full px-8 py-8 bg-vulcan-900 rounded-3xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
+              ></path>
+            </svg>
+
+            <p class="mt-4 text-lg font-medium text-white lg:text-xl">Getting Started</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/helpcenter/help-categories"
+          class="hover:shadow-xl duration-200 items-center bg-gradient-to-b from-indigo-500 via-indigo-500/5 rounded-3xl inline-flex p-[0.060rem] shadow-2xl text-center bg-vulcan-900 h-full w-full"
+        >
+          <div class="flex flex-col items-center justify-between w-full h-full px-8 py-8 bg-vulcan-900 rounded-3xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"
+              ></path>
+            </svg>
+
+            <p class="mt-4 text-lg font-medium text-white lg:text-xl">Recording &amp; editing</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/helpcenter/help-categories"
+          class="hover:shadow-xl duration-200 items-center bg-gradient-to-b from-indigo-500 via-indigo-500/5 rounded-3xl inline-flex p-[0.060rem] shadow-2xl text-center bg-vulcan-900 h-full w-full"
+        >
+          <div class="flex flex-col items-center justify-between w-full h-full px-8 py-8 bg-vulcan-900 rounded-3xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+              ></path>
+            </svg>
+
+            <p class="mt-4 text-lg font-medium text-white lg:text-xl">Workspaces & Plans</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/helpcenter/help-categories"
+          class="hover:shadow-xl duration-200 items-center bg-gradient-to-b from-indigo-500 via-indigo-500/5 rounded-3xl inline-flex p-[0.060rem] shadow-2xl text-center bg-vulcan-900 h-full w-full"
+        >
+          <div class="flex flex-col items-center justify-between w-full h-full px-8 py-8 bg-vulcan-900 rounded-3xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+
+            <p class="mt-4 text-lg font-medium text-white lg:text-xl">Settings & Billing</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/helpcenter/help-categories"
+          class="hover:shadow-xl duration-200 items-center bg-gradient-to-b from-indigo-500 via-indigo-500/5 rounded-3xl inline-flex p-[0.060rem] shadow-2xl text-center bg-vulcan-900 h-full w-full"
+        >
+          <div class="flex flex-col items-center justify-between w-full h-full px-8 py-8 bg-vulcan-900 rounded-3xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+              ></path>
+            </svg>
+
+            <p class="mt-4 text-lg font-medium text-white lg:text-xl">Troubleshooting</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/helpcenter/help-categories"
+          class="hover:shadow-xl duration-200 items-center bg-gradient-to-b from-indigo-500 via-indigo-500/5 rounded-3xl inline-flex p-[0.060rem] shadow-2xl text-center bg-vulcan-900 h-full w-full"
+        >
+          <div class="flex flex-col items-center justify-between w-full h-full px-8 py-8 bg-vulcan-900 rounded-3xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
+              ></path>
+            </svg>
+
+            <p class="mt-4 text-lg font-medium text-white lg:text-xl">Recording Tips & Security</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/helpcenter/help-categories"
+          class="hover:shadow-xl duration-200 items-center bg-gradient-to-b from-indigo-500 via-indigo-500/5 rounded-3xl inline-flex p-[0.060rem] shadow-2xl text-center bg-vulcan-900 h-full w-full"
+        >
+          <div class="flex flex-col items-center justify-between w-full h-full px-8 py-8 bg-vulcan-900 rounded-3xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
+              ></path>
+            </svg>
+
+            <p class="mt-4 text-lg font-medium text-white lg:text-xl">Community</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/helpcenter/help-categories"
+          class="hover:shadow-xl duration-200 items-center bg-gradient-to-b from-indigo-500 via-indigo-500/5 rounded-3xl inline-flex p-[0.060rem] shadow-2xl text-center bg-vulcan-900 h-full w-full"
+        >
+          <div class="flex flex-col items-center justify-between w-full h-full px-8 py-8 bg-vulcan-900 rounded-3xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
+              ></path>
+            </svg>
+
+            <p class="mt-4 text-lg font-medium text-white lg:text-xl">Use cases</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/helpcenter/help-categories"
+          class="hover:shadow-xl duration-200 items-center bg-gradient-to-b from-indigo-500 via-indigo-500/5 rounded-3xl inline-flex p-[0.060rem] shadow-2xl text-center bg-vulcan-900 h-full w-full"
+        >
+          <div class="flex flex-col items-center justify-between w-full h-full px-8 py-8 bg-vulcan-900 rounded-3xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+              ></path>
+            </svg>
+
+            <p class="mt-4 text-lg font-medium text-white lg:text-xl">Product Webinars</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>

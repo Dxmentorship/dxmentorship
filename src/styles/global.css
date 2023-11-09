@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-family: 'Inter', sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+:root {
+  --astro-code-color-text: #a1affc;
+  --astro-code-color-background: #191a29;
+  --astro-code-token-constant: #ffffff70;
+  --astro-code-token-string: #42517e;
+  --astro-code-token-comment: #ffffff80;
+  --astro-code-token-keyword: #ffffff70;
+  --astro-code-token-parameter: #1ab8d2;
+  --astro-code-token-function: #8e6fe9;
+  --astro-code-token-string-expression: #ffffff;
+  --astro-code-token-punctuation: #ffffff80;
+  --astro-code-token-link: #ffffff;
+}

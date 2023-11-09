@@ -1,0 +1,409 @@
+---
+import { Code } from 'astro/components';
+import Verticalgrid from '../assets/Verticalgrid.astro';
+---
+
+<section aria-labelledby="Featuretwo" id="Featuretwo " class="relative">
+  <Verticalgrid />
+  <div class="relative px-8 py-12 mx-auto space-y-24 max-w-7xl md:px-12 lg:px-32 lg:py-24">
+    <div class="grid grid-cols-1 gap-4 mt-6 list-none lg:grid-cols-2 lg:gap-24">
+      <div>
+        <p class="text-3xl font-normal tracking-tight text-white">Growing your wealth.</p>
+        <p class="mt-4 text-base text-vulcan-300">
+          Explore our comprehensive investment management solutions, carefully crafted to help you grow your wealth and
+          make informed investment decisions with the guidance of experienced professionals, ensuring your financial
+          growth and prosperity.
+        </p>
+        <div class="gap-3 mt-12">
+          <ul class="list-none" role="list">
+            <li>
+              <div class="relative flex items-center py-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 text-indigo-400 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <p class="ml-2 text-sm leading-6 text-vulcan-300">
+                  <strong class="font-semibold text-vulcan-100">Access real-time financing</strong> — in your dreams.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="relative flex items-center py-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 text-indigo-400 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <p class="ml-2 text-sm leading-6 text-vulcan-300">
+                  <strong class="font-semibold text-vulcan-100">Bank-level security</strong> — ain't no big deal.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="relative flex items-center py-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 text-indigo-400 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <p class="ml-2 text-sm leading-6 text-vulcan-300">
+                  <strong class="font-semibold text-vulcan-100">Built to scale</strong> — the weight you put on
+                  christmas.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="flex flex-wrap items-center gap-2 mt-10">
+            <a
+              href="https://lexingtonthemes.lemonsqueezy.com/checkout/buy/cad98266-24b3-47fd-99a6-e65ad9af37f6"
+              class="flex items-center justify-center h-10 px-4 py-2 text-sm font-semibold text-white transition-all rounded-lg hover:to-indigo-600 bg-gradient-to-b from-indigo-300 via-indigo-400 to-indigo-500"
+              >Buy Navy</a
+            >
+            <a
+              href="/system/overview"
+              class="flex items-center justify-center h-10 px-4 py-2 text-sm font-semibold text-white transition-all border rounded-lg bg-vulcan-900 hover:text-indigo-400 border-vulcan-700"
+              >See all pages</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="h-full mt-12 lg:mt-0">
+        <div
+          x-data="{
+        tabSelected: 1,
+        tabId: $id('tabs'),
+        tabButtonClicked(tabButton){
+            this.tabSelected = tabButton.id.replace(this.tabId + '-', '');
+            this.tabRepositionMarker(tabButton);
+        },
+        tabRepositionMarker(tabButton){
+            this.$refs.tabMarker.style.width=tabButton.offsetWidth + 'px';
+            this.$refs.tabMarker.style.height=tabButton.offsetHeight + 'px';
+            this.$refs.tabMarker.style.left=tabButton.offsetLeft + 'px';
+        },
+        tabContentActive(tabContent){
+            return this.tabSelected == tabContent.id.replace(this.tabId + '-content-', '');
+        }
+    }"
+          x-init="tabRepositionMarker($refs.tabButtons.firstElementChild);"
+          class="relative lg:border border-white/10 bg-vulcan-900 lg:rounded-3xl lg:p-10"
+        >
+          <div
+            class="relative inline-grid items-center justify-center w-full h-8 grid-cols-3 mx-auto text-white select-none"
+            x-ref="tabButtons"
+          >
+            <button
+              class="relative z-20 inline-flex items-center w-full h-8 text-sm font-medium cursor-pointer ml-2transition-all whitespace-nowrap"
+              type="button"
+              :class="{ 'border-b-2 border-indigo-500' : tabButtonActive($el) }"
+              :id="$id(tabId)"
+              @click="tabButtonClicked($el);"
+              id="tabs-1-1"
+              >Astro Config
+            </button>
+            <button
+              class="relative z-20 inline-flex w-full h-8 text-sm font-medium transition-all cursor-pointer items-centerml-2 whitespace-nowrap"
+              type="button"
+              :class="{ 'border-b-2 border-indigo-500' : tabButtonActive($el) }"
+              :id="$id(tabId)"
+              @click="tabButtonClicked($el);"
+              id="tabs-1-2"
+              >Also Astro config
+            </button>
+            <div
+              class="absolute left-0 z-10 w-1/2 h-full duration-300 ease-out"
+              x-ref="tabMarker"
+              style="width: 256px; height: 32px; left: 0px;"
+            >
+              <div class="w-8 h-full border-b-2 border-indigo-500"></div>
+            </div>
+          </div>
+          <div class="relative w-full mt-2 content">
+            <div :id="$id(tabId + '-content')" x-show="tabContentActive($el)" class="relative">
+              <!-- Tab Content 1 - Replace with your content -->
+              <section class="text-xs font-mono shadow-3xl mt-4 rounded-2xl overflowhidden p-4 bg-[#191a29] h-full">
+                <Code
+                  code={`
+import { defineConfig } from 'astro/config';
+import compress from "astro-compress";
+import partytown from "@astrojs/partytown";
+import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
+import image from "@astrojs/image";
+import image from "@astrojs/image";
+import compress from "astro-compress";
+import partytown from "@astrojs/partytown";
+import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
+import image from "@astrojs/image";
+import compress from "astro-compress";
+import partytown from "@astrojs/partytown";
+import sitemap from "@astrojs/sitemap";
+// https://astro.build/config
+export default defineConfig({
+   site: 'https://lexingtonthemes.com',
+  integrations: [tailwind(), image(), sitemap()]
+});}'`}
+                  lang="js"
+                  theme="css-variables"
+                />
+              </section>
+              <!-- End Tab Content 1 -->
+            </div>
+
+            <div :id="$id(tabId + '-content')" x-show="tabContentActive($el)" class="relative" x-cloak>
+              <section class="text-xs font-mono mt-4 rounded-3xl hadow-2xl overflowhidden p-4 bg-[#191a29] h-full">
+                <Code
+                  code={`
+import { defineConfig } from 'astro/config';
+import tailwind from "@astrojs/tailwind";
+import image from "@astrojs/image";
+import compress from "astro-compress";
+import partytown from "@astrojs/mdx";
+import sitemap from "@astrojs/sitemap";
+import image from "@astrojs/image";
+import compress from "astro-vue";
+import partytown from "@astrojs/partytown";
+import sitemap from "@astrojs/sitemap";
+// https://astro.build/config
+export default defineConfig({
+   site: 'https://lexingtonthemes.com',
+  integrations: [tailwind(),  sitemap()]
+});}'`}
+                  lang="js"
+                  theme="css-variables"
+                />
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 gap-4 mt-6 list-none lg:grid-cols-2 lg:gap-24">
+      <div>
+        <p class="text-3xl font-normal tracking-tight text-white">Smart conversations.</p>
+        <p class="mt-4 text-base text-vulcan-300">
+          Engage in intelligent and efficient conversations with our AI-powered chatbots, capable of providing instant
+          and accurate responses to your banking queries, offering you immediate assistance whenever you need.
+        </p>
+        <div class="gap-3 mt-12">
+          <ul class="list-none" role="list">
+            <li>
+              <div class="relative flex items-center py-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 text-indigo-400 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <p class="ml-2 text-sm leading-6 text-vulcan-300">
+                  <strong class="font-semibold text-vulcan-100">Access real-time financing</strong> — in your dreams.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="relative flex items-center py-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 text-indigo-400 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <p class="ml-2 text-sm leading-6 text-vulcan-300">
+                  <strong class="font-semibold text-vulcan-100">Bank-level security</strong> — ain't no big deal.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="relative flex items-center py-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 text-indigo-400 icon icon-tabler icon-tabler-circle-check"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg>
+                <p class="ml-2 text-sm leading-6 text-vulcan-300">
+                  <strong class="font-semibold text-vulcan-100">Built to scale</strong> — the weight you put on
+                  christmas.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-wrap items-center gap-2 mt-10">
+          <a
+            href="https://lexingtonthemes.lemonsqueezy.com/checkout/buy/cad98266-24b3-47fd-99a6-e65ad9af37f6"
+            class="flex items-center justify-center h-10 px-4 py-2 text-sm font-semibold text-white transition-all rounded-lg hover:to-indigo-600 bg-gradient-to-b from-indigo-300 via-indigo-400 to-indigo-500"
+            >Buy Navy</a
+          >
+          <a
+            href="/system/overview"
+            class="flex items-center justify-center h-10 px-4 py-2 text-sm font-semibold text-white transition-all border rounded-lg bg-vulcan-900 hover:text-indigo-400 border-vulcan-700"
+            >See all pages</a
+          >
+        </div>
+      </div>
+      <div
+        x-data="{
+        tabSelected: 1,
+        tabId: $id('tabs'),
+        tabButtonClicked(tabButton){
+            this.tabSelected = tabButton.id.replace(this.tabId + '-', '');
+            this.tabRepositionMarker(tabButton);
+        },
+        tabRepositionMarker(tabButton){
+            this.$refs.tabMarker.style.width=tabButton.offsetWidth + 'px';
+            this.$refs.tabMarker.style.height=tabButton.offsetHeight + 'px';
+            this.$refs.tabMarker.style.left=tabButton.offsetLeft + 'px';
+        },
+        tabContentActive(tabContent){
+            return this.tabSelected == tabContent.id.replace(this.tabId + '-content-', '');
+        }
+    }"
+        x-init="tabRepositionMarker($refs.tabButtons.firstElementChild);"
+        class="relative lg:border border-white/10 bg-vulcan-900 lg:rounded-3xl lg:p-10 lg:order-first"
+      >
+        <div
+          class="relative inline-grid items-center justify-center w-full h-8 grid-cols-3 mx-auto text-white select-none"
+          x-ref="tabButtons"
+        >
+          <button
+            class="relative z-20 inline-flex items-center w-full h-8 text-sm font-medium cursor-pointer ml-2transition-all whitespace-nowrap"
+            type="button"
+            :class="{ 'border-b-2 border-indigo-500' : tabButtonActive($el) }"
+            :id="$id(tabId)"
+            @click="tabButtonClicked($el);"
+            id="tabs-1-1"
+            >Astro Config
+          </button>
+          <button
+            class="relative z-20 inline-flex w-full h-8 text-sm font-medium transition-all cursor-pointer items-centerml-2 whitespace-nowrap"
+            type="button"
+            :class="{ 'border-b-2 border-indigo-500' : tabButtonActive($el) }"
+            :id="$id(tabId)"
+            @click="tabButtonClicked($el);"
+            id="tabs-1-2"
+            >Also Astro config
+          </button>
+          <div
+            class="absolute left-0 z-10 w-1/2 h-full duration-300 ease-out"
+            x-ref="tabMarker"
+            style="width: 256px; height: 32px; left: 0px;"
+          >
+            <div class="w-8 h-full border-b-2 border-indigo-500"></div>
+          </div>
+        </div>
+        <div class="relative w-full mt-2 content">
+          <div :id="$id(tabId + '-content')" x-show="tabContentActive($el)" class="relative">
+            <!-- Tab Content 1 - Replace with your content -->
+            <section class="text-xs font-mono shadow-3xl mt-4 rounded-2xl overflowhidden p-4 bg-[#191a29] h-full">
+              <Code
+                code={`
+import { defineConfig } from 'astro/config';
+import compress from "astro-compress";
+import partytown from "@astrojs/partytown";
+import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
+import image from "@astrojs/image";
+import image from "@astrojs/image";
+import compress from "astro-compress";
+import partytown from "@astrojs/partytown";
+import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
+import image from "@astrojs/image";
+import compress from "astro-compress";
+import partytown from "@astrojs/partytown";
+import sitemap from "@astrojs/sitemap";
+// https://astro.build/config
+export default defineConfig({
+   site: 'https://lexingtonthemes.com',
+  integrations: [tailwind(), image(), sitemap()]
+});}'`}
+                lang="js"
+                theme="css-variables"
+              />
+            </section>
+            <!-- End Tab Content 1 -->
+          </div>
+
+          <div :id="$id(tabId + '-content')" x-show="tabContentActive($el)" class="relative" x-cloak>
+            <section class="text-xs font-mono mt-4 rounded-3xl hadow-2xl overflowhidden p-4 bg-[#191a29] h-full">
+              <Code
+                code={`
+import { defineConfig } from 'astro/config';
+import tailwind from "@astrojs/tailwind";
+import image from "@astrojs/image";
+import compress from "astro-compress";
+import partytown from "@astrojs/mdx";
+import sitemap from "@astrojs/sitemap";
+import image from "@astrojs/image";
+import compress from "astro-vue";
+import partytown from "@astrojs/partytown";
+import sitemap from "@astrojs/sitemap";
+// https://astro.build/config
+export default defineConfig({
+   site: 'https://lexingtonthemes.com',
+  integrations: [tailwind(),  sitemap()]
+});}'`}
+                lang="js"
+                theme="css-variables"
+              />
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
