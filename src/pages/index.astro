@@ -1,32 +1,24 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
-import HeroOne from '../components/heros/HeroOne.astro';
-import LogoCloudTwo from '../components/testimonials/LogoCloudTwo.astro';
-import FeatureFive from '../components/features/FeatureFive.astro';
-import FeatureEight from '../components/features/FeatureEight.astro';
-import FeatureNine from '../components/features/FeatureNine.astro';
-import FeatureTen from '../components/features/FeatureTen.astro';
-import TestimonialTwo from '../components/testimonials/TestimonialTwo.astro';
-import PricingSix from '../components/pricing/PricingSix.astro';
-import FaqTwo from '../components/Infopages/FaqTwo.astro';
-import CtaTwo from '../components/ctas/CtaTwo.astro';
+import HeroTwo from '../components/heros/HeroTwo.astro';
+import LogocCloudOne from '../components/testimonials/LogoCloudOne.astro';
+import CustomerHome from '../components/customers/CustomerHome.astro';
 
 import { AstroSeo } from '@astrolib/seo';
-import HeroThree from '../components/heros/HeroThree.astro';
 ---
 
 <!---
 Use AstroSeo in all the pages you want different Seo than the index page
 -->
+
 <AstroSeo
-  title="Home"
-  description="Your site description goes here"
-  canonical="https://www.lexingtonthemes.com"
+  title="DxMentorship"
+  description="Get equipped with knowledge and information that will propel you into a fulfilling Developer Advocacy career. We'll be working with industry experts and real world scenarios to prepare you for the job you've always wanted!",
+  canonical="https://www.dxmentorship.com"
   openGraph={{
-    url: 'https://www.lexingtonthemes.com',
-    title: 'Open Graph Title',
-    description: 'Open Graph Description',
+    url: 'https://www.dxmentorship.com',
+    title: 'DxMentorship',
+    description: "Get equipped with knowledge and information that will propel you into a fulfilling Developer Advocacy career. We'll be working with industry experts and real world scenarios to prepare you for the job you've always wanted!",
     images: [
       {
         url: 'https://www.lexingtonthemes.com/opengraph/social-og.jpg',
@@ -45,23 +37,25 @@ Use AstroSeo in all the pages you want different Seo than the index page
       { url: 'https://www.lexingtonthemes.com/opengraph/social-og.jpg' },
       { url: 'https://www.lexingtonthemes.com/opengraph/twitter-og.jpg' },
     ],
-    site_name: 'YourSitesName',
+    site_name: 'DxMentorship',
   }}
   twitter={{
-    handle: '@TwitterHandle',
+    handle: '@dxmentorship',
     site: '@site',
     cardType: 'summary_large_image',
   }}
 />
+
 <BaseLayout>
-  <HeroThree />
-  <LogoCloudTwo />
-  <FeatureFive />
-  <FeatureEight />
-  <FeatureNine />
-  <FeatureTen />
-  <TestimonialTwo />
-  <PricingSix />
-  <FaqTwo />
-  <CtaTwo />
+  <HeroTwo />
+  <LogocCloudOne />
+  <CustomerHome />
+  <!-- <FeatureFour /> -->
+  <!-- <FeatureOne /> -->
+  <!-- <FeatureTwo /> -->
+  <!-- <FeatureThree /> -->
+  <!-- <TestimonialOne /> -->
+  <!-- <Pricing /> -->
+  <!-- <Faq /> -->
+  <!-- <Cta /> -->
 </BaseLayout>

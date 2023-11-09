@@ -1,25 +1,26 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
-import HeroTwo from '../../components/heros/HeroTwo.astro';
-import LogocCloudOne from '../../components/testimonials/LogoCloudOne.astro';
-import FeatureFour from '../../components/features/FeatureFour.astro';
-import FeatureOne from '../../components/features/FeatureOne.astro';
-import FeatureTwo from '../../components/features/FeatureTwo.astro';
-import FeatureThree from '../../components/features/FeatureThree.astro';
-import TestimonialOne from '../../components/testimonials/TestimonialOne.astro';
-import Pricing from '../../components/pricing/Pricing.astro';
-import Faq from '../../components/Infopages/Faq.astro';
-import Cta from '../../components/ctas/Cta.astro';
+import HeroOne from '../components/heros/HeroOne.astro';
+import LogoCloudTwo from '../components/testimonials/LogoCloudTwo.astro';
+import FeatureFive from '../components/features/FeatureFive.astro';
+import FeatureEight from '../components/features/FeatureEight.astro';
+import FeatureNine from '../components/features/FeatureNine.astro';
+import FeatureTen from '../components/features/FeatureTen.astro';
+import TestimonialTwo from '../components/testimonials/TestimonialTwo.astro';
+import PricingSix from '../components/pricing/PricingSix.astro';
+import FaqTwo from '../components/Infopages/FaqTwo.astro';
+import CtaTwo from '../components/ctas/CtaTwo.astro';
 
 import { AstroSeo } from '@astrolib/seo';
+import HeroThree from '../components/heros/HeroThree.astro';
 ---
 
 <!---
 Use AstroSeo in all the pages you want different Seo than the index page
 -->
 <AstroSeo
-  title="Landing page 1"
+  title="Home"
   description="Your site description goes here"
   canonical="https://www.lexingtonthemes.com"
   openGraph={{
@@ -53,14 +54,14 @@ Use AstroSeo in all the pages you want different Seo than the index page
   }}
 />
 <BaseLayout>
-  <HeroTwo />
-  <LogocCloudOne />
-  <FeatureFour />
-  <FeatureOne />
-  <FeatureTwo />
-  <FeatureThree />
-  <TestimonialOne />
-  <Pricing />
-  <Faq />
-  <Cta />
+  <HeroThree />
+  <LogoCloudTwo />
+  <FeatureFive />
+  <FeatureEight />
+  <FeatureNine />
+  <FeatureTen />
+  <TestimonialTwo />
+  <PricingSix />
+  <FaqTwo />
+  <CtaTwo />
 </BaseLayout>
