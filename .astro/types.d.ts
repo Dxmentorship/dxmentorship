@@ -312,16 +312,16 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "posts": {
-"announcing-dxmentorship-cohort-2.md": {
-	id: "announcing-dxmentorship-cohort-2.md";
-  slug: "announcing-dxmentorship-cohort-2";
+"hacktoberfest-for-dev-advocates.md": {
+	id: "hacktoberfest-for-dev-advocates.md";
+  slug: "hacktoberfest-for-dev-advocates";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"announcing-dxmentorship-cohort-3.md": {
-	id: "announcing-dxmentorship-cohort-3.md";
-  slug: "announcing-dxmentorship-cohort-3";
+"mentorship-for-early-dev-advocates.md": {
+	id: "mentorship-for-early-dev-advocates.md";
+  slug: "mentorship-for-early-dev-advocates";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
