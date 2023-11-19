@@ -1,23 +1,27 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroTwo from '../components/heros/HeroTwo.astro';
-import LogocCloudOne from '../components/testimonials/LogoCloudOne.astro';
-import CustomerHome from '../components/customers/CustomerHome.astro';
+// import LogocCloudOne from '../components/testimonials/LogoCloudOne.astro';
+// import
+// import CustomerHome from '../components/customers/CustomerHome.astro';
+import Partners from '../components/partners/Partners.astro';
+import PastMentees from '../components/mentees/PastMentees.astro';
 import { AstroSeo } from '@astrolib/seo';
 ---
 
 <!---
 Use AstroSeo in all the pages you want different Seo than the index page
 -->
-
 <AstroSeo
   title="DxMentorship"
-  description="Get equipped with knowledge and information that will propel you into a fulfilling Developer Advocacy career. We'll be working with industry experts and real world scenarios to prepare you for the job you've always wanted!",
+  description="Get equipped with knowledge and information that will propel you into a fulfilling Developer Advocacy career. We'll be working with industry experts and real world scenarios to prepare you for the job you've always wanted!"
+  ,
   canonical="https://www.dxmentorship.com"
   openGraph={{
     url: 'https://www.dxmentorship.com',
     title: 'DxMentorship',
-    description: "Get equipped with knowledge and information that will propel you into a fulfilling Developer Advocacy career. We'll be working with industry experts and real world scenarios to prepare you for the job you've always wanted!",
+    description:
+      "Get equipped with knowledge and information that will propel you into a fulfilling Developer Advocacy career. We'll be working with industry experts and real world scenarios to prepare you for the job you've always wanted!",
     images: [
       {
         url: 'https://www.lexingtonthemes.com/opengraph/social-og.jpg',
@@ -47,14 +51,6 @@ Use AstroSeo in all the pages you want different Seo than the index page
 
 <BaseLayout>
   <HeroTwo />
-  <LogocCloudOne />
-  <CustomerHome />
-  <!-- <FeatureFour /> -->
-  <!-- <FeatureOne /> -->
-  <!-- <FeatureTwo /> -->
-  <!-- <FeatureThree /> -->
-  <!-- <TestimonialOne /> -->
-  <!-- <Pricing /> -->
-  <!-- <Faq /> -->
-  <!-- <Cta /> -->
+  <Partners />
+  <PastMentees />
 </BaseLayout>
