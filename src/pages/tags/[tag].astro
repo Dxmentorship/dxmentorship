@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import BlogPost from '../../components/BlogPost.astro';
+// import BlogPost from '../../components/BlogPost.astro';
 import EntriesOne from '../../components/entries/EntriesOne.astro';
 import { getCollection } from 'astro:content';
 
@@ -30,7 +30,7 @@ const { posts } = Astro.props;
         </p><p class="mt-8 text-4xl font-normal tracking-tighter text-white sm:text-5xl">
           Blog posts tagged with {tag}
         </p>
-        <form class="mt-6 sm:flex sm:max-w-md">
+        <!-- <form class="mt-6 sm:flex sm:max-w-md">
           <label for="email-address" class="sr-only">Email address</label>
           <input
             type="email"
@@ -48,7 +48,7 @@ const { posts } = Astro.props;
               >Subscribe</button
             >
           </div>
-        </form>
+        </form> -->
       </div>
 
       <div class="py-24">

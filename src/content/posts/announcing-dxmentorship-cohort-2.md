@@ -9,7 +9,7 @@ description:
 image:
   url: 'https://cdn.pixabay.com/photo/2012/04/01/18/08/teachers-23820_1280.png'
   alt: 'The Astro logo with the word One.'
-tags: ['health', 'fashion', 'productivity']
+tags: ['devrel', 'mentorship']
 ---
 
 Hello friends, if you're reading this, I have some exciting news to share. Today, I'm happy to announce that I'll be
