@@ -1,7 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import CustomerHome from '../../components/customers/CustomerHome.astro';
-import CtaSeven from '../../components/ctas/CtaSeven.astro';
+// import CustomerHome from '../../components/customers/CustomerHome.astro';
+import PastMenteesComponent from '../../components/mentees/PastMentees.astro';
+
+// import CtaSeven from '../../components/ctas/CtaSeven.astro';
 import { AstroSeo } from '@astrolib/seo';
 ---
 
@@ -43,6 +45,6 @@ Use AstroSeo in all the pages you want different Seo than the index page
   }}
 />
 <BaseLayout>
-  <CustomerHome />
+  <PastMenteesComponent />
   <!-- <CtaSeven /> -->
 </BaseLayout>
