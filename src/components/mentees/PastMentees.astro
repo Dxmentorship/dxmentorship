@@ -1,4 +1,10 @@
 ---
+let mentees = [
+  { id: 1, name: 'damilola', image: '/mentees/dami.jpg' },
+  { id: 2, name: 'harpreet', image: '/mentees/harpreet.jpeg' },
+  { id: 3, name: 'gloria', image: '/mentees/gloria.jpeg' },
+  { id: 4, name: 'teri', image: '/mentees/teri.jpeg' },
+];
 ---
 
 <section aria-labelledby="Featurethree" id="Featurethree " class="relative">
@@ -11,39 +17,21 @@
         </p>
       </div>
     </div>
+
     <div class="grid grid-cols-2 lg:text-center gap-6 mt-12 list-none lg:grid-cols-4 lg:gap-12 lg:mt-24">
-      <a
-        href="/customers/case-study"
-        class="hover:shadow-xl duration-200 items-center bg-gradient-to-b from-indigo-500 via-indigo-500/5 rounded-3xl inline-flex p-[0.060rem] shadow-2xl text-center bg-vulcan-900 aspect-square"
-      >
-        <div class="bg-vulcan-900 overflow-hidden h-full w-full rounded-3xl inline-flex items-center">
-          <img src="https://res.cloudinary.com//kennyy/image/upload/v1662130373/dami_tgicgp.jpg?w=256&q=75" alt="" class="mx-auto" />
-        </div>
-      </a>
-      <a
-        href="/customers/case-study"
-        class="hover:shadow-xl duration-200 items-center bg-gradient-to-b from-indigo-500 via-indigo-500/5 rounded-3xl inline-flex p-[0.060rem] shadow-2xl text-center bg-vulcan-900 aspect-square"
-      >
-        <div class="bg-vulcan-900 overflow-hidden h-full w-full rounded-3xl inline-flex items-center">
-          <img src="https://res.cloudinary.com//kennyy/image/upload/v1659294659/harpreet_vvpr4h.jpg?w=256&q=75" alt="" class="mx-auto" />
-        </div>
-      </a>
-      <a
-        href="/customers/case-study"
-        class="hover:shadow-xl duration-200 items-center bg-gradient-to-b from-indigo-500 via-indigo-500/5 rounded-3xl inline-flex p-[0.060rem] shadow-2xl text-center bg-vulcan-900 aspect-square"
-      >
-        <div class="bg-vulcan-900 overflow-hidden h-full w-full rounded-3xl inline-flex items-center">
-          <img src="https://res.cloudinary.com//kennyy/image/upload/v1659294659/gloria_eeuj08.jpg?w=256&q=75" alt="" class="mx-auto" />
-        </div>
-      </a>
-      <a
-        href="/customers/case-study"
-        class="hover:shadow-xl duration-200 items-center bg-gradient-to-b from-indigo-500 via-indigo-500/5 rounded-3xl inline-flex p-[0.060rem] shadow-2xl text-center bg-vulcan-900 aspect-square"
-      >
-        <div class="bg-vulcan-900 overflow-hidden h-full w-full rounded-3xl inline-flex items-center">
-          <img src="https://res.cloudinary.com//kennyy/image/upload/v1659294659/teri_ukpn22.jpg?w=256&q=75" alt="" class="mx-auto" />
-        </div>
-      </a>
+      {
+        mentees.map((mentee) => (
+          <a
+            href={`/mentees/${mentee.name}`}
+            class="hover:shadow-xl duration-200 bg-gradient-to-b from-indigo-500 via-indigo-500/5 rounded-3xl inline-flex p-[0.060rem] shadow-2xl text-center bg-vulcan-900"
+          >
+            <div class="bg-vulcan-900 overflow-hidden h-full w-full rounded-3xl flex flex-col justify-center">
+              <img src={mentee.image} alt={mentee.name} class="mx-auto" />
+              <p class="text-white py-3 px-1 ">{mentee.name}</p>
+            </div>
+          </a>
+        ))
+      }
     </div>
   </div>
 </section>

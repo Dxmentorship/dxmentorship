@@ -1,0 +1,21 @@
+---
+const { title, url, description, name, image } = Astro.props;
+---
+
+<li class="group border bg-vulcan-800 border-white/5 overflow-hidden rounded-3xl shadow-vulcan-950 shadow-2xl">
+  <a href={url} title={title}>
+    <div class="flex items-end shadow-2xl shadow-vulcan-950 justify-center overflow-hidden rounded-t-3xl">
+      <div class="flex">
+        <img class="group-hover:scale-110 duration-300" loading="lazy" src={image} alt={title} width="560" />
+      </div>
+    </div>
+    <div class="p-8">
+      <h3 class="mt-5 text-lg font-medium leading-6 text-white">
+        {name}
+      </h3>
+      <p class="mt-2 text-base text-vulcan-300 line-clamp-1">
+        {title}
+      </p>
+    </div>
+  </a>
+</li>
