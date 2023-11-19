@@ -1,8 +1,7 @@
 ---
 name: 'Gloria Asuquo'
-title: 'Dev Advocate'
+title: 'Developer Advocate'
 image: '/assets/gloria_eeuj08.jpg'
-description: 'Developer Advocate'
 twitter: 'https://twitter.com/_Glowreeyah'
 github: 'https://github.com/glowreeyah'
 ---

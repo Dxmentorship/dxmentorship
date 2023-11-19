@@ -2,7 +2,6 @@
 name: 'Damilola Ezekiel'
 title: 'Developer Advocate'
 image: '/assets/dami.jpg'
-description: 'Developer Advocate'
 github: 'https://github.com/damilolaezekiel'
 twitter: 'https://twitter.com/damiezekiel_'
 ---

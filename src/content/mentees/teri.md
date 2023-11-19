@@ -1,8 +1,7 @@
 ---
 name: 'Teri'
-title: 'Dev Advocate'
+title: 'DevRel Engineer'
 image: '/assets/teri_ukpn22.jpg'
-description: 'DevFRel Engineer'
 twitter: 'https://twitter.com/terieyenike'
 github: 'https://github.com/terieyenike'
 ---

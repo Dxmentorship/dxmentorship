@@ -5,7 +5,7 @@ const allPosts = await getCollection('mentees');
 import CtaFive from '../../components/ctas/CtaFive.astro';
 import EntriesOne from '../../components/entries/EntriesOne.astro';
 import { AstroSeo } from '@astrolib/seo';
-import MenteeCard from '../../components/entries/MenteeCard.astro';
+import MenteeCard from '../../components/mentees/MenteeCard.astro';
 ---
 
 <!---
@@ -67,6 +67,7 @@ Use AstroSeo in all the pages you want different Seo than the index page
                   name={post.data.name}
                   description={post.data.description}
                   image={post.data.image}
+                  title={post.data.title}
                 />
               ))
           }

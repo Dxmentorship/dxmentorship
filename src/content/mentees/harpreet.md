@@ -1,8 +1,7 @@
 ---
 name: 'Harpreet'
-title: 'Developer Relations Manager at Deci AI'
+title: 'DevRel Manager at Deci AI'
 image: '/assets/harpreet_vvpr4h.jpg'
-description: 'Head of DevRel @DeciAI'
 github: 'https://github.com/harpreetsahota204'
 twitter: 'https://twitter.com/DataScienceHarp'
 ---

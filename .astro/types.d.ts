@@ -303,6 +303,13 @@ declare module 'astro:content' {
   collection: "mentees";
   data: any
 } & { render(): Render[".md"] };
+"olanetsoft.md": {
+	id: "olanetsoft.md";
+  slug: "olanetsoft";
+  body: string;
+  collection: "mentees";
+  data: any
+} & { render(): Render[".md"] };
 "teri.md": {
 	id: "teri.md";
   slug: "teri";
