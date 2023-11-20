@@ -1,14 +1,10 @@
 ---
-import SplashScreenLayout from '../../layouts/SplashScreenLayout.astro';
-import Contact from '../../components/forms/Contact.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 import { AstroSeo } from '@astrolib/seo';
+import SuccessMessage from '../../components/forms/Success.astro';
 ---
 
-<!---
-Use AstroSeo in all the pages you want different Seo than the index page
--->
 <AstroSeo
-  title="Contact"
   description="Your site description goes here"
   canonical="https://www.lexingtonthemes.com"
   openGraph={{
@@ -17,7 +13,7 @@ Use AstroSeo in all the pages you want different Seo than the index page
     description: 'Open Graph Description',
     images: [
       {
-        url: 'https://www.lexingtonthemes.com/opengraph/social-og.jpg',
+        url: 'https://www.dxmentorship.com/opengraph/social-og.jpg',
         width: 1200,
         height: 630,
         alt: 'Social open graph',
@@ -41,6 +37,8 @@ Use AstroSeo in all the pages you want different Seo than the index page
     cardType: 'summary_large_image',
   }}
 />
-<SplashScreenLayout>
-  <Contact />
-</SplashScreenLayout>
+<BaseLayout>
+  <section class="">
+    <SuccessMessage />
+  </section>
+</BaseLayout>
