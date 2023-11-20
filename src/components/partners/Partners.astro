@@ -1,6 +1,6 @@
 <section
   aria-labelledby="logocloud"
-  id="logocloud "
+  id="logocloud"
   class="flex items-end justify-center bg-black border-y border-white/5"
 >
   <div class="justify-center px-8 py-12 mx-auto max-w-7xl md:px-12 lg:px-24 lg:py-24">
@@ -23,16 +23,50 @@
             <img class="max-h-12" src="/logos/axelar.svg" alt="logo" />
           </div>
           <div class="flex px-8">
-            <img class="max-h-12" src="/logos/webguild.svg" alt="logo" />
+            <img class="max-h-12" src="/logos/webguild.png" alt="logo" />
           </div>
           <div class="flex px-8">
             <img class="max-h-12" src="/logos/tenderlyapp.png" alt="logo" />
           </div>
           <div class="flex px-8">
-            <img class="max-h-12" src="/logos/sb.jpeg" alt="logo" />
+            <img class="max-h-12" src="/logos/sbb.png" alt="logo" />
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  @media (max-width: 640px) {
+    /* Styles for small screens */
+    .max-w-7xl {
+      max-width: 100%;
+    }
+    .md\:px-12 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .lg\:px-24 {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    .lg\:py-24 {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+    .grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .sm\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .lg\:grid-cols-5 {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+    .px-8 {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+</style>
