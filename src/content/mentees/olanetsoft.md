@@ -1,7 +1,7 @@
 ---
 name: ' Idris Olubisi '
 title: 'Developer Relations Engineer'
-image: '/assets/olanetsoft.png'
+image: '/assets/olanetsoft-dp.png'
 github: 'https://github.com/olanetsoft'
 twitter: 'https://twitter.com/olanetsoft'
 ---
