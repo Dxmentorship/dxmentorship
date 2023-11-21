@@ -1,0 +1,103 @@
+---
+import Blurgradienttop from '../assets/Blurgradienttop.astro';
+---
+
+<section class="relative overflow-hidden border-t border-white/5">
+  <Blurgradienttop />
+  <div class="relative px-8 py-12 mx-auto max-w-7xl md:px-12 lg:px-32 lg:py-24">
+    <div class="relative items-center">
+      <div class="grid items-end justify-between w-full grid-cols-1 gap-12 lg:grid-cols-2">
+        <div>
+          <p class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text">
+            Get on board
+          </p>
+          <p class="mt-8 text-3xl font-normal tracking-tight text-white">Subscribe to our newsletter</p>
+          <p class="mt-4 text-base text-vulcan-300">
+            Explore our comprehensive investment management solutions, carefully crafted to help you grow your wealth.
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row lg:ml-auto">
+          <form id="newsletter-form" method="POST" action="#" class="mt-12 lg:mx-auto sm:flex sm:max-w-lg">
+            <div class="flex md:flex-row gap-3 flex-col">
+              <label class="text-white sr-only" for="email-address" class="">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                autocomplete="name"
+                required
+                class="block w-full h-10 px-4 py-2 text-sm text-indigo-300 bg-transparent border rounded-lg appearance-none border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
+                placeholder="Enter your name"
+              />
+              <label class="sr-only text-white" for="email-address" class="">Email address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                required
+                class="block w-full h-10 px-4 py-2 text-sm text-indigo-300 bg-transparent border rounded-lg appearance-none border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="mt-4 sm:ml-2 sm:mt-0 sm:flex-shrink-0">
+              <button
+                type="submit"
+                class="flex items-center justify-center w-auto h-10 px-4 py-2 text-sm font-semibold text-white transition-all rounded-lg hover:to-indigo-600 bg-gradient-to-b from-indigo-300 via-indigo-400 to-indigo-500"
+                >Subscribe</button
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { timerMessage } from 'astro/dist/core/logger/core';
+
+  const form = document.querySelector('#newsletter-form');
+
+  async function handleFormSubmission(event) {
+    event.preventDefault();
+    const form = event.target;
+
+    // Client-side Validation
+    const name = form['name'].value;
+    const email = form['email'].value;
+
+    if (!name || !email) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    const formData = {
+      name,
+      email,
+    };
+
+    //  Send data to Airtable
+    const response = await fetch('/api/newsletter', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.status === 200) {
+      window.location.href = '/success';
+    } else {
+      alert('Oops! An error has occurred, Please try again.');
+    }
+  }
+
+  form.addEventListener('submit', handleFormSubmission, true);
+</script>

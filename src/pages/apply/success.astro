@@ -1,15 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ChangelogDetails from '../../components/Infopages/ChangelogDetails.astro';
-import CtaFive from '../../components/ctas/CtaFive.astro';
 import { AstroSeo } from '@astrolib/seo';
+import SuccessMessage from '../../components/forms/Success.astro';
 ---
 
-<!---
-Use AstroSeo in all the pages you want different Seo than the index page
--->
 <AstroSeo
-  title="ChangelogDetails"
   description="Your site description goes here"
   canonical="https://www.lexingtonthemes.com"
   openGraph={{
@@ -18,7 +13,7 @@ Use AstroSeo in all the pages you want different Seo than the index page
     description: 'Open Graph Description',
     images: [
       {
-        url: 'https://www.lexingtonthemes.com/opengraph/social-og.jpg',
+        url: 'https://www.dxmentorship.com/opengraph/social-og.jpg',
         width: 1200,
         height: 630,
         alt: 'Social open graph',
@@ -43,6 +38,7 @@ Use AstroSeo in all the pages you want different Seo than the index page
   }}
 />
 <BaseLayout>
-  <ChangelogDetails />
-  <CtaFive />
+  <section class="">
+    <SuccessMessage />
+  </section>
 </BaseLayout>

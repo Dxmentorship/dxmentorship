@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { AstroSeo } from '@astrolib/seo';
+import RoundedGrid from '../components/assets/RoundedGrid.astro';
+---
+
+<AstroSeo
+  description="DX Mentorship is a 12-week mentorship program for aspiring designers and developers."
+  canonical="https://www.dxmentorship.com"
+  openGraph={{
+    url: 'https://www.dxmentorship.com',
+    title: 'Success!',
+    description: 'SUCCESS!',
+    images: [
+      {
+        url: 'https://www.dxmentorship.com/opengraph/social-og.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Social open graph',
+        type: 'image/jpeg',
+      },
+      {
+        url: 'https://www.dxmentorship.com/opengraph/twitter-og.jpg',
+        width: 4096,
+        height: 4096,
+        alt: 'Twitter open graph',
+        type: 'image/jpeg',
+      },
+      { url: 'https://www.dxmentorship.com/opengraph/social-og.jpg' },
+      { url: 'https://www.dxmentorship.com/opengraph/twitter-og.jpg' },
+    ],
+    site_name: 'YourSitesName',
+  }}
+  twitter={{
+    handle: '@TwitterHandle',
+    site: '@site',
+    cardType: 'summary_large_image',
+  }}
+/>
+<BaseLayout>
+  <section class="">
+    <section aria-labelledby="cta" id="cta " class="relative overflow-hidden border-t border-white/5">
+      <RoundedGrid />
+      <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:pb-32 lg:pt-56">
+        <div class="relative items-center">
+          <div class="max-w-xl mx-auto text-center">
+            <p class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text">
+              SUBSCRIPTION SUCCESSFUL!
+            </p>
+
+            <p class="max-w-sm mx-auto mt-4 text-vulcan-300">
+              Join our <a href="/community" class="text-pink-300">community</a> and connect with other mentees.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</BaseLayout>
