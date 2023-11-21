@@ -1,35 +1,3 @@
----
-async function handleSubmit(event) {
-  event.preventDefault();
-  const form = event.target;
-
-  console.log('Form submitted!');
-
-  // Client-side Validation
-  const name = form['name'].value;
-  const email = form['email'].value;
-  const message = form['message'].value;
-  // Add other fields and validations as needed
-
-  if (!name || !email || !message) {
-    alert('Please fill in all required fields.');
-    return;
-  }
-
-  // TODO: Additional email format validation
-
-  // Prepare data to send
-  const formData = {
-    name,
-    email,
-    message,
-    // Add other form fields here
-  };
-
-  // Implement Send data to Notion or Airtable
-}
----
-
 <section class="flex justify-center items-center h-screen overflow-hidden lg:px-0 md:px-12 bg-vulcan-900">
   <div>
     <div
@@ -45,13 +13,11 @@ async function handleSubmit(event) {
             </p>
           </div>
         </div>
-        {/* @ts-ignore */}
-        <form @submit={(event) => handleSubmit(event)}>
+        <form id="application-form" method="POST">
           <input autocomplete="false" name="hidden" style="display: none" />
-          <input name="_redirect" type="hidden" value="https://jamstacker.studio/thankyou" />
           <div class="mt-4 space-y-6">
             <div>
-              <label class="block mb-3 text-sm font-medium text-white" for="name">Name*</label>
+              <label class="block mb-3 text-sm font-medium text-white" for="name"> Name*</label>
               <input
                 id="name"
                 class="block w-full h-10 px-4 py-3 text-indigo-300 bg-transparent border rounded-lg appearance-none border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
@@ -59,7 +25,7 @@ async function handleSubmit(event) {
               />
             </div>
             <div class="col-span-full">
-              <label class="block mb-3 text-sm font-medium text-white" for="company">Company / organisation</label>
+              <label class="block mb-3 text-sm font-medium text-white" for="company"> Company / organisation</label>
               <input
                 id="company"
                 class="block w-full h-10 px-4 py-3 text-indigo-300 bg-transparent border rounded-lg appearance-none border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
@@ -67,7 +33,7 @@ async function handleSubmit(event) {
               />
             </div>
             <div class="col-span-full">
-              <label class="block mb-3 text-sm font-medium text-white" for="email">Email*</label>
+              <label class="block mb-3 text-sm font-medium text-white" for="email"> Email*</label>
               <input
                 id="email"
                 class="block w-full h-10 px-4 py-3 text-indigo-300 bg-transparent border rounded-lg appearance-none border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
@@ -77,7 +43,7 @@ async function handleSubmit(event) {
               />
             </div>
             <div class="col-span-full">
-              <label for="location" class="block mb-3 text-sm font-medium text-white" id="email">Location*</label>
+              <label for="location" class="block mb-3 text-sm font-medium text-white" id="email"> Location*</label>
               <input
                 id="location"
                 class="block w-full h-10 px-4 py-3 text-indigo-300 bg-transparent border rounded-lg appearance-none border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
@@ -87,7 +53,7 @@ async function handleSubmit(event) {
               />
             </div>
             <div>
-              <label for="message" class="block mb-3 text-sm font-medium text-white">Why shoul we select you*</label>
+              <label for="message" class="block mb-3 text-sm font-medium text-white"> Why shoul we select you*</label>
               <div class="mt-1">
                 <textarea
                   id="message"
@@ -121,4 +87,58 @@ async function handleSubmit(event) {
       </div>
     </div>
   </div>
-</section>
+</section>;
+
+<script>
+  import { timerMessage } from 'astro/dist/core/logger/core';
+
+  const form = document.querySelector('#application-form');
+
+  async function handleFormSubmission(event) {
+    event.preventDefault();
+    const form = event.target;
+
+    // Client-side Validation
+    const name = form['name'].value;
+    const email = form['email'].value;
+    const company = form['company'].value;
+    const location = form['location'].value;
+    const message = form['message'].value;
+
+    if (!name || !email || !message || !company || !location) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    const formData = {
+      name,
+      email,
+      message,
+      location,
+      company,
+    };
+
+    //  Send data to Airtable
+    const response = await fetch('/api/form', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.status === 200) {
+      window.location.href = '/apply/success';
+    } else {
+      alert('Oops! An error has occurred, Please try again.');
+    }
+  }
+
+  form.addEventListener('submit', handleFormSubmission, true);
+</script>
