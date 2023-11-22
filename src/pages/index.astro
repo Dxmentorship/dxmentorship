@@ -6,6 +6,8 @@ import HeroTwo from '../components/heros/HeroTwo.astro';
 // import CustomerHome from '../components/customers/CustomerHome.astro';
 import Partners from '../components/partners/Partners.astro';
 import PastMentees from '../components/mentees/PastMentees.astro';
+import PastMentors from '../components/mentees/PastMentors.astro';
+import CtaSix from '../components/ctas/CtaSix.astro';
 import { AstroSeo } from '@astrolib/seo';
 import Newsletter from '../components/newsletter/Newsletter.astro';
 ---
@@ -53,6 +55,8 @@ Use AstroSeo in all the pages you want different Seo than the index page
 <BaseLayout>
   <HeroTwo />
   <Partners />
-  <Newsletter />
+  <PastMentors />
+  <CtaSix />
   <PastMentees />
+  <Newsletter />
 </BaseLayout>

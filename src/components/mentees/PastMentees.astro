@@ -30,7 +30,14 @@ let mentees = [
             class="hover:shadow-xl duration-200 bg-gradient-to-b from-indigo-500 via-indigo-500/5 rounded-3xl inline-flex p-[0.060rem] shadow-2xl text-center bg-vulcan-900"
           >
             <div class="bg-vulcan-900 overflow-hidden h-full w-full rounded-3xl flex flex-col justify-center">
-              <img src={mentee.image} alt={mentee.name} class="mx-auto" />
+              <img
+                height="500"
+                class="group-hover:scale-110 duration-300"
+                loading="lazy"
+                src={mentee.image}
+                alt={mentee.name}
+                width="560"
+              />
               <p class="text-white py-3 px-1 ">{mentee.name}</p>
             </div>
           </a>

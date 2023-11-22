@@ -1,0 +1,46 @@
+---
+let mentors = [
+  { id: 2, name: 'Tejas', image: '/assets/tejas.jpeg', url: 'https://twitter.com/TejasKumar_' },
+  { id: 3, name: 'Salma', image: '/assets/salma.jpeg', url: 'https://twitter.com/whitep4nth3r' },
+  { id: 1, name: 'Domitrius', image: '/assets/dom.jpeg', url: 'https://twitter.com/domitriusclark' },
+  // { id: 4, name: 'Ekene', image: '/assets/ekene.jpg', url: 'https://twitter.com/kenny_io' },
+];
+---
+
+<section aria-labelledby="Featurethree" id="Featurethree " class="relative">
+  <div class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-12 relative space-y-24 lg:pt-4">
+    <div class="max-w-2xl mx-auto lg:text-center">
+      <div>
+        <p class="mt-32 text-3xl font-normal tracking-tight text-white">Meet some of our past presenters</p>
+        <p class="text-base mt-2 text-vulcan-300 max-w-sm mx-auto">
+          These wonderful people have shared their knowledge with us and helped our mentees skill up. We are grateful
+          for their time and effort.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 lg:text-center gap-6 mt-12 list-none lg:grid-cols-3 lg:gap-12 lg:mt-24">
+      {
+        mentors.map((mentor) => (
+          <a
+            target="_blank"
+            href={`${mentor.url}`}
+            class="hover:shadow-xl duration-200 bg-gradient-to-b from-indigo-500 via-indigo-500/5 rounded-3xl inline-flex p-[0.060rem] shadow-2xl text-center bg-vulcan-900"
+          >
+            <div class="bg-vulcan-900 overflow-hidden h-full w-full rounded-3xl flex flex-col justify-center">
+              <img
+                height="500"
+                class="group-hover:scale-110 duration-300"
+                loading="lazy"
+                src={mentor.image}
+                alt={mentor.name}
+                width="560"
+              />
+              <p class="text-white py-3 px-1 ">{mentor.name}</p>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>

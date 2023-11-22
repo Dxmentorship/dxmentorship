@@ -11,6 +11,7 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
+
 const { Content } = await entry.render();
 ---
 
@@ -20,30 +21,30 @@ const { Content } = await entry.render();
   canonical="https://www.dxmentorship.com"
   openGraph={{
     url: 'https://www.dxmentorship.com',
-    title: 'Open Graph Title',
-    description: 'Open Graph Description',
+    title: entry.data.title,
+    description: entry.data.description,
     images: [
       {
-        url: 'https://www.dxmentorship.com/opengraph/socialog.webp',
+        url: entry.data.image.url,
         width: 1200,
         height: 630,
         alt: 'Social open graph',
         type: 'image/jpeg',
       },
       {
-        url: 'https://www.dxmentorship.com/opengraph/socialog.webp',
+        url: entry.data.image.url,
         width: 4096,
         height: 4096,
         alt: 'Twitter open graph',
         type: 'image/jpeg',
       },
-      { url: 'https://www.dxmentorship.com/opengraph/socialog.webp' },
-      { url: 'https://www.dxmentorship.com/opengraph/socialog.webp' },
+      { url: entry.data.image.url },
+      { url: entry.data.image.url },
     ],
     site_name: 'YourSitesName',
   }}
   twitter={{
-    handle: '@TwitterHandle',
+    handle: '@dxmentorship',
     site: '@site',
     cardType: 'summary_large_image',
   }}
