@@ -9,7 +9,7 @@ import Verticalgrid from '../assets/Verticalgrid.astro';
       <p class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text">
         Frequent questions and answers
       </p>
-      <h2 class="mt-8 text-3xl font-normal tracking-tight text-white">Verified Answers!</h2>
+      <h2 class="mt-8 text-3xl font-normal tracking-tight text-white">These answers are DXM-Verified</h2>
       <p class="mx-auto mt-4 text-base text-vulcan-300">
         Finding answers to our most commonly asked questions is easy. You can browse our FAQs to find what you need.
         Still can't find what you're looking for? Join our community on Discord, ask your questions and we'll be happy
@@ -50,9 +50,8 @@ import Verticalgrid from '../assets/Verticalgrid.astro';
               x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
             >
               <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">
-                The DX Mentorship is a 3-month program. You will be assigned a mentor who will guide you through the
-                program and help you achieve your goals. You will also have access to our community of mentors and
-                mentees on Discord.
+                The DX Mentorship is a 3-month program. It will typically last for 12 weeks depending on the schedule
+                and availability of the presenters.
               </div>
             </div>
           </li>
@@ -85,9 +84,9 @@ import Verticalgrid from '../assets/Verticalgrid.astro';
               x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
             >
               <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">
-                You can enroll in the program by filling out the application form. Once you have submitted your
-                application, you will be contacted by our team to schedule an interview. If you are accepted into the
-                program, you will be notified by email.
+                You can enroll in the program by filling out the <a class="text-lg" href="/apply"> application form</a>.
+                Once you have submitted your application, you will be contacted by our team to schedule an interview. If
+                you are accepted into the program, you will be notified by email.
               </div>
             </div>
           </li>
@@ -123,8 +122,8 @@ import Verticalgrid from '../assets/Verticalgrid.astro';
             >
               <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">
                 If your application is accepted, the program is free for you. However we offer a paid option for those
-                who want to support the program. The paid option includes a 1-hour consultation with a mentor of your
-                choice to help you with your career goals, guide your journey and answer any questions you may have.
+                who want to support the program. The paid option includes a weekly 1-hour consultation to help you with
+                your career goals, guide your journey and answer any questions you may have.
               </div>
             </div>
           </li>
@@ -233,11 +232,7 @@ import Verticalgrid from '../assets/Verticalgrid.astro';
               x-ref="container3"
               x-bind:style="selected == 7 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''"
             >
-              <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">
-                On the paid path Yes! We have a dedicated team of mentors who will be working with you throughout the
-                program. You will be assigned a mentor who will be your main point of contact. On the free path, you
-                will have the opportunity to connect with other mentees and learn from their experiences.
-              </div>
+              <div class="px-8 pt-4 pb-20 text-sm text-vulcan-300">On the paid path, Yes!</div>
             </div>
           </li>
         </ul>

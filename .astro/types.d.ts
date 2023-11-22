@@ -282,9 +282,23 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "mentees": {
+"blessing.md": {
+	id: "blessing.md";
+  slug: "blessing";
+  body: string;
+  collection: "mentees";
+  data: any
+} & { render(): Render[".md"] };
 "damilola.md": {
 	id: "damilola.md";
   slug: "damilola";
+  body: string;
+  collection: "mentees";
+  data: any
+} & { render(): Render[".md"] };
+"darko.md": {
+	id: "darko.md";
+  slug: "darko";
   body: string;
   collection: "mentees";
   data: any
@@ -303,9 +317,37 @@ declare module 'astro:content' {
   collection: "mentees";
   data: any
 } & { render(): Render[".md"] };
+"joshua.md": {
+	id: "joshua.md";
+  slug: "joshua";
+  body: string;
+  collection: "mentees";
+  data: any
+} & { render(): Render[".md"] };
+"khadijah.md": {
+	id: "khadijah.md";
+  slug: "khadijah";
+  body: string;
+  collection: "mentees";
+  data: any
+} & { render(): Render[".md"] };
+"maryblessing.md": {
+	id: "maryblessing.md";
+  slug: "maryblessing";
+  body: string;
+  collection: "mentees";
+  data: any
+} & { render(): Render[".md"] };
 "olanetsoft.md": {
 	id: "olanetsoft.md";
   slug: "olanetsoft";
+  body: string;
+  collection: "mentees";
+  data: any
+} & { render(): Render[".md"] };
+"reet.md": {
+	id: "reet.md";
+  slug: "reet";
   body: string;
   collection: "mentees";
   data: any
