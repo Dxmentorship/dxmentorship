@@ -92,9 +92,13 @@ import Blurgradienttop from '../assets/Blurgradienttop.astro';
       body: JSON.stringify(formData),
     });
 
-    if (response.status === 200) {
-      window.location.href = '/success';
+    console.log(response);
+
+    if (response.status === 200 && response.ok && response.statusText === 'OK') {
+      console.log(response);
+      // window.location.href = '/success';
     } else {
+      console.log(response);
       alert('Oops! An error has occurred, Please try again.');
     }
   }

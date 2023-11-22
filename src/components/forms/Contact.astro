@@ -13,7 +13,7 @@
             </p>
           </div>
         </div>
-        <form id="application-form" method="POST">
+        <form data-netlify="true" id="application-form" method="POST">
           <input autocomplete="false" name="hidden" style="display: none" />
           <div class="mt-4 space-y-6">
             <div>
@@ -35,6 +35,7 @@
             <div class="col-span-full">
               <label class="block mb-3 text-sm font-medium text-white" for="email"> Email*</label>
               <input
+                autocomplete
                 id="email"
                 class="block w-full h-10 px-4 py-3 text-indigo-300 bg-transparent border rounded-lg appearance-none border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
                 placeholder="email@example.com"
@@ -45,6 +46,7 @@
             <div class="col-span-full">
               <label for="location" class="block mb-3 text-sm font-medium text-white" id="email"> Location*</label>
               <input
+                autocomplete
                 id="location"
                 class="block w-full h-10 px-4 py-3 text-indigo-300 bg-transparent border rounded-lg appearance-none border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
                 placeholder="City, Country"
@@ -133,8 +135,12 @@
       body: JSON.stringify(formData),
     });
 
-    if (response.status === 200) {
-      window.location.href = '/apply/success';
+    console.log(response);
+
+    if (response.status === 200 && response.ok && response.statusText === 'OK') {
+      console.log(response);
+      alert('Your application has been submitted successfully!');
+      // window.location.href = '/apply/success';
     } else {
       alert('Oops! An error has occurred, Please try again.');
     }

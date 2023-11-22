@@ -3,6 +3,7 @@ export const prerender = false;
 export const POST = async ({ request }) => {
   const base = new Airtable({ apiKey: import.meta.env.AIRTABLE_TOKEN }).base('appVFv93LZD6mVhDl');
   const data = await request.json();
+  console.log(data);
 
   //prettier-ignore
   try {
@@ -26,6 +27,7 @@ export const POST = async ({ request }) => {
       },
     );
   } catch (error) {
+    console.log(error);
     return new Response(null, {
       status: 500,
       message: error.message,
@@ -33,13 +35,9 @@ export const POST = async ({ request }) => {
   }
 
   return new Response(
-    JSON.stringify(
-      {
-        message: 'Record Created Successfully',
-      },
-      {
-        status: 200,
-      },
-    ),
+    JSON.stringify({
+      message: 'Record Created Successfully',
+      status: 200,
+    }),
   );
 };
