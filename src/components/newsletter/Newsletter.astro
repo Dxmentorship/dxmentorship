@@ -63,42 +63,47 @@ import Blurgradienttop from '../assets/Blurgradienttop.astro';
     event.preventDefault();
     const form = event.target;
 
-    // Client-side Validation
-    const name = form['name'].value;
-    const email = form['email'].value;
+    try {
+      // Client-side Validation
+      const name = form['name'].value;
+      const email = form['email'].value;
 
-    if (!name || !email) {
-      alert('Please fill in all required fields.');
-      return;
-    }
+      if (!name || !email) {
+        alert('Please fill in all required fields.');
+        return;
+      }
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      alert('Please enter a valid email address.');
-      return;
-    }
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
 
-    const formData = {
-      name,
-      email,
-    };
+      const formData = {
+        name,
+        email,
+      };
 
-    //  Send data to Airtable
-    const response = await fetch('/api/newsletter', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    });
+      //  Send data to Airtable
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    console.log(response);
-
-    if (response.status === 200 && response.ok && response.statusText === 'OK') {
       console.log(response);
-      // window.location.href = '/success';
-    } else {
-      console.log(response);
+
+      if (response.status === 200 && response.ok && response.statusText === 'OK') {
+        console.log(response);
+        // window.location.href = '/success';
+      } else {
+        console.log(response);
+        alert('Oops! An error has occurred, Please try again.');
+      }
+    } catch (error) {
+      console.error('An error occurred:', error);
       alert('Oops! An error has occurred, Please try again.');
     }
   }

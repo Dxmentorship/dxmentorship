@@ -100,48 +100,53 @@
     event.preventDefault();
     const form = event.target;
 
-    // Client-side Validation
-    const name = form['name'].value;
-    const email = form['email'].value;
-    const company = form['company'].value;
-    const location = form['location'].value;
-    const message = form['message'].value;
+    try {
+      // Client-side Validation
+      const name = form['name'].value;
+      const email = form['email'].value;
+      const company = form['company'].value;
+      const location = form['location'].value;
+      const message = form['message'].value;
 
-    if (!name || !email || !message || !company || !location) {
-      alert('Please fill in all required fields.');
-      return;
-    }
+      if (!name || !email || !message || !company || !location) {
+        alert('Please fill in all required fields.');
+        return;
+      }
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      alert('Please enter a valid email address.');
-      return;
-    }
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
 
-    const formData = {
-      name,
-      email,
-      message,
-      location,
-      company,
-    };
+      const formData = {
+        name,
+        email,
+        message,
+        location,
+        company,
+      };
 
-    //  Send data to Airtable
-    const response = await fetch('/api/form', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    });
+      //  Send data to Airtable
+      const response = await fetch('/api/form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    console.log(response);
-
-    if (response.status === 200 && response.ok && response.statusText === 'OK') {
       console.log(response);
-      alert('Your application has been submitted successfully!');
-      // window.location.href = '/apply/success';
-    } else {
+
+      if (response.status === 200 && response.ok && response.statusText === 'OK') {
+        console.log(response);
+        alert('Your application has been submitted successfully!');
+        // window.location.href = '/apply/success';
+      } else {
+        alert('Oops! An error has occurred, Please try again.');
+      }
+    } catch (error) {
+      console.error('An error occurred:', error);
       alert('Oops! An error has occurred, Please try again.');
     }
   }
