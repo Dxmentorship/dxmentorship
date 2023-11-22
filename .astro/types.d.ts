@@ -360,7 +360,37 @@ declare module 'astro:content' {
   data: any
 } & { render(): Render[".md"] };
 };
+"mentors": {
+"dom.md": {
+	id: "dom.md";
+  slug: "dom";
+  body: string;
+  collection: "mentors";
+  data: any
+} & { render(): Render[".md"] };
+"salma.md": {
+	id: "salma.md";
+  slug: "salma";
+  body: string;
+  collection: "mentors";
+  data: any
+} & { render(): Render[".md"] };
+"tajas.md": {
+	id: "tajas.md";
+  slug: "tajas";
+  body: string;
+  collection: "mentors";
+  data: any
+} & { render(): Render[".md"] };
+};
 "posts": {
+"announcing-dxmentorship-cohort-3.md": {
+	id: "announcing-dxmentorship-cohort-3.md";
+  slug: "announcing-dxmentorship-cohort-3";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "hacktoberfest-for-dev-advocates.md": {
 	id: "hacktoberfest-for-dev-advocates.md";
   slug: "hacktoberfest-for-dev-advocates";
