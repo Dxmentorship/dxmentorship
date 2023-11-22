@@ -13,7 +13,7 @@
             </p>
           </div>
         </div>
-        <form data-netlify="true" id="application-form" method="POST">
+        <form name="applications" data-netlify="true" id="application-form" method="POST">
           <input autocomplete="false" name="hidden" style="display: none" />
           <div class="mt-4 space-y-6">
             <div>
@@ -136,17 +136,18 @@
         body: JSON.stringify(formData),
       });
 
-      console.log(response);
+      const data = await response.json();
+      console.log(data);
 
-      if (response.status === 200 && response.ok && response.statusText === 'OK') {
-        console.log(response);
-        alert('Your application has been submitted successfully!');
-        // window.location.href = '/apply/success';
+      if (data.status === 200 && data.message === 'Record Created Successfully') {
+        window.location.href = '/apply/success';
       } else {
+        console.log('An error occurred:', data);
         alert('Oops! An error has occurred, Please try again.');
       }
     } catch (error) {
       console.log('An error occurred:', error);
+      alert(error.message);
     }
   }
 
