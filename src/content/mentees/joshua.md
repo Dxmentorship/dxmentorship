@@ -1,12 +1,18 @@
 ---
 name: 'Joshua Omobola'
 title: 'Developer Relations Engineer'
-image: '/assets/koha.jpg'
+image: '/assets/joshua.png'
 twitter: 'https://twitter.com/kohawithstuff'
 github: 'https://github.com/kohasummons'
 linkedin: 'https://www.linkedin.com/in/kohasummons'
 website: 'https://koha.hashnode.dev'
 ---
 
-Hi, I’m Joshua. Developer Relations Engineer. Solidity🏆 – Lead @ Amazon Cloud Club, Postman, HackerEarth, Agora,
-DeepLearningAI, CesaComm. Houseboy @Loogi V. Founder @ Ossguild.
+<div>
+  Developer Relations Engineer. Solidity🏆 – Community Lead & Chief Pilot @ Amazon Cloud Club, Postman, HackerEarth, Agora, DeepLearningAI,
+  CesaComm & Web5Africa🕸️. Houseboy @Loogi. Founder @ Ossguild. Community Rockstar 🌵. 
+</div>
+
+<div class="mt-4">
+  🏄‍♀️ Currently advocating for decentralized Identities and data self-sovereignity on the global planes via #10daysofdevrel
+</div>
