@@ -1,7 +1,7 @@
 ---
 pubDate: 2023-11-23
 author: Ekene Eze
-title: Announcing the DXMentorship program, cohort 3!
+title: Announcing the DXMentorship Program 3!
 description: Applications for the 3rd cohort of the DXMentorship program is open, apply and grab your spot now!
 image:
   url: '/opengraph/annoucement.png'
