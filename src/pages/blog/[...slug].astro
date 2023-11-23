@@ -14,6 +14,21 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
+<head>
+  <title>{entry.data.title}</title>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@dxmentorship" />
+  <meta name="twitter:creator" content="@dxmentorship" />
+  <meta name="twitter:title" content={entry.data.title} />
+  <meta name="twitter:description" content={entry.data.description} />
+  <meta name="twitter:image" content={entry.data.image.url} />
+  <meta property="og:url" content="https://www.dxmentorship.com" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content={entry.data.title} />
+  <meta property="og:description" content={entry.data.description} />
+  <meta property="og:image" content={entry.data.image.url} />
+</head>
+
 <AstroSeo
   title={entry.data.title}
   description={entry.data.description}
@@ -44,7 +59,7 @@ const { Content } = await entry.render();
   }}
   twitter={{
     handle: '@dxmentorship',
-    site: '@site',
+    site: '@dxmentorship',
     cardType: 'summary_large_image',
   }}
 />
