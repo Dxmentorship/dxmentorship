@@ -5,7 +5,7 @@ let mentees = [
   { id: 1, name: 'darko', image: '/assets/darko.jpeg' },
   { id: 4, name: 'teri', image: '/mentees/teri.jpeg' },
   { id: 5, name: 'blessing', image: '/assets/blessing.jpeg' },
-  { id: 6, name: 'joshua', image: '/assets/joshua.jpeg' },
+  { id: 6, name: 'joshua', image: '/assets/joshua.png' },
   { id: 7, name: 'khadijah', image: '/assets/khadijah.jpg' },
   { id: 7, name: 'reet', image: '/assets/reet.jpeg' },
 ];
@@ -38,7 +38,7 @@ let mentees = [
                 alt={mentee.name}
                 width="560"
               />
-              <p class="text-white py-3 px-1 ">{mentee.name}</p>
+              <p class="text-white py-3 px-1 ">{mentee.name.replace(/^./, mentee.name[0].toUpperCase())}</p>
             </div>
           </a>
         ))
