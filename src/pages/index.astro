@@ -1,9 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroTwo from '../components/heros/HeroTwo.astro';
-// import LogocCloudOne from '../components/testimonials/LogoCloudOne.astro';
-// import
-// import CustomerHome from '../components/customers/CustomerHome.astro';
 import Partners from '../components/partners/Partners.astro';
 import PastMentees from '../components/mentees/PastMentees.astro';
 import PastMentors from '../components/mentees/PastMentors.astro';
@@ -12,9 +9,6 @@ import { AstroSeo } from '@astrolib/seo';
 import Newsletter from '../components/newsletter/Newsletter.astro';
 ---
 
-<!---
-Use AstroSeo in all the pages you want different Seo than the index page
--->
 <AstroSeo
   title="DxMentorship - Developer Advocacy Mentorship Program"
   description="Get equipped with knowledge and information that will propel you into a fulfilling Developer Advocacy career. We'll be working with industry experts and real world scenarios to prepare you for the job you've always wanted!"
@@ -27,21 +21,21 @@ Use AstroSeo in all the pages you want different Seo than the index page
       "Get equipped with knowledge and information that will propel you into a fulfilling Developer Advocacy career. We'll be working with industry experts and real world scenarios to prepare you for the job you've always wanted!",
     images: [
       {
-        url: 'https://www.dxmentorship.com/opengraph/socialog.png',
+        url: '/opengraph/socialog.png',
         width: 1200,
         height: 630,
         alt: 'Social open graph',
         type: 'image/jpeg',
       },
       {
-        url: 'https://www.dxmentorship.com/opengraph/socialog.png',
+        url: '/opengraph/socialog.png',
         width: 4096,
         height: 4096,
         alt: 'Twitter open graph',
         type: 'image/jpeg',
       },
-      { url: 'https://www.dxmentorship.com/opengraph/socialog.png' },
-      { url: 'https://www.dxmentorship.com/opengraph/socialog.png' },
+      { url: '/opengraph/socialog.png' },
+      { url: '/opengraph/socialog.png' },
     ],
     site_name: 'DxMentorship',
   }}
