@@ -41,6 +41,10 @@ git remote add upstream https://github.com/[YOUR-GITHUB-USERNAME]/dxmentorship.g
 
 4. **Documentation**: If you are improving documentation, please follow the existing style and make sure your documentation is clear and concise.
 
+## Code of Conduct
+
+By participating in this project, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md).
+
 ## Contact
 
 If you have questions, concerns, or need to contact the project team, you can reach out to [Discord](https://discord.com/invite/dUQyb2mk4s).
