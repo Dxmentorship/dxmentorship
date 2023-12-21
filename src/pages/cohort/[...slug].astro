@@ -64,51 +64,57 @@ const { Content } = await entry.render();
         class="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6 lg:flex lg:flex-row-reverse"
       >
         <div class="mx-auto max-w-2xl lg:mx-0">
-          <div class="hidden sm:mt-32 sm:flex lg:mt-16">
-            <div
-              class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
-            >
-              Follow {entry.data.name} on social media <a
-                href={entry.data.twitter}
-                class="whitespace-nowrap font-semibold text-vulcan-800"
-                ><span class="absolute inset-0" aria-hidden="true"></span> Twitter <span aria-hidden="true">&rarr;</span
-                ></a
+          <div class="max-w-2xl">
+            <p class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-500 to-indigo-900 bg-clip-text">
+              Cohort {entry.data.cohort}
+            </p>
+            <div class="hidden sm:mt-32 sm:flex lg:mt-14">
+              <div
+                class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
               >
+                Follow {entry.data.name} on social media <a
+                  href={entry.data.twitter}
+                  class="whitespace-nowrap font-semibold text-vulcan-800"
+                  ><span class="absolute inset-0" aria-hidden="true"></span> Twitter <span aria-hidden="true"
+                    >&rarr;</span
+                  ></a
+                >
+              </div>
             </div>
-          </div>
-          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl">
-            {entry.data.name}
-          </h1>
-          <p class="mt-6 text-lg leading-8 text-gray-600">
-            <Content />
-          </p>
-          <!-- use the graident of colors associated with each social media platform -->
-          <div class="mt-10 flex items-center gap-x-3">
-            <a
-              href={entry.data.github}
-              class="rounded-md bg-vulcan-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-vulcan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vulcan-600"
-              >Github</a
-            >
-            {
-              entry.data.linkedin && (
-                <a
-                  href={entry.data.linkedin}
-                  class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 "
-                >
-                  Linkedin
-                </a>
-              )
-            }
-            {
-              entry.data.website && (
-                <a
-                  href={entry.data.website}
-                  class="rounded-md bg-purple-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
-                >
-                  Website
-                </a>
-              )
-            }
+            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl">
+              {entry.data.name}
+            </h1>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+              <Content />
+            </p>
+            <!-- use the graident of colors associated with each social media platform -->
+            <div class="mt-10 flex items-center gap-x-3">
+              <a
+                href={entry.data.github}
+                class="rounded-md bg-vulcan-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-vulcan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vulcan-600"
+                >Github</a
+              >
+              {
+                entry.data.linkedin && (
+                  <a
+                    href={entry.data.linkedin}
+                    class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 "
+                  >
+                    Linkedin
+                  </a>
+                )
+              }
+              {
+                entry.data.website && (
+                  <a
+                    href={entry.data.website}
+                    class="rounded-md bg-purple-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
+                  >
+                    Website
+                  </a>
+                )
+              }
+            </div>
           </div>
         </div>
       </div>
