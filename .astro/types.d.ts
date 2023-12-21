@@ -184,7 +184,16 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"curriculum": {
+		"cohort": {
+"joshua.md": {
+	id: "joshua.md";
+  slug: "joshua";
+  body: string;
+  collection: "cohort";
+  data: any
+} & { render(): Render[".md"] };
+};
+"curriculum": {
 "community-building.md": {
 	id: "community-building.md";
   slug: "community-building";
@@ -299,6 +308,13 @@ declare module 'astro:content' {
 "darko.md": {
 	id: "darko.md";
   slug: "darko";
+  body: string;
+  collection: "mentees";
+  data: any
+} & { render(): Render[".md"] };
+"desmond.md": {
+	id: "desmond.md";
+  slug: "desmond";
   body: string;
   collection: "mentees";
   data: any
