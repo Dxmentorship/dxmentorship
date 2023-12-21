@@ -312,6 +312,13 @@ declare module 'astro:content' {
   collection: "mentees";
   data: any
 } & { render(): Render[".md"] };
+"desmond.md": {
+	id: "desmond.md";
+  slug: "desmond";
+  body: string;
+  collection: "mentees";
+  data: any
+} & { render(): Render[".md"] };
 "gloria.md": {
 	id: "gloria.md";
   slug: "gloria";
