@@ -1,7 +1,7 @@
 ---
 name: 'David Asaolu'
 title: 'Frontend Engineer | Technical Writer'
-image: '/assets/koha.jpg'
+image: '/assets/david.jpeg'
 twitter: 'https://twitter.com/dayvid_JS'
 github: 'https://github.com/dha-stix'
 linkedin: 'https://www.linkedin.com/in/david-asaolu234/'
