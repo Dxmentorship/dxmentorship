@@ -1,7 +1,7 @@
 ---
 name: 'Elon Musk'
 title: 'Overlord of X'
-image: '/assets/musk.jpg'
+image: '/assets/musk.gif'
 twitter: 'https://twitter.com/elonmusk'
 github: 'https://github.com/elonmusk'
 linkedin: 'https://www.linkedin.com/in/kohasummons'
