@@ -1,7 +1,7 @@
 ---
 name: 'Mayowa Abikoye'
 title: 'BlockChain Developer'
-image: '/assets/the-first-elder.jpg'
+image: '/assets/the-first-elder.png'
 twitter: 'https://twitter.com/The_First_Elder'
 github: 'https://github.com/catherine-chisom'
 linkedin: 'https://github.com/the-first-elder'
