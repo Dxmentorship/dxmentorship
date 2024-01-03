@@ -184,12 +184,126 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"cohort": {
+		"alumni": {
+"blessing.md": {
+	id: "blessing.md";
+  slug: "blessing";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"damilola.md": {
+	id: "damilola.md";
+  slug: "damilola";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"darko.md": {
+	id: "darko.md";
+  slug: "darko";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"desmond.md": {
+	id: "desmond.md";
+  slug: "desmond";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"gloria.md": {
+	id: "gloria.md";
+  slug: "gloria";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"harpreet.md": {
+	id: "harpreet.md";
+  slug: "harpreet";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
 "joshua.md": {
 	id: "joshua.md";
   slug: "joshua";
   body: string;
-  collection: "cohort";
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"khadijah.md": {
+	id: "khadijah.md";
+  slug: "khadijah";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"maryblessing.md": {
+	id: "maryblessing.md";
+  slug: "maryblessing";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"olanetsoft.md": {
+	id: "olanetsoft.md";
+  slug: "olanetsoft";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"reet.md": {
+	id: "reet.md";
+  slug: "reet";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"teri.md": {
+	id: "teri.md";
+  slug: "teri";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+};
+"cohort-3": {
+"amara.md": {
+	id: "amara.md";
+  slug: "amara";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"david.md": {
+	id: "david.md";
+  slug: "david";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"joshua.md": {
+	id: "joshua.md";
+  slug: "joshua";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"ngozi_peace.md": {
+	id: "ngozi_peace.md";
+  slug: "ngozi_peace";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"wachiou.md": {
+	id: "wachiou.md";
+  slug: "wachiou";
+  body: string;
+  collection: "cohort-3";
   data: any
 } & { render(): Render[".md"] };
 "ojochogwu.md": {
@@ -295,92 +409,6 @@ declare module 'astro:content' {
   body: string;
   collection: "graduates";
   data: InferEntrySchema<"graduates">
-} & { render(): Render[".md"] };
-};
-"mentees": {
-"blessing.md": {
-	id: "blessing.md";
-  slug: "blessing";
-  body: string;
-  collection: "mentees";
-  data: any
-} & { render(): Render[".md"] };
-"damilola.md": {
-	id: "damilola.md";
-  slug: "damilola";
-  body: string;
-  collection: "mentees";
-  data: any
-} & { render(): Render[".md"] };
-"darko.md": {
-	id: "darko.md";
-  slug: "darko";
-  body: string;
-  collection: "mentees";
-  data: any
-} & { render(): Render[".md"] };
-"desmond.md": {
-	id: "desmond.md";
-  slug: "desmond";
-  body: string;
-  collection: "mentees";
-  data: any
-} & { render(): Render[".md"] };
-"gloria.md": {
-	id: "gloria.md";
-  slug: "gloria";
-  body: string;
-  collection: "mentees";
-  data: any
-} & { render(): Render[".md"] };
-"harpreet.md": {
-	id: "harpreet.md";
-  slug: "harpreet";
-  body: string;
-  collection: "mentees";
-  data: any
-} & { render(): Render[".md"] };
-"joshua.md": {
-	id: "joshua.md";
-  slug: "joshua";
-  body: string;
-  collection: "mentees";
-  data: any
-} & { render(): Render[".md"] };
-"khadijah.md": {
-	id: "khadijah.md";
-  slug: "khadijah";
-  body: string;
-  collection: "mentees";
-  data: any
-} & { render(): Render[".md"] };
-"maryblessing.md": {
-	id: "maryblessing.md";
-  slug: "maryblessing";
-  body: string;
-  collection: "mentees";
-  data: any
-} & { render(): Render[".md"] };
-"olanetsoft.md": {
-	id: "olanetsoft.md";
-  slug: "olanetsoft";
-  body: string;
-  collection: "mentees";
-  data: any
-} & { render(): Render[".md"] };
-"reet.md": {
-	id: "reet.md";
-  slug: "reet";
-  body: string;
-  collection: "mentees";
-  data: any
-} & { render(): Render[".md"] };
-"teri.md": {
-	id: "teri.md";
-  slug: "teri";
-  body: string;
-  collection: "mentees";
-  data: any
 } & { render(): Render[".md"] };
 };
 "mentors": {
