@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { AstroSeo } from '@astrolib/seo';
 export async function getStaticPaths() {
-  const blogEntries = await getCollection('cohort-3');
+  const blogEntries = await getCollection('alumni');
 
   return blogEntries.map((entry) => ({
     params: { slug: entry.slug },
