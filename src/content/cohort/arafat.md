@@ -10,8 +10,8 @@ cohort: '3'
 ---
 
 <div>
-  ⭐ I am  a software backend and infrastructre Engineer at Phace Company. I have contributed to open source technical writing program at section.io, where i wrote and review alot of blogs by developers from around the world. <br/>
-  👻 Currently, i am a senior in the C.S.E department at Obafemi Awolowo University Ile-Ife, Nigeria. As an undergraduate, i have had several years of teachning experience in both high school and undergraduate levels.<br/>
+  ⭐ I am  a software backend and infrastructre Engineer. I have contributed to open source technical writing program at section.io, where i wrote and review alot of blogs by developers from around the world. <br/>
+  👻 Currently, i am a senior in the C.S.E department at Obafemi Awolowo University Ile-Ife, Nigeria. As an undergraduate, i have had several years of teaching experience in both high school and undergraduate levels.<br/>
   💜 I belong to Amazon Web Services community of builders where i answer technical questions, write about software containers solutions on the cloud e.t.c. I am also a Certified Kubernetes Developer(CKD) and an associate Google Cloud Platform engineer. 
 </div>
 
