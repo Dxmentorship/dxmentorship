@@ -192,6 +192,13 @@ declare module 'astro:content' {
   collection: "cohort";
   data: any
 } & { render(): Render[".md"] };
+"ngozi_peace.md": {
+	id: "ngozi_peace.md";
+  slug: "ngozi_peace";
+  body: string;
+  collection: "cohort";
+  data: any
+} & { render(): Render[".md"] };
 };
 "curriculum": {
 "community-building.md": {
