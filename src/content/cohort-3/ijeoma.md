@@ -1,6 +1,6 @@
 ---
 Name: 'Ijeoma Igboagu'
-Title: 'Web Developer | Technical writer'
+Title: 'Web Developer | Technical Writer'
 Image: '/assets/ijeoma.jpg'
 Twitter: 'https://twitter.com/ijaydimples'
 GitHub: 'https://github.com/ijayhub'
