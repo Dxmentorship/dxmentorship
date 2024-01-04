@@ -3,7 +3,7 @@ name: 'Adefisayo Adejumo'
 title: 'Software Engineer'
 image: '/assets/adefisayo.jpeg'
 github: 'https://github.com/Beloved1310'
-twitter: 'https://twitter.com/deoluwafisayomi
+twitter: 'https://twitter.com/deoluwafisayomi'
 website: 'https://adeoluwafisayomi.vzy.io/'
 ---
 
