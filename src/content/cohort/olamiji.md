@@ -3,6 +3,7 @@ name: 'Olamiji Badmos'
 title: 'Front end developer'
 image: '/assets/olamijiBadmos.jpg'
 github: 'https://github.com/thebadmos'
+twitter: 'https://twitter.com/mijiblac_'
 linkedin: 'https://www.linkedin.com/in/olamijibadmos/'
 cohort: '3'
 ---
