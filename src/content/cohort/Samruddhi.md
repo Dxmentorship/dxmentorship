@@ -1,7 +1,7 @@
 ---
 name: 'Samruddhi Sangale'
 title: 'Associate'
-image: '/assets/koha.jpg'
+image: '/assets/Samruddhi.JPG'
 twitter: 'https://twitter.com/Samruddhi0909'
 github: 'https://github.com/samrudhi0909'
 linkedin: 'https://www.linkedin.com/in/samruddhi-sangale-21680a1b1/'
