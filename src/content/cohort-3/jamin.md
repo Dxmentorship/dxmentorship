@@ -9,6 +9,6 @@ website: 'https://jamiin.com'
 cohort: '3'
 ---
 
-Jamin is software engineer and technical writer passionate about open-source, web development, and blockchain technologies.
+Jamin is software engineer and technical writer passionate about open-source, web development, and web3 technologies.
 
 He helps developers by breaking down complex concepts and communicating them clearly and concisely. Having an affinity for helping other developers, he also leads developer initiatives and developer-focused communities.
