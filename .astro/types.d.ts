@@ -270,9 +270,21 @@ declare module 'astro:content' {
   data: any
 } & { render(): Render[".md"] };
 };
-"cohort": {
-};
 "cohort-3": {
+"Chisom.md": {
+	id: "Chisom.md";
+  slug: "chisom";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"Wisdom.md": {
+	id: "Wisdom.md";
+  slug: "wisdom";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
 "amara.md": {
 	id: "amara.md";
   slug: "amara";
@@ -283,6 +295,13 @@ declare module 'astro:content' {
 "david.md": {
 	id: "david.md";
   slug: "david";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"geoffrey.md": {
+	id: "geoffrey.md";
+  slug: "geoffrey";
   body: string;
   collection: "cohort-3";
   data: any
@@ -463,7 +482,9 @@ declare module 'astro:content' {
 	};
 
 	type DataEntryMap = {
-		
+		"cohort": {
+};
+
 	};
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
