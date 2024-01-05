@@ -1,6 +1,6 @@
 ---
 name: 'Abdulazeez Apata'
-title: 'Developer Advocate'
+title: 'Frontend developer'
 image: '/assets/Abdulazeez.jpg'
 twitter: 'https://twitter.com/officialapata'
 github: 'https://github.com/Apatakayuss'
