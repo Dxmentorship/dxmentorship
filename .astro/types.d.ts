@@ -270,9 +270,21 @@ declare module 'astro:content' {
   data: any
 } & { render(): Render[".md"] };
 };
-"cohort": {
-};
 "cohort-3": {
+"Abdulazeez.md": {
+	id: "Abdulazeez.md";
+  slug: "abdulazeez";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"Chisom.md": {
+	id: "Chisom.md";
+  slug: "chisom";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
 "amara.md": {
 	id: "amara.md";
   slug: "amara";
