@@ -8,6 +8,7 @@
 /forms/contact          /forms/contact/index.html          200
 /apply/success          /apply/success/index.html          200
 /apply                  /apply/index.html                  200
+/alumni                 /alumni/index.html                 200
 /success                /success/index.html                200
 /rss.xml                /rss.xml                           200
 /mentees                /mentees/index.html                200
@@ -22,4 +23,5 @@
 /_image                 /.netlify/functions/entry          200
 /tags/:tag              /tags/:tag/index.html              200
 /blog/*                 /blog/*/index.html                 200
+/alumni/*               /alumni/*/index.html               200
 /mentees/*              /mentees/*/index.html              200
