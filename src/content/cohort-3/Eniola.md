@@ -21,6 +21,6 @@ cohort: '3'
   </div>
 
 <div class="mt-4">
-  ⁋Eniola is currently helping tech newbies navigate the tech sphere by connecting them to resources, hosting informative sessions, and providing the guidance that they seek.❤ <br/>
+  ⭐Eniola is currently helping tech newbies navigate the tech sphere by connecting them to resources, hosting informative sessions, and providing the guidance that they seek.❤ <br/>
   When Eniola is not doing tech stuff, you can find her hands smudged with paint; using her paintbrushes to create strokes on a canvas in a bid to bring her imagination to life.😊❤
 </div>
