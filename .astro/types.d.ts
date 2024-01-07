@@ -285,6 +285,16 @@ declare module 'astro:content' {
   collection: "cohort-3";
   data: any
 } & { render(): Render[".md"] };
+<<<<<<< Astra
+=======
+"Eniola.md": {
+	id: "Eniola.md";
+  slug: "eniola";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+>>>>>>> main
 "Wisdom.md": {
 	id: "Wisdom.md";
   slug: "wisdom";
