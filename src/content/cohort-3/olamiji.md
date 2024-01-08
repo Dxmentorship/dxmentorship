@@ -1,6 +1,6 @@
 ---
 name: 'Olamiji Badmos'
-title: 'Front end developer'
+title: 'Front-end developer'
 image: '/assets/olamijiBadmos.jpg'
 github: 'https://github.com/thebadmos'
 twitter: 'https://twitter.com/mijiblac_'
