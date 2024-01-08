@@ -185,6 +185,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"alumni": {
+"alhassan-joshua.md": {
+	id: "alhassan-joshua.md";
+  slug: "alhassan-joshua";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
 "blessing.md": {
 	id: "blessing.md";
   slug: "blessing";
@@ -271,6 +278,13 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "cohort": {
+"Samruddhi.md": {
+	id: "Samruddhi.md";
+  slug: "samruddhi";
+  body: string;
+  collection: "cohort";
+  data: any
+} & { render(): Render[".md"] };
 "Stacy.md": {
 	id: "Stacy.md";
   slug: "stacy";
@@ -280,6 +294,13 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "cohort-3": {
+"Abdulazeez.md": {
+	id: "Abdulazeez.md";
+  slug: "abdulazeez";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
 "Chisom.md": {
 	id: "Chisom.md";
   slug: "chisom";
@@ -290,6 +311,20 @@ declare module 'astro:content' {
 "Eniola.md": {
 	id: "Eniola.md";
   slug: "eniola";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"Gorretti.md": {
+	id: "Gorretti.md";
+  slug: "gorretti";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"Samruddhi.md": {
+	id: "Samruddhi.md";
+  slug: "samruddhi";
   body: string;
   collection: "cohort-3";
   data: any
@@ -318,6 +353,20 @@ declare module 'astro:content' {
 "amara.md": {
 	id: "amara.md";
   slug: "amara";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"anuoluwapo.md": {
+	id: "anuoluwapo.md";
+  slug: "anuoluwapo";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"arafat.md": {
+	id: "arafat.md";
+  slug: "arafat";
   body: string;
   collection: "cohort-3";
   data: any
@@ -353,6 +402,20 @@ declare module 'astro:content' {
 "ella.md": {
 	id: "ella.md";
   slug: "ella";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"ijeoma.md": {
+	id: "ijeoma.md";
+  slug: "ijeoma";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"jamin.md": {
+	id: "jamin.md";
+  slug: "jamin";
   body: string;
   collection: "cohort-3";
   data: any
