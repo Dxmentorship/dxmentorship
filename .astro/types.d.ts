@@ -239,6 +239,15 @@ declare module 'astro:content' {
         data: any;
       } & { render(): Render['.md'] };
     };
+    cohort: {
+      'Stacy.md': {
+        id: 'Stacy.md';
+        slug: 'stacy';
+        body: string;
+        collection: 'cohort';
+        data: any;
+      } & { render(): Render['.md'] };
+    };
     'cohort-3': {
       'Chisom.md': {
         id: 'Chisom.md';
@@ -254,9 +263,23 @@ declare module 'astro:content' {
         collection: 'cohort-3';
         data: any;
       } & { render(): Render['.md'] };
+      'Wisdom-Ngwueche.md': {
+        id: 'Wisdom-Ngwueche.md';
+        slug: 'wisdom-ngwueche';
+        body: string;
+        collection: 'cohort-3';
+        data: any;
+      } & { render(): Render['.md'] };
       'Wisdom.md': {
         id: 'Wisdom.md';
         slug: 'wisdom';
+        body: string;
+        collection: 'cohort-3';
+        data: any;
+      } & { render(): Render['.md'] };
+      'akshat.md': {
+        id: 'akshat.md';
+        slug: 'akshat';
         body: string;
         collection: 'cohort-3';
         data: any;
@@ -282,6 +305,13 @@ declare module 'astro:content' {
         collection: 'cohort-3';
         data: any;
       } & { render(): Render['.md'] };
+      'danyal.md': {
+        id: 'danyal.md';
+        slug: 'danyal';
+        body: string;
+        collection: 'cohort-3';
+        data: any;
+      } & { render(): Render['.md'] };
       'david.md': {
         id: 'david.md';
         slug: 'david';
@@ -289,9 +319,9 @@ declare module 'astro:content' {
         collection: 'cohort-3';
         data: any;
       } & { render(): Render['.md'] };
-      'geoffrey.md': {
-        id: 'geoffrey.md';
-        slug: 'geoffrey';
+      'ella.md': {
+        id: 'ella.md';
+        slug: 'ella';
         body: string;
         collection: 'cohort-3';
         data: any;
@@ -313,6 +343,13 @@ declare module 'astro:content' {
       'ojochogwu.md': {
         id: 'ojochogwu.md';
         slug: 'ojochogwu';
+        body: string;
+        collection: 'cohort-3';
+        data: any;
+      } & { render(): Render['.md'] };
+      'stacy.md': {
+        id: 'stacy.md';
+        slug: 'stacy';
         body: string;
         collection: 'cohort-3';
         data: any;
