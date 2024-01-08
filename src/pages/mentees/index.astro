@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-const allPosts = await getCollection('cohort-3');
+const Mentees = await getCollection('cohort-3');
 import CtaFive from '../../components/newsletter/Newsletter.astro';
 import EntriesOne from '../../components/entries/EntriesOne.astro';
 import { AstroSeo } from '@astrolib/seo';
@@ -59,17 +59,15 @@ Use AstroSeo in all the pages you want different Seo than the index page
       <div class="py-24">
         <ol class="grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2" role="list">
           {
-            allPosts
-              .slice()
-              .map((post) => (
-                <MenteeCard
-                  url={'/mentees/' + post.slug}
-                  name={post.data.name}
-                  description={post.data.description}
-                  image={post.data.image}
-                  title={post.data.title}
-                />
-              ))
+            Mentees.slice().map((mentee) => (
+              <MenteeCard
+                url={'/mentees/' + mentee.slug}
+                name={mentee.data.name}
+                description={mentee.data.description}
+                image={mentee.data.image}
+                title={mentee.data.title}
+              />
+            ))
           }
         </ol>
       </div>
