@@ -152,6 +152,7 @@ declare module 'astro:content' {
     ReturnTypeOrOriginal<Required<ContentConfig['collections'][C]>['schema']>
   >;
 
+
   type ContentEntryMap = {
     alumni: {
       'blessing.md': {
@@ -507,6 +508,7 @@ declare module 'astro:content' {
     };
   };
 
+
   type DataEntryMap = {
     cohort: {};
   };
@@ -514,4 +516,5 @@ declare module 'astro:content' {
   type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
   type ContentConfig = typeof import('../src/content/config');
+
 }
