@@ -1,6 +1,6 @@
 ---
 name: 'Mayowa Abikoye'
-title: 'BlockChain Developer'
+title: 'Web3 Security Researcher'
 image: '/assets/the-first-elder.png'
 twitter: 'https://twitter.com/The_First_Elder'
 github: 'https://github.com/catherine-chisom'
