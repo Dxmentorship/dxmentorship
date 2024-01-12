@@ -315,6 +315,13 @@ declare module 'astro:content' {
   collection: "cohort-3";
   data: any
 } & { render(): Render[".md"] };
+"Favour.md": {
+	id: "Favour.md";
+  slug: "favour";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
 "Gorretti.md": {
 	id: "Gorretti.md";
   slug: "gorretti";
