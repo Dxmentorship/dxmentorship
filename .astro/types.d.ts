@@ -278,6 +278,13 @@ declare module 'astro:content' {
   collection: "cohort-3";
   data: any
 } & { render(): Render[".md"] };
+"Wisdom.md": {
+	id: "Wisdom.md";
+  slug: "wisdom";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
 "amara.md": {
 	id: "amara.md";
   slug: "amara";
@@ -292,6 +299,13 @@ declare module 'astro:content' {
   collection: "cohort-3";
   data: any
 } & { render(): Render[".md"] };
+"daniel.md": {
+	id: "daniel.md";
+  slug: "daniel";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
 "david.md": {
 	id: "david.md";
   slug: "david";
@@ -302,6 +316,13 @@ declare module 'astro:content' {
 "joshua.md": {
 	id: "joshua.md";
   slug: "joshua";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"musab.md": {
+	id: "musab.md";
+  slug: "musab";
   body: string;
   collection: "cohort-3";
   data: any
