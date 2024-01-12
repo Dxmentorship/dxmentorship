@@ -10,13 +10,13 @@ cohort: '3'
 ---
 
 <div>
-  ⭐ I am  a software backend and infrastructre Engineer at Phace Company. I have contributed to open source technical writing program at section.io, where i wrote and review alot of blogs by developers from around the world. <br/>
-  👻 Currently, i am a senior in the C.S.E department at Obafemi Awolowo University Ile-Ife, Nigeria. As an undergraduate, i have had several years of teachning experience in both high school and undergraduate levels.<br/>
-  💜 I belong to Amazon Web Services community of builders where i answer technical questions, write about software containers solutions on the cloud e.t.c. I am also a Certified Kubernetes Developer(CKD) and an associate Google Cloud Platform engineer. 
+  ⭐ I am  a software infrastructure engineer, currently open to a new role. I have contributed to the open-source technical writing program at section.io, where I wrote and reviewed a lot of blogs by developers from around the world. <br/>
+  👻 Currently, I am a senior in the C.S.E department at Obafemi Awolowo University Ile-Ife, Nigeria. As an undergraduate, I have had several years of teaching experience in both high school and undergraduate levels.<br/>
+  💜 I belong to the Amazon Web Services community of builders where I answer technical questions, write about software container solutions on the cloud etc. I am also a Certified Kubernetes Developer(CKD) and an associate Google Cloud Platform engineer. 
 </div>
 
 <div class="mt-4">
-  🏄‍♀️ <p>As a cloud native software developer, I am looking forward to transitioning into developer relations and experience career where i advocate on cloud native infrastructure and distributed systems to wider audience.</p>
+  🏄‍♀️ <p>As a cloud-native software developer, I am looking forward to transitioning into developer relations and experience career where I advocate cloud-native infrastructure and distributed systems to a wider audience.</p>
 
 🏄‍♀️ At the end of DXMentorship cohort 3, I would have learned the following;
 
