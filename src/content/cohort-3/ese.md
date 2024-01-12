@@ -1,7 +1,7 @@
 ---
 name: 'Ese Monday'
 title: 'Frontend Engineer| Technical writer'
-image: '/assets/ijeoma.jpg'
+image: '/assets/ese.jpg'
 twitter: 'https://twitter.com/EseMonday1'
 github: 'https://github.com/ESE-MONDAY'
 linkedIn: 'https://www.linkedin.com/in/ese-monday/'
