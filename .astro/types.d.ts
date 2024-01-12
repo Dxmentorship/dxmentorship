@@ -448,6 +448,13 @@ declare module 'astro:content' {
   collection: "cohort-3";
   data: any
 } & { render(): Render[".md"] };
+"musab.md": {
+	id: "musab.md";
+  slug: "musab";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
 "ngozi_peace.md": {
 	id: "ngozi_peace.md";
   slug: "ngozi_peace";
