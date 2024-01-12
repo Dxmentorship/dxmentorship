@@ -185,6 +185,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"alumni": {
+"alhassan-joshua.md": {
+	id: "alhassan-joshua.md";
+  slug: "alhassan-joshua";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
 "blessing.md": {
 	id: "blessing.md";
   slug: "blessing";
@@ -270,10 +277,61 @@ declare module 'astro:content' {
   data: any
 } & { render(): Render[".md"] };
 };
+"cohort": {
+"Samruddhi.md": {
+	id: "Samruddhi.md";
+  slug: "samruddhi";
+  body: string;
+  collection: "cohort";
+  data: any
+} & { render(): Render[".md"] };
+"Stacy.md": {
+	id: "Stacy.md";
+  slug: "stacy";
+  body: string;
+  collection: "cohort";
+  data: any
+} & { render(): Render[".md"] };
+};
 "cohort-3": {
+"Abdulazeez.md": {
+	id: "Abdulazeez.md";
+  slug: "abdulazeez";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
 "Chisom.md": {
 	id: "Chisom.md";
   slug: "chisom";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"Eniola.md": {
+	id: "Eniola.md";
+  slug: "eniola";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"Gorretti.md": {
+	id: "Gorretti.md";
+  slug: "gorretti";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"Samruddhi.md": {
+	id: "Samruddhi.md";
+  slug: "samruddhi";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"Wisdom-Ngwueche.md": {
+	id: "Wisdom-Ngwueche.md";
+  slug: "wisdom-ngwueche";
   body: string;
   collection: "cohort-3";
   data: any
@@ -285,9 +343,30 @@ declare module 'astro:content' {
   collection: "cohort-3";
   data: any
 } & { render(): Render[".md"] };
+"akshat.md": {
+	id: "akshat.md";
+  slug: "akshat";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
 "amara.md": {
 	id: "amara.md";
   slug: "amara";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"anuoluwapo.md": {
+	id: "anuoluwapo.md";
+  slug: "anuoluwapo";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"arafat.md": {
+	id: "arafat.md";
+  slug: "arafat";
   body: string;
   collection: "cohort-3";
   data: any
@@ -306,9 +385,44 @@ declare module 'astro:content' {
   collection: "cohort-3";
   data: any
 } & { render(): Render[".md"] };
+"danyal.md": {
+	id: "danyal.md";
+  slug: "danyal";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
 "david.md": {
 	id: "david.md";
   slug: "david";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"ella.md": {
+	id: "ella.md";
+  slug: "ella";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"geoffrey.md": {
+	id: "geoffrey.md";
+  slug: "geoffrey";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"ijeoma.md": {
+	id: "ijeoma.md";
+  slug: "ijeoma";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"jamin.md": {
+	id: "jamin.md";
+  slug: "jamin";
   body: string;
   collection: "cohort-3";
   data: any
@@ -337,6 +451,20 @@ declare module 'astro:content' {
 "ojochogwu.md": {
 	id: "ojochogwu.md";
   slug: "ojochogwu";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"olamiji.md": {
+	id: "olamiji.md";
+  slug: "olamiji";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"stacy.md": {
+	id: "stacy.md";
+  slug: "stacy";
   body: string;
   collection: "cohort-3";
   data: any
