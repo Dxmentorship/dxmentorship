@@ -10,6 +10,6 @@ website: 'https://dev.to/miracool'
 
 Makanju Oluwafemi is passionate about knowledge sharing, particularly in web engineering.
 <br><br>
-He is a seasoned technical writer with a track record of producing user-friendly content for a variety of audiences. He is adept at translating complicated ideas into a simple, concise guide.
+He is a frontend engineer and a seasoned technical writer with a track record of producing user-friendly content for a variety of audiences. He is adept at translating complicated ideas into a simple, concise guide.
 <br><br>
 His goal is to improve developer experience and comprehension by creating clear documentation for software applications.
