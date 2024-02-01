@@ -1,4 +1,4 @@
-# Contributing to dxmentorship.com Rebuild
+# Contributing to dxmentorship.com
 
 Thank you for your interest in contributing to the dxmentorship.com rebuild project. We welcome your contributions to help make the project more efficient, user-friendly, and informative for mentees.
 
