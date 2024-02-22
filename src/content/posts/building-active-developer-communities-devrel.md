@@ -45,7 +45,7 @@ In addition, introducing engaging elements such as themed discussion topics, mon
 
 To foster developer engagement and loyalty, it's crucial to offer a wealth of valuable resources, including meticulously crafted documentation, insightful tutorials, exemplary sample code, and detailed API references.
 
-For a deeper dive into creating effective technical documentation, be sure to explore our dedicated article on the topic [How to Create Effective Technical Documentation for Developers](https://docs.google.com/document/d/1JGyEVtD6w6xbWWLZQ0AphN6fz-sraLRaBcyRGE-NUxI/edit?usp=sharing)
+For a deeper dive into creating effective technical documentation, be sure to explore our dedicated article on the topic [How to Create Effective Technical Documentation for Developers](https://dxmentorship.com/blog/effective-technical-documentation-developersohort)
 
 These resources should not only be easily accessible but also undergo regular updates to stay in sync with the evolving needs of a vibrant developer community.
 
