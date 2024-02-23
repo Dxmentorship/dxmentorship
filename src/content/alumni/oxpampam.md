@@ -1,7 +1,7 @@
 ---
 name: ' Ayomitan Pamilerin '
 title: 'Developer Advocate @Klaytn'
-image: '/dist/assets/oxpampam.png'
+image: '/assets/oxpampam.jpeg'
 github: 'https://github.com/AyDeveloper'
 twitter: 'https://twitter.com/oxpampam'
 linkedin: 'https://www.linkedin.com/in/oxpampam/'
