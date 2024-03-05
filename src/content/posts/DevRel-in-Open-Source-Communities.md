@@ -133,3 +133,4 @@ Nonetheless, issues with managing community expectations, quantifying impact, an
 
 Fundamentally, DevRel's future in open-source communities rests on its capacity to innovate, change, and adapt to the demands of the community and the rapidly advancing state of technology. Open-source initiatives are positioned to have a long-lasting influence and to succeed with sustained cooperation and effort.
 
+> Contributed by Clan two of the Third Cohort of [Dxmentorship](https://dxmentorship.com)
