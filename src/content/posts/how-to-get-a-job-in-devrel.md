@@ -34,4 +34,29 @@ As a DevRel professional, companies hire you to create and maintain a positive r
 
 Building a strong relationship with the developers fosters trust, loyalty, and collaboration, which are essential for long-term success. You can create a healthy relationship with the developers by being open to feedback on the product and ensuring each one is reviewed and acted upon. This shows that the users are valued and their needs are top priority.
 
+### Developer Education and Content Creation
+DevRel professionals are responsible for providing educational resources and creating content that empowers developers to understand and use the company's products effectively.
+
+Through tutorials, video content, webinars, blog posts, and other materials, as a DevRel, you are charged with equipping developers with the knowledge needed to overcome challenges and innovate with the company's products. 
+
+### Community Building and Management
+DevRel plays a crucial role in building and managing a vibrant developer community around a company's products. They facilitate connections, knowledge-sharing, and collaboration among developers by organizing events, hackathons, and other engaging activities. 
+
+The developers' community provides valuable support, networking opportunities, and peer-to-peer learning experiences. Additionally, it can aid the company's hiring processes by identifying developers who understand the product, are very passionate about it, and would love to contribute to the growth of the company's product to become a part of the team.
+
+### Technical and API Documentation
+DevRel ensures that technical documentation and API resources are clear, comprehensive, and easily accessible to developers. Well-documented APIs create a smooth developer experience, enabling developers to use the company's technologies more efficiently. 
+
+Developers should not need to contact the support team to carry out basic tasks. All the product's functionalities should be easily accessible to developers in a clear and comprehensive format. By providing accurate and up-to-date documentation, DevRel enhances the developer experience and encourages widespread adoption of the company's products.
+
+### Developers' Marketing and Influencing
+DevRel serves as a liaison between developers and the broader marketing efforts of the company. By sharing developers' success stories, advocating for their needs, and showcasing innovative projects, DevRel influences how the company is perceived within the developer community and beyond. 
+
+A DevRel professional strengthens the company's brand reputation and shapes the product development priorities and strategies to serve the needs of developers.
+
+## How to get jobs in DevRel
+There are various ways to position yourself for opportunities and land your next job in DevRel. Here, I will highlight multiple ways to achieve this.
+
+### Contributing to open source
+
 > Contributed by [David](https://dxmentorship.com/mentees/david) from Clan Six of the Third Cohort of [Dxmentorship](https://dxmentorship.com)
