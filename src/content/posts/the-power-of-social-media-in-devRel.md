@@ -191,4 +191,4 @@ cultivating relationships, delivering value, and building a trusted presence wit
 on these aspects, companies can truly harness the full potential of social media for lasting success in developer
 relations.
 
->Contributed by Clan Six of the Third Cohort of [Dxmentorship](https://dxmentorship.com)
+> Contributed by Clan Six of the Third Cohort of [Dxmentorship](https://dxmentorship.com)
