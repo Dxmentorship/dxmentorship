@@ -57,6 +57,45 @@ A DevRel professional strengthens the company's brand reputation and shapes the 
 ## How to get jobs in DevRel
 There are various ways to position yourself for opportunities and land your next job in DevRel. Here, I will highlight multiple ways to achieve this.
 
-### Contributing to open source
+### Contributing to Open Source
+Actively contributing to open-source projects related to your areas of interest or expertise can be a great way to make yourself known within the community. It can also be a great plus for you in a job application pool in an organization. 
+
+Open source contributions demonstrate your technical and collaborative skills and commitment to the developer community, all of which are highly valued in DevRel roles.
+
+### Building in Public
+Building in a public is an efficient way to attract opportunities. By sharing your projects, insights, and experiences on social media platforms, companies can easily find you and offer opportunities based on your personality, audience, and interests. 
+
+Documenting your journey showcases your passion and expertise and  allows you to connect with like-minded individuals and potential employers who may notice your work.
+
+### Content Creation
+Creating compelling content such as blog posts, tutorials, videos, or podcasts that showcase your expertise can be a great way to attract opportunities and create a niche within the tech ecosystem. 
+
+Consistent content creation demonstrates your ability to communicate complex concepts effectively and manage a developers' community, which is essential in DevRel roles.
+
+### Networking and Volunteering at Events
+Network with professionals in the industry by attending conferences, meetups, and workshops related to developer relations and even developers' products. 
+
+You can also volunteer as a speaker or organizer at such events to increase your visibility and establish yourself as a credible voice within the community.
+
+### Tailor your Resume to each Job
+Ensure that your resume is tailored according to the job description or company's requirements. Since the activities of a DevRel in a company can be different from another, ensure that the resume highlights the necessary skills needed for the role. 
+
+Also, include cover letters in your applications. Cover letters help you stand out from other applicants and highlight the relevant experiences, skills, and achievements that align with the specific requirements for the role.
+
+### Job boards and LinkedIn
+Set up job alerts on various job boards and be active to ensure you don't miss out on opportunities. Examples of DevRel job boards are  [DevRel Careers](https://devrelcareers.com), [Write the Docs Slack Channel](https://www.writethedocs.org/slack), and many others. Monitoring job postings on these platforms can be beneficial in getting your next DevRel opportunity.
+
+You can also leverage professional networking platforms like LinkedIn to engage with hiring managers and Developer Relations Managers of your preferred companies. Connect with recruiters and actively engage with relevant communities and discussions to expand your network and discover potential job opportunities.
+
+## Conclusion
+Securing your first job in DevRel can seem daunting, but by committing to two or more of the job-hunting techniques discussed in this article, you'll find yourself closer to your next role than you imagine.
+
+Companies developing tools for developers are increasingly recognizing the need for Developer Relations professionals over traditional salespersons. DevRel experts understand developers' needs and can communicate effectively with them to ensure a seamless user experience.
+
+[The DXMentorship founder](https://twitter.com/kenny_io) recently delivered a presentation on how to land your first job in DevRel. Feel free to watch it on YouTube for practical steps on standing out as a beginner.
+
+[![How to get a job in DevRel as a beginner with no experience](https://img.youtube.com/vi/otbgouhppXA/0.jpg)](https://www.youtube.com/watch?v=otbgouhppXA)
+
+Thank you for reading!
 
 > Contributed by [David](https://dxmentorship.com/mentees/david) from Clan Six of the Third Cohort of [Dxmentorship](https://dxmentorship.com)
