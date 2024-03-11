@@ -30,6 +30,8 @@ Companies hire DevRel professionals for various reasons, primarily to create a s
 However, what are these reasons, and how do DevRel professionals create this connection?
 
 ### Fostering Relationships with the Developers
+As a DevRel professional, companies hire you to create and maintain a positive relationship between its products and the users (developers). By offering personalized support and engagement, you can ensure they feel valued and connected to the company's mission.
 
+Building a strong relationship with the developers fosters trust, loyalty, and collaboration, which are essential for long-term success. You can create a healthy relationship with the developers by being open to feedback on the product and ensuring each one is reviewed and acted upon. This shows that the users are valued and their needs are top priority.
 
 > Contributed by [David](https://dxmentorship.com/mentees/david) from Clan Six of the Third Cohort of [Dxmentorship](https://dxmentorship.com)
