@@ -25,6 +25,9 @@ Basically, it's about building an active community around the product and suppor
 A DevRel role can differ depending on the company's needs; some may need DevRel professionals to create clear technical documentation, curate content ideas and demos for developers, attend events and speak at various events, and many others. DevRel roles involve one or more of these activities. However, why do companies need DevRel?
 
 ## Why is DevRel important?
+Companies hire DevRel professionals for various reasons, primarily to create a strong connection between their products and the developer community. 
+
+However, what are these reasons, and how do DevRel professionals create this connection?
 
 
 > Contributed by [David](https://dxmentorship.com/mentees/david) from Clan Six of the Third Cohort of [Dxmentorship](https://dxmentorship.com)
