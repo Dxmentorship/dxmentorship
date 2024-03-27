@@ -36,3 +36,5 @@ Communication is also a powerful marketing tool. By communicating effectively, y
 ## Conclusion
 
 Effective communication in the developer relation(DevRel) is strategic and very important for the prosperity of a technology-based company. It helps to establish relationships based on trust, to share useful information between companies and developers, to break down the barriers that exist between developers and companies, and to build loyalty among developers who will become evangelists for the company's products and services.
+
+Contributed by Clan Six of the Third Cohort of [Dxmentorship](https://dxmentorship.com)
