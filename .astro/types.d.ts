@@ -322,6 +322,13 @@ declare module 'astro:content' {
   collection: "cohort-3";
   data: any
 } & { render(): Render[".md"] };
+"George.md": {
+	id: "George.md";
+  slug: "george";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
 "Gorretti.md": {
 	id: "Gorretti.md";
   slug: "gorretti";
@@ -329,9 +336,44 @@ declare module 'astro:content' {
   collection: "cohort-3";
   data: any
 } & { render(): Render[".md"] };
+"Harpreet.md": {
+	id: "Harpreet.md";
+  slug: "harpreet";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"Ihuoma.md": {
+	id: "Ihuoma.md";
+  slug: "ihuoma";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"IjeomaOnwuka.md": {
+	id: "IjeomaOnwuka.md";
+  slug: "ijeomaonwuka";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"Mayowa-Abikoye.md": {
+	id: "Mayowa-Abikoye.md";
+  slug: "mayowa-abikoye";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
 "Mayowa.md": {
 	id: "Mayowa.md";
   slug: "mayowa";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"Olushola.md": {
+	id: "Olushola.md";
+  slug: "olushola";
   body: string;
   collection: "cohort-3";
   data: any
@@ -385,6 +427,13 @@ declare module 'astro:content' {
   collection: "cohort-3";
   data: any
 } & { render(): Render[".md"] };
+"audrey.md": {
+	id: "audrey.md";
+  slug: "audrey";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
 "catherine.md": {
 	id: "catherine.md";
   slug: "catherine";
@@ -413,9 +462,30 @@ declare module 'astro:content' {
   collection: "cohort-3";
   data: any
 } & { render(): Render[".md"] };
+"deborah.md": {
+	id: "deborah.md";
+  slug: "deborah";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
 "ella.md": {
 	id: "ella.md";
   slug: "ella";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"ese.md": {
+	id: "ese.md";
+  slug: "ese";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"felicia.md": {
+	id: "felicia.md";
+  slug: "felicia";
   body: string;
   collection: "cohort-3";
   data: any
@@ -444,6 +514,13 @@ declare module 'astro:content' {
 "joshua.md": {
 	id: "joshua.md";
   slug: "joshua";
+  body: string;
+  collection: "cohort-3";
+  data: any
+} & { render(): Render[".md"] };
+"makanju.md": {
+	id: "makanju.md";
+  slug: "makanju";
   body: string;
   collection: "cohort-3";
   data: any
@@ -612,9 +689,30 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "posts": {
+"DevRel-in-Open-Source.md": {
+	id: "DevRel-in-Open-Source.md";
+  slug: "devrel-in-open-source";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "announcing-dxmentorship-cohort-3.md": {
 	id: "announcing-dxmentorship-cohort-3.md";
   slug: "announcing-dxmentorship-cohort-3";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"building-active-developer-communities-devrel.md": {
+	id: "building-active-developer-communities-devrel.md";
+  slug: "building-active-developer-communities-devrel";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"effective-technical-documentation-developersohort.md": {
+	id: "effective-technical-documentation-developersohort.md";
+  slug: "effective-technical-documentation-developersohort";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
