@@ -19,24 +19,24 @@ import Blurgradienttop from '../assets/Blurgradienttop.astro';
         <div class="flex flex-col sm:flex-row lg:ml-auto">
           <form id="newsletter-form" method="POST" action="#" class="mt-12 lg:mx-auto sm:flex sm:max-w-lg">
             <div class="flex md:flex-row gap-3 flex-col">
-              <label class="text-white sr-only" for="email-address" class="">Name</label>
+              <label class="text-white sr-only" for="name">Name</label>
               <input
                 type="text"
                 name="name"
                 id="name"
                 autocomplete="name"
                 required
-                class="block w-full h-10 px-4 py-2 text-sm text-indigo-300 bg-transparent border rounded-lg appearance-none border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
+                class="block w-full h-10 px-4 py-2 text-sm text-indigo-300 bg-transparent border rounded-lg appearance-none border-gray-300 placeholder-white/50 focus:border-indigo-400 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
                 placeholder="Enter your name"
               />
-              <label class="sr-only text-white" for="email-address" class="">Email address</label>
+              <label class="sr-only text-white" for="email">Email address</label>
               <input
                 type="email"
                 name="email"
                 id="email"
                 autocomplete="email"
                 required
-                class="block w-full h-10 px-4 py-2 text-sm text-indigo-300 bg-transparent border rounded-lg appearance-none border-white/10 placeholder-white/50 focus:border-indigo-300 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
+                class="block w-full h-10 px-4 py-2 text-sm text-indigo-300 bg-transparent border rounded-lg appearance-none border-gray-300 placeholder-white/50 focus:border-indigo-400 focus:bg-transparent focus:outline-none focus:ring-indigo-300 sm:text-sm"
                 placeholder="Enter your email"
               />
             </div>
@@ -44,8 +44,9 @@ import Blurgradienttop from '../assets/Blurgradienttop.astro';
               <button
                 type="submit"
                 class="flex items-center justify-center w-auto h-10 px-4 py-2 text-sm font-semibold text-white transition-all rounded-lg hover:to-indigo-600 bg-gradient-to-b from-indigo-300 via-indigo-400 to-indigo-500"
-                >Subscribe</button
               >
+                Subscribe
+              </button>
             </div>
           </form>
         </div>

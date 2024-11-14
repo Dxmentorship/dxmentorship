@@ -11,20 +11,20 @@ let mentees = [
 ];
 ---
 
-<section aria-labelledby="Featurethree" id="Featurethree " class="relative">
+<section aria-labelledby="Featurethree" id="Featurethree" class="relative">
   <div class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-12 relative space-y-24 lg:pt-4">
     <div class="max-w-2xl mx-auto lg:text-center">
       <div>
         <p class="mt-32 text-3xl font-normal tracking-tight text-white">Meet some of our Past Mentees</p>
         <p class="text-base mt-2 text-vulcan-300 max-w-sm mx-auto">
-          DxMentorship has contributed to the Journey of these amazing folks
+          DxMentorship has contributed to the journey of these amazing folks
         </p>
       </div>
     </div>
 
     <div class="grid grid-cols-2 lg:text-center gap-6 mt-12 list-none lg:grid-cols-4 lg:gap-12 lg:mt-24">
       {
-        mentees.map((mentee) => (
+        mentees.slice(0, 8).map((mentee) => (
           <a
             href={`/mentees/${mentee.name}`}
             class="hover:shadow-xl duration-200 bg-gradient-to-b from-indigo-500 via-indigo-500/5 rounded-3xl inline-flex p-[0.060rem] shadow-2xl text-center bg-vulcan-900"
@@ -38,11 +38,20 @@ let mentees = [
                 alt={mentee.name}
                 width="560"
               />
-              <p class="text-white py-3 px-1 ">{mentee.name.replace(/^./, mentee.name[0].toUpperCase())}</p>
+              <p class="text-white py-3 px-1 text-lg">{mentee.name.replace(/^./, mentee.name[0].toUpperCase())}</p>
             </div>
           </a>
         ))
       }
+    </div>
+
+    <div class="mt-12 text-center">
+      <a
+        href="/mentees"
+        class="inline-flex items-center justify-center px-6 py-3 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-lg"
+      >
+        Show All Mentees
+      </a>
     </div>
   </div>
 </section>
