@@ -51,10 +51,10 @@ const { Content } = await entry.render();
   }}
 />
 <BaseLayout>
-  <div class="relative bg-white">
+  <div class="relative bg-black">
     <div class="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
       <div class="lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
-        <div class="w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full">
+        <div class="w-full bg-black object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full">
           <div class="flex items-center justify-center h-full">
             <img class="w-1/2 mt-32 h-auto rounded-md shadow-lg object-cover" src={entry.data.image} alt="" />
           </div>
@@ -63,23 +63,23 @@ const { Content } = await entry.render();
       <div
         class="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6 lg:flex lg:flex-row-reverse"
       >
-        <div class="mx-auto max-w-2xl lg:mx-0">
+        <div class="mx-auto max-w-2xl lg:mx-0 text-vulcan-300">
           <div class="hidden sm:mt-32 sm:flex lg:mt-16">
             <div
-              class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+              class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-400 hover:ring-white"
             >
               Follow {entry.data.name} on social media <a
                 href={entry.data.twitter}
-                class="whitespace-nowrap font-semibold text-vulcan-800"
+                class="whitespace-nowrap font-semibold text-blue-400"
                 ><span class="absolute inset-0" aria-hidden="true"></span> Twitter <span aria-hidden="true">&rarr;</span
                 ></a
               >
             </div>
           </div>
-          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl">
+          <h1 class="text-4xl font-bold tracking-tight text-white sm:mt-10 sm:text-6xl">
             {entry.data.name}
           </h1>
-          <p class="mt-6 text-lg leading-8 text-gray-600">
+          <p class="mt-6 text-lg leading-8 text-vulcan-300">
             <Content />
           </p>
           <!-- use the graident of colors associated with each social media platform -->
