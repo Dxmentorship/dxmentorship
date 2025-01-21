@@ -4,7 +4,7 @@ title: 'Developer Advocate'
 image: '/assets/alhassan.jpg'
 github: 'https://github.com/josh-alhassan'
 twitter: 'https://twitter.com/josh_script'
-website: 'https://alhassanjoshua.hashnode.dev/'
+website: 'https://joahua-alhassan.vercel.app/'
 ---
 
 ---
