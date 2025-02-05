@@ -666,9 +666,37 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "mentors": {
+"angie.md": {
+	id: "angie.md";
+  slug: "angie";
+  body: string;
+  collection: "mentors";
+  data: any
+} & { render(): Render[".md"] };
+"chanel.md": {
+	id: "chanel.md";
+  slug: "chanel";
+  body: string;
+  collection: "mentors";
+  data: any
+} & { render(): Render[".md"] };
 "dom.md": {
 	id: "dom.md";
   slug: "dom";
+  body: string;
+  collection: "mentors";
+  data: any
+} & { render(): Render[".md"] };
+"nadar.md": {
+	id: "nadar.md";
+  slug: "nadar";
+  body: string;
+  collection: "mentors";
+  data: any
+} & { render(): Render[".md"] };
+"rizel.md": {
+	id: "rizel.md";
+  slug: "rizel";
   body: string;
   collection: "mentors";
   data: any
@@ -699,6 +727,13 @@ declare module 'astro:content' {
 "announcing-dxmentorship-cohort-3.md": {
 	id: "announcing-dxmentorship-cohort-3.md";
   slug: "announcing-dxmentorship-cohort-3";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"announcing-dxmentorship-cohort-4.md": {
+	id: "announcing-dxmentorship-cohort-4.md";
+  slug: "announcing-dxmentorship-cohort-4";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
