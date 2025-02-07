@@ -673,9 +673,23 @@ declare module 'astro:content' {
   collection: "mentors";
   data: any
 } & { render(): Render[".md"] };
+"bdougie.md": {
+	id: "bdougie.md";
+  slug: "bdougie";
+  body: string;
+  collection: "mentors";
+  data: any
+} & { render(): Render[".md"] };
 "chanel.md": {
 	id: "chanel.md";
   slug: "chanel";
+  body: string;
+  collection: "mentors";
+  data: any
+} & { render(): Render[".md"] };
+"chulo.md": {
+	id: "chulo.md";
+  slug: "chulo";
   body: string;
   collection: "mentors";
   data: any
@@ -687,9 +701,9 @@ declare module 'astro:content' {
   collection: "mentors";
   data: any
 } & { render(): Render[".md"] };
-"nadar.md": {
-	id: "nadar.md";
-  slug: "nadar";
+"lisa.md": {
+	id: "lisa.md";
+  slug: "lisa";
   body: string;
   collection: "mentors";
   data: any
