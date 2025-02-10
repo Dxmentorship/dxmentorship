@@ -3,7 +3,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 const allPosts = await getCollection('alumni');
 import CtaFive from '../../components/newsletter/Newsletter.astro';
-import EntriesOne from '../../components/entries/EntriesOne.astro';
 import { AstroSeo } from '@astrolib/seo';
 import MenteeCard from '../../components/mentees/MenteeCard.astro';
 ---
@@ -12,30 +11,30 @@ import MenteeCard from '../../components/mentees/MenteeCard.astro';
 Use AstroSeo in all the pages you want different Seo than the index page
 -->
 <AstroSeo
-  title="Mentees | DXMentorship"
-  description="Showcase of our previous mentees"
+  title="Alumni | DXMentorship"
+  description="Meet our DXMentorship program graduates"
   canonical="https://www.dxmentorship.com"
   openGraph={{
     url: 'https://www.dxmentorship.com',
-    title: 'DXMentorship Mentees',
-    description: 'Showcase of our previous mentees',
+    title: 'DXMentorship Alumni',
+    description: 'Meet our DXMentorship program graduates',
     images: [
       {
-        url: '/opengraph/mentees-og.png',
+        url: '/opengraph/alumni-og.png',
         width: 1200,
         height: 630,
         alt: 'Social open graph',
         type: 'image/jpeg',
       },
       {
-        url: '/opengraph/mentees-og.png',
+        url: '/opengraph/alumni-og.png',
         width: 4096,
         height: 4096,
         alt: 'Twitter open graph',
         type: 'image/jpeg',
       },
-      { url: '/opengraph/mentees-og.png' },
-      { url: '/opengraph/mentees-og.png' },
+      { url: '/opengraph/alumni-og.png' },
+      { url: '/opengraph/alumni-og.png' },
     ],
     site_name: 'DXMentorship',
   }}
@@ -50,26 +49,26 @@ Use AstroSeo in all the pages you want different Seo than the index page
     <div class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-32 lg:py-36 relative">
       <div class="max-w-2xl">
         <p class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text">
-          Our Past Mentees
-        </p><p class="mt-8 text-4xl font-normal tracking-tighter text-white sm:text-5xl">
-          Mentees from our previous cohorts
+          Our Alumni
+        </p>
+        <p class="mt-8 text-4xl font-normal tracking-tighter text-white sm:text-5xl">Meet Our Program Graduates</p>
+        <p class="mt-4 text-vulcan-300">
+          These talented individuals have successfully completed our DevRel mentorship program and are now making their
+          mark in the industry.
         </p>
       </div>
 
       <div class="py-24">
         <ol class="grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2" role="list">
           {
-            allPosts
-              .slice()
-              .map((post) => (
-                <MenteeCard
-                  url={'/alumni/' + post.slug}
-                  name={post.data.name}
-                  description={post.data.description}
-                  image={post.data.image}
-                  title={post.data.title}
-                />
-              ))
+            allPosts.map((post) => (
+              <MenteeCard
+                url={'/alumni/' + post.slug}
+                name={post.data.name}
+                title={post.data.title}
+                image={post.data.image}
+              />
+            ))
           }
         </ol>
       </div>

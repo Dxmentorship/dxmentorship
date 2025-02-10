@@ -185,9 +185,142 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"alumni": {
+"Abdulazeez.md": {
+	id: "Abdulazeez.md";
+  slug: "abdulazeez";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"Chisom.md": {
+	id: "Chisom.md";
+  slug: "chisom";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"Eniola.md": {
+	id: "Eniola.md";
+  slug: "eniola";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"Favour.md": {
+	id: "Favour.md";
+  slug: "favour";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"George.md": {
+	id: "George.md";
+  slug: "george";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"Gorretti.md": {
+	id: "Gorretti.md";
+  slug: "gorretti";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"Ihuoma.md": {
+	id: "Ihuoma.md";
+  slug: "ihuoma";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"IjeomaOnwuka.md": {
+	id: "IjeomaOnwuka.md";
+  slug: "ijeomaonwuka";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"Mayowa-Abikoye.md": {
+	id: "Mayowa-Abikoye.md";
+  slug: "mayowa-abikoye";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"Mayowa.md": {
+	id: "Mayowa.md";
+  slug: "mayowa";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"Olushola.md": {
+	id: "Olushola.md";
+  slug: "olushola";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"Samruddhi.md": {
+	id: "Samruddhi.md";
+  slug: "samruddhi";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"Wisdom-Ngwueche.md": {
+	id: "Wisdom-Ngwueche.md";
+  slug: "wisdom-ngwueche";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"Wisdom.md": {
+	id: "Wisdom.md";
+  slug: "wisdom";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"akshat.md": {
+	id: "akshat.md";
+  slug: "akshat";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
 "alhassan-joshua.md": {
 	id: "alhassan-joshua.md";
   slug: "alhassan-joshua";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"amara.md": {
+	id: "amara.md";
+  slug: "amara";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"anuoluwapo.md": {
+	id: "anuoluwapo.md";
+  slug: "anuoluwapo";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"arafat.md": {
+	id: "arafat.md";
+  slug: "arafat";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"audrey.md": {
+	id: "audrey.md";
+  slug: "audrey";
   body: string;
   collection: "alumni";
   data: any
@@ -199,9 +332,30 @@ declare module 'astro:content' {
   collection: "alumni";
   data: any
 } & { render(): Render[".md"] };
+"catherine.md": {
+	id: "catherine.md";
+  slug: "catherine";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
 "damilola.md": {
 	id: "damilola.md";
   slug: "damilola";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"daniel.md": {
+	id: "daniel.md";
+  slug: "daniel";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"danyal.md": {
+	id: "danyal.md";
+  slug: "danyal";
   body: string;
   collection: "alumni";
   data: any
@@ -213,9 +367,51 @@ declare module 'astro:content' {
   collection: "alumni";
   data: any
 } & { render(): Render[".md"] };
+"david.md": {
+	id: "david.md";
+  slug: "david";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"deborah.md": {
+	id: "deborah.md";
+  slug: "deborah";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
 "desmond.md": {
 	id: "desmond.md";
   slug: "desmond";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"ella.md": {
+	id: "ella.md";
+  slug: "ella";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"ese.md": {
+	id: "ese.md";
+  slug: "ese";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"felicia.md": {
+	id: "felicia.md";
+  slug: "felicia";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"geoffrey.md": {
+	id: "geoffrey.md";
+  slug: "geoffrey";
   body: string;
   collection: "alumni";
   data: any
@@ -234,6 +430,20 @@ declare module 'astro:content' {
   collection: "alumni";
   data: any
 } & { render(): Render[".md"] };
+"ijeoma.md": {
+	id: "ijeoma.md";
+  slug: "ijeoma";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"jamin.md": {
+	id: "jamin.md";
+  slug: "jamin";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
 "joshua.md": {
 	id: "joshua.md";
   slug: "joshua";
@@ -248,9 +458,44 @@ declare module 'astro:content' {
   collection: "alumni";
   data: any
 } & { render(): Render[".md"] };
+"makanju.md": {
+	id: "makanju.md";
+  slug: "makanju";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
 "maryblessing.md": {
 	id: "maryblessing.md";
   slug: "maryblessing";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"musab.md": {
+	id: "musab.md";
+  slug: "musab";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"ngozi_peace.md": {
+	id: "ngozi_peace.md";
+  slug: "ngozi_peace";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"ojochogwu.md": {
+	id: "ojochogwu.md";
+  slug: "ojochogwu";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"olamiji.md": {
+	id: "olamiji.md";
+  slug: "olamiji";
   body: string;
   collection: "alumni";
   data: any
@@ -269,9 +514,23 @@ declare module 'astro:content' {
   collection: "alumni";
   data: any
 } & { render(): Render[".md"] };
+"stacy.md": {
+	id: "stacy.md";
+  slug: "stacy";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
 "teri.md": {
 	id: "teri.md";
   slug: "teri";
+  body: string;
+  collection: "alumni";
+  data: any
+} & { render(): Render[".md"] };
+"wachiou.md": {
+	id: "wachiou.md";
+  slug: "wachiou";
   body: string;
   collection: "alumni";
   data: any

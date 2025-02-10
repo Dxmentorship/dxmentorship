@@ -16,5 +16,5 @@ website: 'https://koha.hashnode.dev'
 </div>
 
 <div class="mt-4">
-  🏄‍♀️ Currently advocating for decentralized Identities and data sovereignity on the global planes via #10daysofdevrel with #Web5
+  🏄‍♀️ Currently advocating for decentralized Identities and data self-sovereignity on the global planes via #10daysofdevrel with #Web5
 </div>
