@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from "@tailwindcss/vite";
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 import netlify from "@astrojs/netlify/functions";
@@ -7,6 +7,9 @@ import netlify from "@astrojs/netlify/functions";
 // https://astro.build/config
 export default defineConfig({
   output: 'hybrid',
+  vite: {
+    plugins: [tailwindcss()],
+  },
   markdown: {
     drafts: true,
     shikiConfig: {
@@ -19,7 +22,7 @@ export default defineConfig({
     drafts: true
   },
   site: 'https://dxmentorship.com',
-  integrations: [tailwind(), sitemap(), mdx()],
+  integrations: [sitemap(), mdx()],
   adapter: netlify()
 });
 export const prerender = false;
