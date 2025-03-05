@@ -2,13 +2,24 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { AstroSeo } from '@astrolib/seo';
+
 export async function getStaticPaths() {
-  const blogEntries = await getCollection('cohort-3');
+  const blogEntries = await getCollection('cohort-4');
 
   return blogEntries.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
   }));
+}
+
+export async function getStaticProps({ params }) {
+  const entry = await getCollection('cohort-4').findOne({ slug: params.slug });
+
+  return {
+    props: {
+      entry,
+    },
+  };
 }
 
 const { entry } = Astro.props;
@@ -82,11 +93,10 @@ const { Content } = await entry.render();
           <p class="mt-6 text-lg leading-8 text-gray-600">
             <Content />
           </p>
-          <!-- use the graident of colors associated with each social media platform -->
           <div class="mt-10 flex items-center gap-x-3">
             <a
               href={entry.data.github}
-              class="rounded-md bg-vulcan-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-vulcan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vulcan-600"
+              class="rounded-md bg-vulcan-600 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-vulcan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vulcan-600"
               >Github</a
             >
             {

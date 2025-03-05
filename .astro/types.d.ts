@@ -827,6 +827,15 @@ declare module 'astro:content' {
   data: any
 } & { render(): Render[".md"] };
 };
+"cohort-4": {
+"Aileen.md": {
+	id: "Aileen.md";
+  slug: "aileen";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+};
 "curriculum": {
 "community-building.md": {
 	id: "community-building.md";
