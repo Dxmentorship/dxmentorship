@@ -53,9 +53,25 @@ const graduatesCollection = defineCollection({
   }),
 });
 
+const menteesCollection = defineCollection({
+  schema: z.object({
+    name: z.string(),
+    title: z.string(),
+    image: z.string(),
+    twitter: z.string().optional(),
+    github: z.string().optional(),
+    linkedin: z.string().optional(),
+    website: z.string().optional(),
+    cohort: z.number(),
+    goals: z.array(z.string()).optional(),
+    currentStatus: z.string().optional(),
+  }),
+});
+
 export const collections = {
   posts: postsCollection,
   faqs: faqsCollection,
   curriculum: curriculumCollection,
   graduates: graduatesCollection,
+  mentees: menteesCollection,
 };
