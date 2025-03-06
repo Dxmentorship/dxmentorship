@@ -924,6 +924,15 @@ declare module 'astro:content' {
   data: InferEntrySchema<"graduates">
 } & { render(): Render[".md"] };
 };
+"mentees": {
+"renan-garcia.md": {
+	id: "renan-garcia.md";
+  slug: "renan-garcia";
+  body: string;
+  collection: "mentees";
+  data: InferEntrySchema<"mentees">
+} & { render(): Render[".md"] };
+};
 "mentors": {
 "angie.md": {
 	id: "angie.md";

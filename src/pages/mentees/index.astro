@@ -2,6 +2,12 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CtaFive from '../../components/newsletter/Newsletter.astro';
 import { AstroSeo } from '@astrolib/seo';
+import { getCollection } from 'astro:content';
+import MenteeCard from '../../components/mentees/MenteeCard.astro';
+
+const mentees = await getCollection('mentees');
+const currentCohort = 4;
+const currentMentees = mentees.filter((mentee) => mentee.data.cohort === currentCohort);
 ---
 
 <AstroSeo
@@ -43,23 +49,30 @@ import { AstroSeo } from '@astrolib/seo';
     <div class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-32 lg:py-36 relative">
       <div class="max-w-2xl">
         <p class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text">
-          Cohort 4 Coming Soon
+          Cohort {currentCohort}
         </p>
         <p class="mt-8 text-4xl font-normal tracking-tighter text-white sm:text-5xl">
-          Applications are now open for Cohort 4
+          Cohort {currentCohort} Mentees
         </p>
-        <p class="mt-4 text-vulcan-300">
-          Join our next cohort of amazing mentees! Applications are open until February 23, 2025.
-        </p>
-        <div class="mt-8">
-          <a
-            href="https://forms.gle/d6DNATNStTYkqVM89"
-            class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white transition-all rounded-lg hover:to-indigo-600 bg-gradient-to-b from-indigo-300 via-indigo-400 to-indigo-500"
-          >
-            Apply Now
-          </a>
-        </div>
+        <p class="mt-4 text-vulcan-300">Meet our current cohort of mentees!</p>
       </div>
+
+      {
+        currentMentees.length > 0 && (
+          <div class="py-16">
+            <ol class="grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2" role="list">
+              {currentMentees.map((mentee) => (
+                <MenteeCard
+                  url={'/mentees/' + mentee.slug}
+                  name={mentee.data.name}
+                  title={mentee.data.title}
+                  image={mentee.data.image}
+                />
+              ))}
+            </ol>
+          </div>
+        )
+      }
     </div>
   </section>
 
