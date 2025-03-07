@@ -1,6 +1,6 @@
 ---
 name: 'Edun Rilwan'
-title: 'Frontend Engineer'
+title: 'Backend Engineer'
 image: '/assets/edun.jpeg'
 twitter: 'https://x.com/emiloju_py'
 github: 'https://github.com/Omotunde2005'
