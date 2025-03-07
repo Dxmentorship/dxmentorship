@@ -828,6 +828,13 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "cohort-4": {
+"joy-Ndukwe.md": {
+	id: "joy-Ndukwe.md";
+  slug: "joy-ndukwe";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
 "samuel-uzor.md": {
 	id: "samuel-uzor.md";
   slug: "samuel-uzor";
