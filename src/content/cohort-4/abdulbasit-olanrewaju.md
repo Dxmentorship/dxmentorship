@@ -1,6 +1,6 @@
 ---
 
-name: 'Abdulbasit Olanrewaju'
+name: 'Olanrewaju Abdulbasit'
 
 title: 'AI Developer Advocate'
 
