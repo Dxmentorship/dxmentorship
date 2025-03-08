@@ -5,6 +5,7 @@ image: '/assets/abdulrasheed-abdulsalam.jpg'
 twitter: 'https://x.com/Triple123A'
 github: 'https://github.com/TRIPLE-ADE'
 linkedin: 'https://www.linkedin.com/in/abdulsalam-dev'
+website: 'https://triple-portfolio.netlify.app'
 cohort: '4'
 ---
 
