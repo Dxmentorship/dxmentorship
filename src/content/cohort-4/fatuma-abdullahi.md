@@ -1,6 +1,6 @@
 ---
 name: 'Fatuma Abdullahi'
-title: 'Frontend Engineer - Design-systems and accessibility'
+title: 'Frontend Engineer'
 image: '/assets/fatuma-abdullahi.png'
 twitter: 'https://x.com/XquisiteDreamer'
 github: 'https://github.com/FatumaA'
