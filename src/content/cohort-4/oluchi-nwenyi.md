@@ -1,6 +1,6 @@
 ---
 name: 'Oluchi Nwenyi'
-title: 'Techncial writer'
+title: 'Techncial Writer'
 image: '/assets/oluchi.jpg'
 twitter: 'https://x.com/lulunwenyi'
 github: 'https://github.com/lulunwenyi'
