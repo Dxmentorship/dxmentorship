@@ -16,8 +16,8 @@ cohort: '4'
 
 📌 Gain a good understanding of Open Source <br/>
 
-📌 Become better at Technical Writting and documentation <br/>
+📌 Become better at Technical writing and documentation <br/>
 
-📌 Land a full-time role as a Developer Advocate🥑 or Developer Community Manager👨.
+📌 Land a new full-time role as a Developer Advocate🥑 or Developer Community Manager👨.
 
 </div>
