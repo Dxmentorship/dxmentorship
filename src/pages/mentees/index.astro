@@ -1,7 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CtaFive from '../../components/newsletter/Newsletter.astro';
+import { getCollection } from 'astro:content';
+const allPosts = await getCollection('cohort-4');
 import { AstroSeo } from '@astrolib/seo';
+import MenteeCard from '../../components/mentees/MenteeCard.astro';
 ---
 
 <AstroSeo
@@ -59,9 +62,23 @@ import { AstroSeo } from '@astrolib/seo';
             Apply Now
           </a>
         </div>
+        <div class="py-24">
+          <ol class="grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2" role="list">
+            {
+              allPosts.map((post) => (
+                <MenteeCard
+                  url={'/cohort-4/' + post.slug}
+                  name={post.data.name}
+                  title={post.data.title}
+                  image={post.data.image}
+                />
+              ))
+            }
+          </ol>
+        </div>
       </div>
+
+      <CtaFive />
     </div>
   </section>
-
-  <CtaFive />
 </BaseLayout>
