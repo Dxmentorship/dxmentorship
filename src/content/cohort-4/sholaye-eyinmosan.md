@@ -1,6 +1,6 @@
 ---
 name: 'Sholaye Eyinmosan'
-title: 'Softwere Enginner | community manager | devrel '
+title: 'Softwere Enginner | Community manager | devrel '
 image: '/assets/sholaye-eyinmosan.jpeg'
 twitter: 'https://x.com/kingnove_'
 github: 'https://github.com/novertech411'
