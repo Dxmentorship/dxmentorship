@@ -1,6 +1,6 @@
 ---
 name: 'Abimbola Adedotun Samuel'
-title: 'Developer Advocate'
+title: 'Developer-Advocate'
 image: '/assets/dotun.jpg'
 twitter: 'https://x.com/Adedot1Abimbola'
 github: 'https://github.com/dotun2203'
