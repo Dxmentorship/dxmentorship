@@ -10,7 +10,6 @@ cohort: '4'
 
 <div>
 <h3>My Goals for DxMentorship</h3> <br/>
-
 At the end of the program, I want to: <br/>
 
 📌 Transition into an AI/Web3 Developer Advocate role <br/>
@@ -24,9 +23,7 @@ At the end of the program, I want to: <br/>
 <a href="https://x.com/0xexcellus" target="_blank">
 
   <button style="padding: 10px 15px; background: #1DA1F2; color: white; border: none; border-radius: 5px; cursor: pointer;">
-
     Reach Me on X
-
   </button>
 
 </a>
