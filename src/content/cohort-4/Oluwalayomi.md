@@ -10,5 +10,5 @@ cohort: '4'
 
 <div>
   <h3>Goals for DXMentorship<h3>
-  ⭐ To improve as a frontend engineer, learn open sourcing, documentation as well as technical writing. To become a better mentor. I also intend improve on my social media skill.
+  ⭐ To improve as a frontend engineer, learn open sourcing, documentation as well as technical writing. To become a better Mentor. I also intend improve on my social media skill.
 </div>
