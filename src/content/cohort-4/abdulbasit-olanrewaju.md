@@ -9,7 +9,6 @@ cohort: '4'
 ---
 
 <div>
-
 <h3>My Goals for DxMentorship</h3> <br/>
 
 At the end of the program, I want to: <br/>
