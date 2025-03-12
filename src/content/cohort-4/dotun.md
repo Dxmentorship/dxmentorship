@@ -1,7 +1,7 @@
 ---
 name: 'Abimbola Adedotun Samuel'
 title: 'Developer Advocate'
-image: '/assets/JoyNdukwe.jpg'
+image: '/assets/dotun.jpg'
 twitter: 'https://x.com/Adedot1Abimbola'
 github: 'https://github.com/dotun2203'
 linkedin: 'https://www.linkedin.com/in/abimbola-adedotun/'
