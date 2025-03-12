@@ -1,7 +1,7 @@
 ---
 name: 'Adetola Jesulayomi'
 title: 'Community Manager'
-image: '/assets/adetola.jesulayomi.jpg'
+image: '/assets/adetola-jesulayomi.jpg'
 twitter: 'https://x.com/l_ayomi'
 github: 'https://github.com/layomii'
 linkedin: 'https://www.linkedin.com/in/adetola-jesulayomi-7146a2162/'
