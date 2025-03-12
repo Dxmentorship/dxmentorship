@@ -1,19 +1,11 @@
 ---
-
 name: 'Olanrewaju Abdulbasit'
-
 title: 'AI Developer Advocate'
-
 image: '/assets/abdulbasit.jpg'
-
 twitter: 'https://x.com/0xexcellus'
-
 github: 'https://github.com/Gbolahan43'
-
 linkedin: 'https://www.linkedin.com/in/olanrewaju-abdulbasit-gbolahan/'
-
 cohort: '4'
-
 ---
 
 <div>
@@ -39,5 +31,4 @@ At the end of the program, I want to: <br/>
   </button>
 
 </a>
-
 </div>
