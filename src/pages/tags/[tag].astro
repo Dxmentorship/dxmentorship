@@ -23,17 +23,34 @@ const { posts } = Astro.props;
 
 <BaseLayout pageTitle={tag}>
   <section>
-    <div class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-32 lg:py-36 relative">
+    <div class='max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-32 lg:py-36 relative'>
       <div>
-        <p class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text">
+        <p class='text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text'>
           Tags categories
-        </p><p class="mt-8 text-4xl font-normal tracking-tighter text-white sm:text-5xl">
+        </p><p class='mt-8 text-4xl font-normal tracking-tighter text-white sm:text-5xl'>
           Blog posts tagged with {tag}
         </p>
       </div>
 
-      <div class="py-24">
-        <ol class="grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2" role="list">
+      <ul class='flex flex-wrap gap-8 mt-12' role='list'>
+        <a href={`/tags/${tag}`} class='relative'>
+          <li
+            class='flex items-center justify-center h-8 text-xs px-4 py-2 font-semibold text-white transition-all border rounded-lg bg-vulcan-900 hover:text-indigo-400 border-vulcan-700'
+          >
+            {tag}
+          </li>
+        </a>
+        <a href='/blog'>
+          <li
+            class='flex items-center justify-center h-8 text-xs px-4 py-2 font-semibold bg-white text-indigo-400 transition-all border rounded-lg hover:bg-indigo-50'
+          >
+            clear filter
+          </li>
+        </a>
+      </ul>
+
+      <div class='py-24'>
+        <ol class='grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2' role='list'>
           {
             posts.map((post) => (
               <EntriesOne
