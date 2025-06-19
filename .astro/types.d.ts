@@ -828,6 +828,34 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "cohort-4": {
+"Adeola-Ajiboso.md": {
+	id: "Adeola-Ajiboso.md";
+  slug: "adeola-ajiboso";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"Faith-Ayoola-Oni.md": {
+	id: "Faith-Ayoola-Oni.md";
+  slug: "faith-ayoola-oni";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"Happiness-Omale.md": {
+	id: "Happiness-Omale.md";
+  slug: "happiness-omale";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"Paschal-Anaedu.md": {
+	id: "Paschal-Anaedu.md";
+  slug: "paschal-anaedu";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
 "abdul-qawi-laniyan.md": {
 	id: "abdul-qawi-laniyan.md";
   slug: "abdul-qawi-laniyan";
@@ -835,9 +863,233 @@ declare module 'astro:content' {
   collection: "cohort-4";
   data: any
 } & { render(): Render[".md"] };
+"abdulbasit-olanrewaju.md": {
+	id: "abdulbasit-olanrewaju.md";
+  slug: "abdulbasit-olanrewaju";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"abdulrasaq-mustapha.md": {
+	id: "abdulrasaq-mustapha.md";
+  slug: "abdulrasaq-mustapha";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"abdulrasheed-abdulsalam.md": {
+	id: "abdulrasheed-abdulsalam.md";
+  slug: "abdulrasheed-abdulsalam";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"adetola-jesulayomi.md": {
+	id: "adetola-jesulayomi.md";
+  slug: "adetola-jesulayomi";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"aileen-villanueva.md": {
+	id: "aileen-villanueva.md";
+  slug: "aileen-villanueva";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"chinedu-ekene-okpala.md": {
+	id: "chinedu-ekene-okpala.md";
+  slug: "chinedu-ekene-okpala";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"dotun.md": {
+	id: "dotun.md";
+  slug: "dotun";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"edun-rilwan.md": {
+	id: "edun-rilwan.md";
+  slug: "edun-rilwan";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"fatuma-abdullahi.md": {
+	id: "fatuma-abdullahi.md";
+  slug: "fatuma-abdullahi";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"favxlaw.md": {
+	id: "favxlaw.md";
+  slug: "favxlaw";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"femi-olah.md": {
+	id: "femi-olah.md";
+  slug: "femi-olah";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"hussein-alamutu.md": {
+	id: "hussein-alamutu.md";
+  slug: "hussein-alamutu";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"ido-evergreen.md": {
+	id: "ido-evergreen.md";
+  slug: "ido-evergreen";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"imam-bashir.md": {
+	id: "imam-bashir.md";
+  slug: "imam-bashir";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"joy-Ndukwe.md": {
+	id: "joy-Ndukwe.md";
+  slug: "joy-ndukwe";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"joy-taribagshaw.md": {
+	id: "joy-taribagshaw.md";
+  slug: "joy-taribagshaw";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"manan-singhal.md": {
+	id: "manan-singhal.md";
+  slug: "manan-singhal";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"mercy-thaddeus.md": {
+	id: "mercy-thaddeus.md";
+  slug: "mercy-thaddeus";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"mfonobong.md": {
+	id: "mfonobong.md";
+  slug: "mfonobong";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"murewa-ashiru.md": {
+	id: "murewa-ashiru.md";
+  slug: "murewa-ashiru";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"obinna-aguwa.md": {
+	id: "obinna-aguwa.md";
+  slug: "obinna-aguwa";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"ogheneyoma-emore.md": {
+	id: "ogheneyoma-emore.md";
+  slug: "ogheneyoma-emore";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"olubisi-fola.md": {
+	id: "olubisi-fola.md";
+  slug: "olubisi-fola";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"oluchi-nwenyi.md": {
+	id: "oluchi-nwenyi.md";
+  slug: "oluchi-nwenyi";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"oluwalayomi-lawore.md": {
+	id: "oluwalayomi-lawore.md";
+  slug: "oluwalayomi-lawore";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"onyedikachi-eni.md": {
+	id: "onyedikachi-eni.md";
+  slug: "onyedikachi-eni";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"pinku-agrawal.md": {
+	id: "pinku-agrawal.md";
+  slug: "pinku-agrawal";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"precious-ngwube.md": {
+	id: "precious-ngwube.md";
+  slug: "precious-ngwube";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"renan-garcia.md": {
+	id: "renan-garcia.md";
+  slug: "renan-garcia";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
 "samuel-uzor.md": {
 	id: "samuel-uzor.md";
   slug: "samuel-uzor";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"sholaye-eyinmosan.md": {
+	id: "sholaye-eyinmosan.md";
+  slug: "sholaye-eyinmosan";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"techynurse.md": {
+	id: "techynurse.md";
+  slug: "techynurse";
+  body: string;
+  collection: "cohort-4";
+  data: any
+} & { render(): Render[".md"] };
+"victor-yakubu.md": {
+	id: "victor-yakubu.md";
+  slug: "victor-yakubu";
   body: string;
   collection: "cohort-4";
   data: any
