@@ -849,56 +849,56 @@ declare module 'astro:content' {
   slug: "community-building";
   body: string;
   collection: "curriculum";
-  data: any
+  data: InferEntrySchema<"curriculum">
 } & { render(): Render[".md"] };
 "conferences-and-events.md": {
 	id: "conferences-and-events.md";
   slug: "conferences-and-events";
   body: string;
   collection: "curriculum";
-  data: any
+  data: InferEntrySchema<"curriculum">
 } & { render(): Render[".md"] };
 "content-creation.md": {
 	id: "content-creation.md";
   slug: "content-creation";
   body: string;
   collection: "curriculum";
-  data: any
+  data: InferEntrySchema<"curriculum">
 } & { render(): Render[".md"] };
 "dev-marketing-evangelism.md": {
 	id: "dev-marketing-evangelism.md";
   slug: "dev-marketing-evangelism";
   body: string;
   collection: "curriculum";
-  data: any
+  data: InferEntrySchema<"curriculum">
 } & { render(): Render[".md"] };
 "documentation-and-technical-writing.md": {
 	id: "documentation-and-technical-writing.md";
   slug: "documentation-and-technical-writing";
   body: string;
   collection: "curriculum";
-  data: any
+  data: InferEntrySchema<"curriculum">
 } & { render(): Render[".md"] };
 "dx-engineering.md": {
 	id: "dx-engineering.md";
   slug: "dx-engineering";
   body: string;
   collection: "curriculum";
-  data: any
+  data: InferEntrySchema<"curriculum">
 } & { render(): Render[".md"] };
 "metrics-and-value-prop.md": {
 	id: "metrics-and-value-prop.md";
   slug: "metrics-and-value-prop";
   body: string;
   collection: "curriculum";
-  data: any
+  data: InferEntrySchema<"curriculum">
 } & { render(): Render[".md"] };
 "open-source.md": {
 	id: "open-source.md";
   slug: "open-source";
   body: string;
   collection: "curriculum";
-  data: any
+  data: InferEntrySchema<"curriculum">
 } & { render(): Render[".md"] };
 };
 "faqs": {
@@ -907,28 +907,28 @@ declare module 'astro:content' {
   slug: "have-more-questions";
   body: string;
   collection: "faqs";
-  data: any
+  data: InferEntrySchema<"faqs">
 } & { render(): Render[".md"] };
 "how-do-I-enroll.md": {
 	id: "how-do-I-enroll.md";
   slug: "how-do-i-enroll";
   body: string;
   collection: "faqs";
-  data: any
+  data: InferEntrySchema<"faqs">
 } & { render(): Render[".md"] };
 "how-do-I-pay.md": {
 	id: "how-do-I-pay.md";
   slug: "how-do-i-pay";
   body: string;
   collection: "faqs";
-  data: any
+  data: InferEntrySchema<"faqs">
 } & { render(): Render[".md"] };
 "what-is-dx-mentorship.md": {
 	id: "what-is-dx-mentorship.md";
   slug: "what-is-dx-mentorship";
   body: string;
   collection: "faqs";
-  data: any
+  data: InferEntrySchema<"faqs">
 } & { render(): Render[".md"] };
 };
 "graduates": {
@@ -937,7 +937,7 @@ declare module 'astro:content' {
   slug: "template";
   body: string;
   collection: "graduates";
-  data: any
+  data: InferEntrySchema<"graduates">
 } & { render(): Render[".md"] };
 };
 "mentors": {
@@ -1011,49 +1011,49 @@ declare module 'astro:content' {
   slug: "devrel-in-open-source";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "announcing-dxmentorship-cohort-3.md": {
 	id: "announcing-dxmentorship-cohort-3.md";
   slug: "announcing-dxmentorship-cohort-3";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "announcing-dxmentorship-cohort-4.md": {
 	id: "announcing-dxmentorship-cohort-4.md";
   slug: "announcing-dxmentorship-cohort-4";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "building-active-developer-communities-devrel.md": {
 	id: "building-active-developer-communities-devrel.md";
   slug: "building-active-developer-communities-devrel";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "effective-technical-documentation-developersohort.md": {
 	id: "effective-technical-documentation-developersohort.md";
   slug: "effective-technical-documentation-developersohort";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "hacktoberfest-for-dev-advocates.md": {
 	id: "hacktoberfest-for-dev-advocates.md";
   slug: "hacktoberfest-for-dev-advocates";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 "mentorship-for-early-dev-advocates.md": {
 	id: "mentorship-for-early-dev-advocates.md";
   slug: "mentorship-for-early-dev-advocates";
   body: string;
   collection: "posts";
-  data: any
+  data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
 };
 
@@ -1065,5 +1065,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = never;
+	type ContentConfig = typeof import("../src/content/config");
 }
