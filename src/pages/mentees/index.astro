@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 const allPosts = await getCollection('cohort-4');
+const isApplicationOngoing = true;
 import CtaFive from '../../components/newsletter/Newsletter.astro';
 import { AstroSeo } from '@astrolib/seo';
 import MenteeCard from '../../components/mentees/MenteeCard.astro';
@@ -44,26 +45,50 @@ import MenteeCard from '../../components/mentees/MenteeCard.astro';
 <BaseLayout>
   <section>
     <div class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-32 lg:py-36 relative">
-      <div class="max-w-2xl">
-        <p class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text">
-          Our Mentees
-        </p>
-        <p class="mt-8 text-4xl font-normal tracking-tighter text-white sm:text-5xl">Mentees from the present cohort</p>
-      </div>
+      {
+        !isApplicationOngoing && (
+          <div class="max-w-2xl">
+            <p class="text-sm text-transparent uppercase bg-gradient-to-r from-indigo-300 to-indigo-400 bg-clip-text">
+              Our Mentees
+            </p>
+            <p class="mt-8 text-4xl font-normal tracking-tighter text-white sm:text-5xl">
+              Mentees from the present cohort
+            </p>
+          </div>
+        )
+      }
 
       <div class="py-24">
-        <ol class="grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2" role="list">
-          {
-            allPosts.map((post) => (
-              <MenteeCard
-                url={'/mentees/' + post.slug}
-                name={post.data.name}
-                title={post.data.title}
-                image={post.data.image}
-              />
-            ))
-          }
-        </ol>
+        {
+          !isApplicationOngoing ? (
+            <ol class="grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2" role="list">
+              {allPosts.map((post) => (
+                <MenteeCard
+                  url={'/mentees/' + post.slug}
+                  name={post.data.name}
+                  title={post.data.title}
+                  image={post.data.image}
+                />
+              ))}
+            </ol>
+          ) : (
+            <div class="max-w-3xl mx-auto text-center">
+              <h2 class="text-5xl font-bold tracking-tighter text-white mb-6">This Could Be You</h2>
+
+              <p class="text-xl text-vulcan-300 mb-8 max-w-2xl mx-auto">
+                Join our next cohort and learn from industry experts to accelerate your DevRel career!
+              </p>
+              <a
+                href="https://forms.gle/SULV71vPdB2SgpPp9"
+                class="inline-flex items-center justify-center h-12 px-8 py-3 text-base font-semibold
+text-white transition-all rounded-lg hover:to-indigo-600 bg-gradient-to-b from-indigo-300 via-indigo-400
+to-indigo-500 shadow-lg shadow-indigo-500/50 hover:shadow-indigo-500/70"
+              >
+                Apply Now
+              </a>
+            </div>
+          )
+        }
       </div>
     </div>
   </section>
