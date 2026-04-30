@@ -1,86 +1,141 @@
 ---
 import Verticalgrid from '../assets/Verticalgrid.astro';
 
-const curriculum = [
+const cohort6 = [
   {
-    weeks: [
-      {
-        title: 'Week 1: Developer Advocacy Foundations & AI Tools',
-        content: [
-          'Role and impact of Developer Advocates in 2025',
-          'Using AI tools for developer advocacy',
-          'Building developer-first mindset',
-        ],
-      },
-      {
-        title: 'Week 2: Technical Content Strategy',
-        content: [
-          'Creating effective technical documentation',
-          'Documentation-as-code practices',
-          'Content distribution and SEO for technical content',
-        ],
-      },
-      {
-        title: 'Week 3: Modern Community Building',
-        content: [
-          'Building communities in a remote-first world',
-          'Community engagement tactics',
-          'Managing developer feedback',
-        ],
-      },
-      {
-        title: 'Week 4: Core Technical Skills',
-        content: ['Modern web development overview', 'Working with APIs and SDKs', 'Developer tools and platforms'],
-      },
-      {
-        title: 'Week 5: Video & Interactive Content',
-        content: [
-          'Creating developer-focused video content',
-          'Interactive documentation techniques',
-          'Presentation skills for technical audiences',
-        ],
-      },
-      {
-        title: 'Week 6: Developer Event Strategy',
-        content: [
-          'Planning virtual and hybrid events',
-          'Event formats and engagement strategies',
-          'Measuring event success',
-        ],
-      },
-      {
-        title: 'Week 7: Developer Experience',
-        content: [
-          'DX principles and best practices',
-          'User research for developers',
-          'Feedback loops and implementation',
-        ],
-      },
-      {
-        title: 'Week 8: Developer Marketing Essentials',
-        content: [
-          'Developer marketing fundamentals',
-          'Content strategy for developers',
-          'DevRel and marketing alignment',
-        ],
-      },
-      {
-        title: 'Week 9: Metrics That Matter',
-        content: ['Key DevRel metrics', 'Data analysis for advocacy', 'Impact reporting'],
-      },
-      {
-        title: 'Week 10: Strategic DevRel',
-        content: ['Cross-functional collaboration', 'Building developer programs', 'Global developer relations'],
-      },
-      {
-        title: 'Week 11: Future Technologies',
-        content: ['AI/ML developer tools', 'Web3 and blockchain basics', 'Emerging platforms'],
-      },
-      {
-        title: 'Week 12: Final Presentations',
-        content: ['Advocacy strategy presentation', 'Program implementation plan', 'Peer feedback session'],
-      },
+    title: 'Week 1: DevRel 101',
+    content: [
+      'Role and responsibilities of a Developer Advocate',
+      'Building a developer-first mindset',
+      'Getting started in the DevRel ecosystem',
     ],
+  },
+  {
+    title: 'Week 2: DevRel in the Age of AI',
+    content: [
+      'How AI is reshaping developer relations',
+      'Using AI tools to scale your advocacy work',
+      'Emerging opportunities at the intersection of AI and DevRel',
+    ],
+  },
+  {
+    title: 'Week 3: Content Production for DevRels',
+    content: [
+      'Writing technical content that resonates with developers',
+      'Video, livestreams, and interactive content formats',
+      'Building and distributing a content strategy',
+    ],
+  },
+  {
+    title: 'Week 4: Events',
+    content: [
+      'Planning and running developer events',
+      'Engaging communities at conferences and meetups',
+      'Measuring event impact and follow-up strategies',
+    ],
+  },
+  {
+    title: 'Week 5: Hackathon & Presentations',
+    content: [
+      'Hands-on hackathon challenge',
+      'Building and pitching a DevRel project',
+      'Peer feedback and iteration',
+    ],
+  },
+  {
+    title: 'Week 6: Product & GTM',
+    content: [
+      "DevRel's role in go-to-market strategy",
+      'Collaborating with product and marketing teams',
+      'Influencing roadmap through developer feedback',
+    ],
+  },
+  {
+    title: 'Week 7: Graduation',
+    content: [
+      'Final presentations and showcase',
+      'Celebrating cohort achievements',
+      'Next steps and career guidance',
+    ],
+  },
+];
+
+const previousCurriculum = [
+  {
+    title: 'Week 1: Developer Advocacy Foundations & AI Tools',
+    content: [
+      'Role and impact of Developer Advocates in 2025',
+      'Using AI tools for developer advocacy',
+      'Building developer-first mindset',
+    ],
+  },
+  {
+    title: 'Week 2: Technical Content Strategy',
+    content: [
+      'Creating effective technical documentation',
+      'Documentation-as-code practices',
+      'Content distribution and SEO for technical content',
+    ],
+  },
+  {
+    title: 'Week 3: Modern Community Building',
+    content: [
+      'Building communities in a remote-first world',
+      'Community engagement tactics',
+      'Managing developer feedback',
+    ],
+  },
+  {
+    title: 'Week 4: Core Technical Skills',
+    content: ['Modern web development overview', 'Working with APIs and SDKs', 'Developer tools and platforms'],
+  },
+  {
+    title: 'Week 5: Video & Interactive Content',
+    content: [
+      'Creating developer-focused video content',
+      'Interactive documentation techniques',
+      'Presentation skills for technical audiences',
+    ],
+  },
+  {
+    title: 'Week 6: Developer Event Strategy',
+    content: [
+      'Planning virtual and hybrid events',
+      'Event formats and engagement strategies',
+      'Measuring event success',
+    ],
+  },
+  {
+    title: 'Week 7: Developer Experience',
+    content: [
+      'DX principles and best practices',
+      'User research for developers',
+      'Feedback loops and implementation',
+    ],
+  },
+  {
+    title: 'Week 8: Developer Marketing Essentials',
+    content: [
+      'Developer marketing fundamentals',
+      'Content strategy for developers',
+      'DevRel and marketing alignment',
+    ],
+  },
+  {
+    title: 'Week 9: Metrics That Matter',
+    content: ['Key DevRel metrics', 'Data analysis for advocacy', 'Impact reporting'],
+  },
+  {
+    title: 'Week 10: Strategic DevRel',
+    content: ['Cross-functional collaboration', 'Building developer programs', 'Global developer relations'],
+  },
+  {
+    title: 'Week 11: Future Technologies',
+    content: ['AI/ML developer tools', 'Web3 and blockchain basics', 'Emerging platforms'],
+  },
+  {
+    title: 'Week 12: Final Presentations',
+    content: ['Advocacy strategy presentation', 'Program implementation plan', 'Peer feedback session'],
   },
 ];
 ---
@@ -94,46 +149,100 @@ const curriculum = [
           Our Curriculum
         </p>
         <p class="mt-8 text-lg font-normal tracking-tight text-white">
-          We're excited to go on this journey with you and we've mapped out this curriculum to direct our paths for the
-          next 12 weeks. For this cohort we'll cover this curriculum, go over their practical applications, and
-          occassionally bring experts in these areas to teach and share their knowledge and experiences.
+          We're excited to go on this journey with you. Over 7 weeks we'll cover the core pillars of Developer
+          Relations, hear from industry experts, and work through real-world scenarios to prepare you for a career in
+          DevRel.
         </p>
       </div>
     </div>
 
     <ul class="grid grid-cols-1 gap-6 mt-12 list-none sm:grid-cols-2 lg:grid-cols-3 lg:gap-12 lg:mt-24">
       {
-        curriculum.map((curriculumWeek) =>
-          curriculumWeek.weeks.map((weekData) => (
-            <li class="gap-3">
-              <h3 class="text-xl font-bold text-white">{weekData.title}</h3>
-              <ul>
-                {weekData.content.map((contentItem) => (
-                  <li>
-                    <div class="relative flex items-center py-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="w-4 h-4 text-indigo-400 icon icon-tabler icon-tabler-circle-check"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        stroke="currentColor"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-                        <path d="M9 12l2 2l4 -4" />
-                      </svg>
-                      <p class="ml-2 text-sm leading-6 text-vulcan-300">{contentItem}</p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          )),
-        )
+        cohort6.map((weekData) => (
+          <li class="gap-3">
+            <h3 class="text-xl font-bold text-white">{weekData.title}</h3>
+            <ul>
+              {weekData.content.map((contentItem) => (
+                <li>
+                  <div class="relative flex items-center py-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-4 h-4 text-indigo-400 icon icon-tabler icon-tabler-circle-check"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                      <path d="M9 12l2 2l4 -4" />
+                    </svg>
+                    <p class="ml-2 text-sm leading-6 text-vulcan-300">{contentItem}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))
       }
     </ul>
+
+    <!-- Previous curriculum collapsible -->
+    <div class="mt-24">
+      <details class="group">
+        <summary
+          class="flex items-center justify-between cursor-pointer list-none text-white/50 hover:text-white/80 transition-colors text-sm font-medium"
+        >
+          <span>Previous curriculum</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-4 transition-transform group-open:rotate-180"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M6 9l6 6l6 -6" />
+          </svg>
+        </summary>
+        <ul class="grid grid-cols-1 gap-6 mt-12 list-none sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
+          {
+            previousCurriculum.map((weekData) => (
+              <li class="gap-3">
+                <h3 class="text-xl font-bold text-white/60">{weekData.title}</h3>
+                <ul>
+                  {weekData.content.map((contentItem) => (
+                    <li>
+                      <div class="relative flex items-center py-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-4 h-4 text-indigo-400/50"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                          <path d="M9 12l2 2l4 -4" />
+                        </svg>
+                        <p class="ml-2 text-sm leading-6 text-vulcan-300/50">{contentItem}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))
+          }
+        </ul>
+      </details>
+    </div>
   </div>
 </section>
